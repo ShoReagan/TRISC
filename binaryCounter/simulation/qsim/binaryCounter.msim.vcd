@@ -1,0 +1,311 @@
+$comment
+	File created using the following command:
+		vcd file binaryCounter.msim.vcd -direction
+$end
+$date
+	Sun Apr 03 11:33:04 2022
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module binaryCounter_vlg_vec_tst $end
+$var reg 4 ! D [3:0] $end
+$var reg 1 " clear $end
+$var reg 1 # increment $end
+$var reg 1 $ load $end
+$var wire 1 % Q [3] $end
+$var wire 1 & Q [2] $end
+$var wire 1 ' Q [1] $end
+$var wire 1 ( Q [0] $end
+
+$scope module i1 $end
+$var wire 1 ) gnd $end
+$var wire 1 * vcc $end
+$var wire 1 + unknown $end
+$var tri1 1 , devclrn $end
+$var tri1 1 - devpor $end
+$var tri1 1 . devoe $end
+$var wire 1 / ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 0 ~QUARTUS_CREATED_UNVM~~busy $end
+$var wire 1 1 ~QUARTUS_CREATED_ADC1~~eoc $end
+$var wire 1 2 ~QUARTUS_CREATED_ADC2~~eoc $end
+$var wire 1 3 Q[0]~output_o $end
+$var wire 1 4 Q[1]~output_o $end
+$var wire 1 5 Q[2]~output_o $end
+$var wire 1 6 Q[3]~output_o $end
+$var wire 1 7 increment~input_o $end
+$var wire 1 8 increment~inputclkctrl_outclk $end
+$var wire 1 9 D[0]~input_o $end
+$var wire 1 : load~input_o $end
+$var wire 1 ; Q~0_combout $end
+$var wire 1 < clear~input_o $end
+$var wire 1 = clear~inputclkctrl_outclk $end
+$var wire 1 > Q[0]~reg0_q $end
+$var wire 1 ? D[1]~input_o $end
+$var wire 1 @ Q~1_combout $end
+$var wire 1 A Q[1]~reg0_q $end
+$var wire 1 B D[2]~input_o $end
+$var wire 1 C Q~2_combout $end
+$var wire 1 D Q~3_combout $end
+$var wire 1 E Q[2]~reg0_q $end
+$var wire 1 F D[3]~input_o $end
+$var wire 1 G Q~4_combout $end
+$var wire 1 H Q~5_combout $end
+$var wire 1 I Q[3]~reg0_q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b101 !
+1"
+0#
+0$
+0(
+0'
+0&
+0%
+0)
+1*
+x+
+1,
+1-
+1.
+0/
+z0
+z1
+z2
+03
+04
+05
+06
+07
+08
+19
+0:
+1;
+1<
+1=
+0>
+0?
+0@
+0A
+1B
+0C
+0D
+0E
+0F
+1G
+0H
+0I
+$end
+#20000
+1$
+1:
+0G
+1H
+1D
+0H
+#40000
+1#
+17
+18
+1E
+1>
+13
+15
+1&
+1(
+#80000
+0#
+07
+08
+#120000
+0$
+1#
+17
+0:
+18
+1C
+0D
+1@
+0;
+1D
+#160000
+0#
+07
+08
+#200000
+1#
+17
+18
+1A
+0>
+03
+14
+1G
+1'
+0(
+1H
+1;
+0H
+#240000
+0#
+07
+08
+#280000
+1#
+17
+18
+1>
+13
+0G
+0C
+1(
+0@
+0;
+1H
+0D
+#320000
+0#
+07
+08
+#360000
+1#
+17
+18
+1I
+0E
+0A
+0>
+03
+04
+05
+16
+1G
+1%
+0&
+0'
+0(
+1;
+#400000
+0#
+07
+08
+#440000
+1#
+17
+18
+1>
+13
+1(
+1@
+0;
+#480000
+0#
+07
+08
+#520000
+1#
+17
+18
+1A
+0>
+03
+14
+1'
+0(
+1;
+#560000
+0#
+07
+08
+#600000
+1#
+17
+18
+1>
+13
+1C
+1(
+0@
+0;
+1D
+#640000
+0#
+07
+08
+#680000
+1#
+17
+18
+1E
+0A
+0>
+03
+04
+15
+1&
+0'
+0(
+1;
+#720000
+0"
+0#
+07
+0<
+0=
+08
+0E
+0I
+06
+05
+0C
+0&
+0%
+0H
+0D
+#760000
+1#
+17
+18
+#800000
+0#
+07
+08
+#840000
+1"
+1#
+17
+1<
+1=
+18
+1>
+13
+1(
+1@
+0;
+#880000
+0#
+07
+08
+#920000
+1#
+17
+18
+1A
+0>
+03
+14
+1'
+0(
+1;
+#960000
+0#
+07
+08
+#1000000

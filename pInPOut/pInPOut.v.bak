@@ -1,0 +1,15 @@
+module pInPOut #(parameter N = 4)
+(
+	input [N-1:0] D,
+	input clear, load,
+	output [N-1:0] Q
+)
+	if(clear == 0)
+		assign Q = 4'b0000;
+	else if(load == 0)
+		assign Q = 4'b1111;
+	else begin
+		assign Q = D;
+	end
+	
+endmodule

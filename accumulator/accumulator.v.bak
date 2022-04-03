@@ -1,0 +1,13 @@
+module accumulator
+(
+	input [3:0] A, B,
+	input A/B, load, increment, clear,
+	output reg [3:0] Z
+);
+	wire [3:0] C;
+	twoToOne(A, B, A/B, C);
+	binaryCounter(C, clear, increment, load, Z);
+endmodule
+		
+
+	

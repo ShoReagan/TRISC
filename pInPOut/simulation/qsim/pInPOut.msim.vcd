@@ -1,0 +1,297 @@
+$comment
+	File created using the following command:
+		vcd file pInPOut.msim.vcd -direction
+$end
+$date
+	Sun Apr 03 11:07:45 2022
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module pInPOut_vlg_vec_tst $end
+$var reg 4 ! D [3:0] $end
+$var reg 1 " clear $end
+$var reg 1 # load $end
+$var wire 1 $ Q [3] $end
+$var wire 1 % Q [2] $end
+$var wire 1 & Q [1] $end
+$var wire 1 ' Q [0] $end
+
+$scope module i1 $end
+$var wire 1 ( gnd $end
+$var wire 1 ) vcc $end
+$var wire 1 * unknown $end
+$var tri1 1 + devclrn $end
+$var tri1 1 , devpor $end
+$var tri1 1 - devoe $end
+$var wire 1 . ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 / ~QUARTUS_CREATED_UNVM~~busy $end
+$var wire 1 0 ~QUARTUS_CREATED_ADC1~~eoc $end
+$var wire 1 1 ~QUARTUS_CREATED_ADC2~~eoc $end
+$var wire 1 2 Q[0]~output_o $end
+$var wire 1 3 Q[1]~output_o $end
+$var wire 1 4 Q[2]~output_o $end
+$var wire 1 5 Q[3]~output_o $end
+$var wire 1 6 load~input_o $end
+$var wire 1 7 load~inputclkctrl_outclk $end
+$var wire 1 8 clear~input_o $end
+$var wire 1 9 D[0]~input_o $end
+$var wire 1 : Q~0_combout $end
+$var wire 1 ; Q[0]~reg0_q $end
+$var wire 1 < D[1]~input_o $end
+$var wire 1 = Q~1_combout $end
+$var wire 1 > Q[1]~reg0_q $end
+$var wire 1 ? D[2]~input_o $end
+$var wire 1 @ Q~2_combout $end
+$var wire 1 A Q[2]~reg0_q $end
+$var wire 1 B D[3]~input_o $end
+$var wire 1 C Q~3_combout $end
+$var wire 1 D Q[3]~reg0_q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b100 !
+1"
+0#
+0'
+0&
+0%
+0$
+0(
+1)
+x*
+1+
+1,
+1-
+0.
+z/
+z0
+z1
+02
+03
+04
+05
+06
+07
+18
+09
+0:
+0;
+0<
+0=
+0>
+1?
+1@
+0A
+0B
+0C
+0D
+$end
+#40000
+1#
+16
+17
+1A
+14
+1%
+#80000
+0#
+06
+07
+#120000
+b0 !
+b1 !
+0"
+1#
+16
+08
+0?
+19
+17
+0@
+#160000
+0#
+06
+07
+#200000
+1#
+16
+17
+0A
+04
+0%
+#240000
+b0 !
+0#
+06
+09
+07
+#260000
+b1000 !
+1"
+18
+1B
+1C
+#280000
+1#
+16
+17
+1D
+15
+1$
+#320000
+0#
+06
+07
+#360000
+1#
+16
+17
+#380000
+b1010 !
+b10 !
+0B
+1<
+0C
+1=
+#400000
+0#
+06
+07
+#440000
+1#
+16
+17
+0D
+1>
+13
+05
+0$
+1&
+#480000
+0#
+06
+07
+#500000
+b0 !
+0<
+0=
+#520000
+b100 !
+b1100 !
+1#
+16
+1B
+1?
+17
+1C
+1@
+0>
+03
+0&
+#560000
+0#
+06
+07
+#600000
+1#
+16
+17
+1D
+1A
+14
+15
+1$
+1%
+#640000
+b1000 !
+0#
+06
+0?
+07
+0@
+#660000
+b0 !
+0B
+0C
+#680000
+b1 !
+b11 !
+b111 !
+1#
+16
+1?
+1<
+19
+17
+1@
+1=
+1:
+0D
+0A
+04
+05
+0$
+0%
+#720000
+0#
+06
+07
+#760000
+1#
+16
+17
+1A
+1>
+1;
+12
+13
+14
+1%
+1&
+1'
+#800000
+b110 !
+b100 !
+b0 !
+0#
+06
+0?
+0<
+09
+07
+0@
+0=
+0:
+#840000
+1#
+16
+17
+0A
+0>
+0;
+02
+03
+04
+0%
+0&
+0'
+#880000
+0#
+06
+07
+#920000
+1#
+16
+17
+#960000
+0#
+06
+07
+#1000000

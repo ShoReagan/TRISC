@@ -1,0 +1,82 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Sho/OneDrive/Documents/Verilog/FAbehav/simulation/qsim
+vFAbehav
+Z1 !s110 1649006765
+!i10b 1
+!s100 _2F419S8W^;z8AG=NO^]m3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IfjjdXz0adC`G8:zcNT0E`1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1649006764
+Z5 8FAbehav.vo
+Z6 FFAbehav.vo
+!i122 0
+L0 32 250
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1649006765.000000
+Z9 !s107 FAbehav.vo|
+Z10 !s90 -work|work|FAbehav.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+n@f@abehav
+vFAbehav_vlg_vec_tst
+R1
+!i10b 1
+!s100 [=IT2`CO_Z?EMOnEk5C9V3
+R2
+IkgV]hnLI4<U56iLG4240h3
+R3
+R0
+R4
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 1
+L0 30 51
+R7
+r1
+!s85 0
+31
+R8
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R11
+R12
+n@f@abehav_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 E1d=8WB1nIKJ9f=hEo]K;1
+R2
+I7[8YLU308c71zn6cZ_6B_3
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 283 45
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12

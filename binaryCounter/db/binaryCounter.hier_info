@@ -1,0 +1,23 @@
+|binaryCounter
+D[0] => Q.DATAB
+D[1] => Q.DATAB
+D[2] => Q.DATAB
+D[3] => Q.DATAB
+clear => Q[0]~reg0.ACLR
+clear => Q[1]~reg0.ACLR
+clear => Q[2]~reg0.ACLR
+clear => Q[3]~reg0.ACLR
+increment => Q[0]~reg0.CLK
+increment => Q[1]~reg0.CLK
+increment => Q[2]~reg0.CLK
+increment => Q[3]~reg0.CLK
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+load => Q.OUTPUTSELECT
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

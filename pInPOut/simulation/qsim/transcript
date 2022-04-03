@@ -1,0 +1,46 @@
+# do pInPOut.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:07:44 on Apr 03,2022
+# vlog -work work pInPOut.vo 
+# -- Compiling module pInPOut
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	pInPOut
+# End time: 11:07:44 on Apr 03,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:07:44 on Apr 03,2022
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module pInPOut_vlg_vec_tst
+# 
+# Top level modules:
+# 	pInPOut_vlg_vec_tst
+# End time: 11:07:44 on Apr 03,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -t 1ps -L fiftyfivenm_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.pInPOut_vlg_vec_tst 
+# Start time: 11:07:44 on Apr 03,2022
+# Loading work.pInPOut_vlg_vec_tst
+# Loading work.pInPOut
+# Loading work.hard_block
+# Loading fiftyfivenm_ver.fiftyfivenm_lcell_comb
+# Loading fiftyfivenm_ver.fiftyfivenm_io_obuf
+# Loading fiftyfivenm_ver.fiftyfivenm_io_ibuf
+# Loading fiftyfivenm_ver.fiftyfivenm_clkctrl
+# Loading fiftyfivenm_ver.fiftyfivenm_mux41
+# Loading fiftyfivenm_ver.fiftyfivenm_ena_reg
+# Loading altera_ver.dffeas
+# Loading fiftyfivenm_ver.fiftyfivenm_unvm
+# Loading fiftyfivenm_ver.fiftyfivenm_adcblock
+# Loading altera_ver.PRIM_GDFF_LOW
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\~QUARTUS_CREATED_ADC1~ '.  Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /pInPOut_vlg_vec_tst/i1/\~QUARTUS_CREATED_ADC1~  File: pInPOut.vo Line: 432
+# ** Warning: (vsim-3722) pInPOut.vo(432): [TFMPC] - Missing connection for port 'clk_dft'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\~QUARTUS_CREATED_ADC2~ '.  Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /pInPOut_vlg_vec_tst/i1/\~QUARTUS_CREATED_ADC2~  File: pInPOut.vo Line: 455
+# ** Warning: (vsim-3722) pInPOut.vo(455): [TFMPC] - Missing connection for port 'clk_dft'.
+# after#24
+# ** Note: $finish    : Waveform.vwf.vt(49)
+#    Time: 1 us  Iteration: 0  Instance: /pInPOut_vlg_vec_tst
+# End time: 11:07:45 on Apr 03,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 4
