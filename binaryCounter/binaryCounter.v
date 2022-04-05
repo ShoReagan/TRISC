@@ -13,7 +13,7 @@ module binaryCounter #(parameter N=4)
 					Q = D;
 				else
 					Q <= Q + 1;
-				end
+			end
 	end
 endmodule
 			
