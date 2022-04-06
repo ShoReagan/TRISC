@@ -24,11 +24,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "clear",
+					"name" : "load",
 					"strict" : false
 				},
 				{
-					"name" : "load",
+					"name" : "clear",
 					"strict" : false
 				},
 				{

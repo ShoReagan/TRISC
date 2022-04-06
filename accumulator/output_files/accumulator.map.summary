@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Sun Apr 03 11:58:38 2022
+Analysis & Synthesis Status : Successful - Tue Apr 05 19:50:14 2022
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : accumulator
 Top-level Entity Name : accumulator
 Family : MAX 10
-Total logic elements : 8
-    Total combinational functions : 8
+Total logic elements : 23
+    Total combinational functions : 23
     Dedicated logic registers : 4
 Total registers : 4
 Total pins : 16

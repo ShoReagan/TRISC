@@ -26,7 +26,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sun Apr 03 12:05:58 2022
+    Info: Processing started: Tue Apr 05 19:51:27 2022
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off accumulator -c accumulator --vector_source=C:/Users/Sho/OneDrive/Documents/Verilog/accumulator/Waveform.vwf --testbench_file=C:/Users/Sho/OneDrive/Documents/Verilog/accumulator/simulation/qsim/Waveform.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -55,21 +55,21 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sun Apr 03 12:05:59 2022
+    Info: Processing started: Tue Apr 05 19:51:28 2022
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Sho/OneDrive/Documents/Verilog/accumulator/simulation/qsim/ accumulator -c accumulator
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file accumulator.vo in folder "C:/Users/Sho/OneDrive/Documents/Verilog/accumulator/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4642 megabytes
-    Info: Processing ended: Sun Apr 03 12:06:00 2022
+    Info: Processing ended: Tue Apr 05 19:51:29 2022
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 Completed successfully. 
 
 **** Generating the ModelSim .do script ****
 
-C:/Users/Sho/OneDrive/Documents/Verilog/accumulator/simulation/qsim/accumulator.do generated.
+C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/accumulator/simulation/qsim/accumulator.do generated.
 
 Completed successfully. 
 
@@ -84,29 +84,30 @@ Reading pref.tcl
 
 # do accumulator.do
 # ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:06:00 on Apr 03,2022
-# vlog -work work accumulator.vo 
 
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:51:29 on Apr 05,2022
+# vlog -work work accumulator.vo 
 # -- Compiling module accumulator
 # -- Compiling module hard_block
 # 
 # Top level modules:
 # 	accumulator
-# End time: 12:06:00 on Apr 03,2022, Elapsed time: 0:00:00
+# End time: 19:51:29 on Apr 05,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:06:00 on Apr 03,2022
+# Start time: 19:51:29 on Apr 05,2022
 # vlog -work work Waveform.vwf.vt 
 # -- Compiling module accumulator_vlg_vec_tst
 # 
 # Top level modules:
 # 	accumulator_vlg_vec_tst
-# End time: 12:06:01 on Apr 03,2022, Elapsed time: 0:00:01
+# End time: 19:51:30 on Apr 05,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L fiftyfivenm_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.accumulator_vlg_vec_tst 
-# Start time: 12:06:01 on Apr 03,2022
+# Start time: 19:51:30 on Apr 05,2022
 # Loading work.accumulator_vlg_vec_tst
 # Loading work.accumulator
 # Loading work.hard_block
@@ -127,23 +128,22 @@ Reading pref.tcl
 #    Time: 0 ps  Iteration: 0  Instance: /accumulator_vlg_vec_tst/i1/\~QUARTUS_CREATED_ADC2~  File: accumulator.vo Line: 628
 # ** Warning: (vsim-3722) accumulator.vo(628): [TFMPC] - Missing connection for port 'clk_dft'.
 # after#26
-
 # ** Note: $finish    : Waveform.vwf.vt(55)
 #    Time: 1 us  Iteration: 0  Instance: /accumulator_vlg_vec_tst
-# End time: 12:06:01 on Apr 03,2022, Elapsed time: 0:00:00
+# End time: 19:51:30 on Apr 05,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 4
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Users/Sho/OneDrive/Documents/Verilog/accumulator/Waveform.vwf...
+Reading C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/accumulator/Waveform.vwf...
 
-Reading C:/Users/Sho/OneDrive/Documents/Verilog/accumulator/simulation/qsim/accumulator.msim.vcd...
+Reading C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/accumulator/simulation/qsim/accumulator.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/Sho/OneDrive/Documents/Verilog/accumulator/simulation/qsim/accumulator_20220403120601.sim.vwf
+Writing the resulting VWF to C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/accumulator/simulation/qsim/accumulator_20220405195130.sim.vwf
 
 Finished VCD to VWF conversion.
 

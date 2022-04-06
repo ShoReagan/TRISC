@@ -3,7 +3,7 @@ $comment
 		vcd file twoToOne.msim.vcd -direction
 $end
 $date
-	Sat Apr 02 17:29:24 2022
+	Tue Apr 05 19:39:54 2022
 $end
 $version
 	ModelSim Version 2020.1

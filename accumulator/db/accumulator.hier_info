@@ -11,10 +11,10 @@ S => S.IN1
 load => load.IN1
 increment => increment.IN1
 clear => clear.IN1
-Z[0] <= binaryCounter:comb_4.port4
-Z[1] <= binaryCounter:comb_4.port4
-Z[2] <= binaryCounter:comb_4.port4
-Z[3] <= binaryCounter:comb_4.port4
+Z[0] << binaryCounter:comb_4.port4
+Z[1] << binaryCounter:comb_4.port4
+Z[2] << binaryCounter:comb_4.port4
+Z[3] << binaryCounter:comb_4.port4
 
 
 |accumulator|twoToOne:comb_3
@@ -37,10 +37,11 @@ Y[3] <= Y.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |accumulator|binaryCounter:comb_4
-D[0] => Q.DATAB
-D[1] => Q.DATAB
-D[2] => Q.DATAB
-D[3] => Q.DATAB
+D[0] => Q[0]~reg0.ADATA
+D[1] => Q[1]~reg0.ADATA
+D[2] => Q[2]~reg0.ADATA
+D[3] => Q[3]~reg0.ADATA
+clear => Q[3].IN0
 clear => Q[0]~reg0.ACLR
 clear => Q[1]~reg0.ACLR
 clear => Q[2]~reg0.ACLR
@@ -49,10 +50,7 @@ increment => Q[0]~reg0.CLK
 increment => Q[1]~reg0.CLK
 increment => Q[2]~reg0.CLK
 increment => Q[3]~reg0.CLK
-load => Q.OUTPUTSELECT
-load => Q.OUTPUTSELECT
-load => Q.OUTPUTSELECT
-load => Q.OUTPUTSELECT
+load => Q[3].IN1
 Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE

@@ -8,42 +8,42 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/Sho/OneDrive/Documents/Verilog/pInPOut/simulation/qsim
+dC:/Users/Sho/OneDrive/Documents/Verilog/pInPOut/simulation/qsim
 vhard_block
-Z1 !s110 1649002064
+Z0 !s110 1649205779
 !i10b 1
 !s100 @B`QVi=5R>@][5>Kf@6;@1
-Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
 I4G<Ih^GYDNFjW??`;X`T13
-Z3 VDg1SIo80bB@j0V0VzS_@n1
-R0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/pInPOut/simulation/qsim
 Z4 w1649002063
 Z5 8pInPOut.vo
 Z6 FpInPOut.vo
-!i122 0
+!i122 2
 L0 487 45
 Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1649002064.000000
+Z8 !s108 1649205778.000000
 Z9 !s107 pInPOut.vo|
 Z10 !s90 -work|work|pInPOut.vo|
 !i113 1
 Z11 o-work work
 Z12 tCvgOpt 0
 vpInPOut
-R1
+R0
 !i10b 1
 !s100 >D1I2T6hQ7RCLFM97;H;I1
-R2
+R1
 I^WWnT0]d88Lb>La`0^i;j3
+R2
 R3
-R0
 R4
 R5
 R6
-!i122 0
+!i122 2
 L0 32 454
 R7
 r1
@@ -57,23 +57,23 @@ R11
 R12
 np@in@p@out
 vpInPOut_vlg_vec_tst
-R1
+R0
 !i10b 1
 !s100 Uf=ZU>YnYoNb7>3]odPRn3
-R2
+R1
 I9UNWUMo^AGGnA[GJ8jnEa2
+R2
 R3
-R0
-w1649002062
+w1649205777
 8Waveform.vwf.vt
 FWaveform.vwf.vt
-!i122 1
+!i122 3
 L0 30 79
 R7
 r1
 !s85 0
 31
-R8
+!s108 1649205779.000000
 !s107 Waveform.vwf.vt|
 !s90 -work|work|Waveform.vwf.vt|
 !i113 1

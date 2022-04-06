@@ -1,0 +1,11 @@
+module alu #(parameter N=4)
+(
+	input [N-1:0] A, B,
+	input S0, S1,
+	output Cout, ovr,
+	output [N-1:0] R
+);
+
+	twoCompAddSub(A, B, S0, R, Cout, ovr);
+	
+endmodule

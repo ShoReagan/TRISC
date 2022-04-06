@@ -1,5 +1,5 @@
 Analysis & Synthesis report for accumulator
-Sun Apr 03 11:58:38 2022
+Tue Apr 05 19:50:14 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -14,13 +14,12 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Parameter Settings for User Entity Instance: twoToOne:comb_3
- 11. Parameter Settings for User Entity Instance: binaryCounter:comb_4
- 12. Post-Synthesis Netlist Statistics for Top Partition
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
- 15. Analysis & Synthesis Suppressed Messages
+  9. Parameter Settings for User Entity Instance: twoToOne:comb_3
+ 10. Parameter Settings for User Entity Instance: binaryCounter:comb_4
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+ 14. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -47,13 +46,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Apr 03 11:58:38 2022       ;
+; Analysis & Synthesis Status        ; Successful - Tue Apr 05 19:50:14 2022       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; accumulator                                 ;
 ; Top-level Entity Name              ; accumulator                                 ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 8                                           ;
-;     Total combinational functions  ; 8                                           ;
+; Total logic elements               ; 23                                          ;
+;     Total combinational functions  ; 23                                          ;
 ;     Dedicated logic registers      ; 4                                           ;
 ; Total registers                    ; 4                                           ;
 ; Total pins                         ; 16                                          ;
@@ -165,51 +164,52 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-12        ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                        ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                          ; Library ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------+---------+
-; ../twoToOne/twoToOne.v           ; yes             ; User Verilog HDL File  ; C:/Users/Sho/OneDrive/Documents/Verilog/twoToOne/twoToOne.v           ;         ;
-; ../binaryCounter/binaryCounter.v ; yes             ; User Verilog HDL File  ; C:/Users/Sho/OneDrive/Documents/Verilog/binaryCounter/binaryCounter.v ;         ;
-; accumulator.v                    ; yes             ; User Verilog HDL File  ; C:/Users/Sho/OneDrive/Documents/Verilog/accumulator/accumulator.v     ;         ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                  ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                    ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------+---------+
+; ../twoToOne/twoToOne.v           ; yes             ; User Verilog HDL File  ; C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/twoToOne/twoToOne.v           ;         ;
+; ../binaryCounter/binaryCounter.v ; yes             ; User Verilog HDL File  ; C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/binaryCounter/binaryCounter.v ;         ;
+; accumulator.v                    ; yes             ; User Verilog HDL File  ; C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/accumulator/accumulator.v     ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                             ;
-+---------------------------------------------+---------------------------+
-; Resource                                    ; Usage                     ;
-+---------------------------------------------+---------------------------+
-; Estimated Total logic elements              ; 8                         ;
-;                                             ;                           ;
-; Total combinational functions               ; 8                         ;
-; Logic element usage by number of LUT inputs ;                           ;
-;     -- 4 input functions                    ; 1                         ;
-;     -- 3 input functions                    ; 5                         ;
-;     -- <=2 input functions                  ; 2                         ;
-;                                             ;                           ;
-; Logic elements by mode                      ;                           ;
-;     -- normal mode                          ; 8                         ;
-;     -- arithmetic mode                      ; 0                         ;
-;                                             ;                           ;
-; Total registers                             ; 4                         ;
-;     -- Dedicated logic registers            ; 4                         ;
-;     -- I/O registers                        ; 0                         ;
-;                                             ;                           ;
-; I/O pins                                    ; 16                        ;
-;                                             ;                           ;
-; Embedded Multiplier 9-bit elements          ; 0                         ;
-;                                             ;                           ;
-; Maximum fan-out node                        ; binaryCounter:comb_4|Q[0] ;
-; Maximum fan-out                             ; 5                         ;
-; Total fan-out                               ; 62                        ;
-; Average fan-out                             ; 1.41                      ;
-+---------------------------------------------+---------------------------+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 23          ;
+;                                             ;             ;
+; Total combinational functions               ; 23          ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 10          ;
+;     -- 3 input functions                    ; 5           ;
+;     -- <=2 input functions                  ; 8           ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 23          ;
+;     -- arithmetic mode                      ; 0           ;
+;                                             ;             ;
+; Total registers                             ; 4           ;
+;     -- Dedicated logic registers            ; 4           ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 16          ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; clear~input ;
+; Maximum fan-out                             ; 10          ;
+; Total fan-out                               ; 103         ;
+; Average fan-out                             ; 1.75        ;
++---------------------------------------------+-------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -217,8 +217,9 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------+---------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name               ; Entity Name   ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------+---------------+--------------+
-; |accumulator               ; 8 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 16   ; 0            ; 0          ; |accumulator                      ; accumulator   ; work         ;
-;    |binaryCounter:comb_4|  ; 8 (8)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |accumulator|binaryCounter:comb_4 ; binaryCounter ; work         ;
+; |accumulator               ; 23 (0)              ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 16   ; 0            ; 0          ; |accumulator                      ; accumulator   ; work         ;
+;    |binaryCounter:comb_4|  ; 19 (19)             ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |accumulator|binaryCounter:comb_4 ; binaryCounter ; work         ;
+;    |twoToOne:comb_3|       ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |accumulator|twoToOne:comb_3      ; twoToOne      ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -230,21 +231,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Total registers                              ; 4     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 4     ;
+; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 4     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |accumulator|binaryCounter:comb_4|Q[0] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
 
 
 +--------------------------------------------------------------+
@@ -274,16 +266,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; boundary_port         ; 16                          ;
 ; cycloneiii_ff         ; 4                           ;
-;     CLR SLD           ; 4                           ;
-; cycloneiii_lcell_comb ; 8                           ;
-;     normal            ; 8                           ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 1                           ;
+;     CLR               ; 4                           ;
+; cycloneiii_lcell_comb ; 23                          ;
+;     normal            ; 23                          ;
+;         2 data inputs ; 8                           ;
 ;         3 data inputs ; 5                           ;
-;         4 data inputs ; 1                           ;
+;         4 data inputs ; 10                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.88                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 3.28                        ;
 +-----------------------+-----------------------------+
 
 
@@ -302,40 +293,45 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sun Apr 03 11:58:32 2022
+    Info: Processing started: Tue Apr 05 19:50:07 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off accumulator -c accumulator
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /users/sho/onedrive/documents/verilog/twotoone/twotoone.v
-    Info (12023): Found entity 1: twoToOne File: C:/Users/Sho/OneDrive/Documents/Verilog/twoToOne/twoToOne.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/sho/onedrive/documents/verilog/binarycounter/binarycounter.v
-    Info (12023): Found entity 1: binaryCounter File: C:/Users/Sho/OneDrive/Documents/Verilog/binaryCounter/binaryCounter.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/sho/onedrive/desktop/digitallogicverilog/twotoone/twotoone.v
+    Info (12023): Found entity 1: twoToOne File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/twoToOne/twoToOne.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/sho/onedrive/desktop/digitallogicverilog/binarycounter/binarycounter.v
+    Info (12023): Found entity 1: binaryCounter File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/binaryCounter/binaryCounter.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file accumulator.v
-    Info (12023): Found entity 1: accumulator File: C:/Users/Sho/OneDrive/Documents/Verilog/accumulator/accumulator.v Line: 1
-Critical Warning (10846): Verilog HDL Instantiation warning at accumulator.v(9): instance has no name File: C:/Users/Sho/OneDrive/Documents/Verilog/accumulator/accumulator.v Line: 9
-Critical Warning (10846): Verilog HDL Instantiation warning at accumulator.v(10): instance has no name File: C:/Users/Sho/OneDrive/Documents/Verilog/accumulator/accumulator.v Line: 10
+    Info (12023): Found entity 1: accumulator File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/accumulator/accumulator.v Line: 1
+Critical Warning (10846): Verilog HDL Instantiation warning at accumulator.v(9): instance has no name File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/accumulator/accumulator.v Line: 9
+Critical Warning (10846): Verilog HDL Instantiation warning at accumulator.v(10): instance has no name File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/accumulator/accumulator.v Line: 10
 Info (12127): Elaborating entity "accumulator" for the top level hierarchy
-Info (12128): Elaborating entity "twoToOne" for hierarchy "twoToOne:comb_3" File: C:/Users/Sho/OneDrive/Documents/Verilog/accumulator/accumulator.v Line: 9
-Info (12128): Elaborating entity "binaryCounter" for hierarchy "binaryCounter:comb_4" File: C:/Users/Sho/OneDrive/Documents/Verilog/accumulator/accumulator.v Line: 10
-Warning (10230): Verilog HDL assignment warning at binaryCounter.v(15): truncated value with size 32 to match size of target (4) File: C:/Users/Sho/OneDrive/Documents/Verilog/binaryCounter/binaryCounter.v Line: 15
+Info (12128): Elaborating entity "twoToOne" for hierarchy "twoToOne:comb_3" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/accumulator/accumulator.v Line: 9
+Info (12128): Elaborating entity "binaryCounter" for hierarchy "binaryCounter:comb_4" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/accumulator/accumulator.v Line: 10
+Warning (10230): Verilog HDL assignment warning at binaryCounter.v(15): truncated value with size 32 to match size of target (4) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/binaryCounter/binaryCounter.v Line: 15
+Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
+    Warning (13310): Register "binaryCounter:comb_4|Q[0]" is converted into an equivalent circuit using register "binaryCounter:comb_4|Q[0]~_emulated" and latch "binaryCounter:comb_4|Q[0]~1" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/binaryCounter/binaryCounter.v Line: 15
+    Warning (13310): Register "binaryCounter:comb_4|Q[1]" is converted into an equivalent circuit using register "binaryCounter:comb_4|Q[1]~_emulated" and latch "binaryCounter:comb_4|Q[1]~6" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/binaryCounter/binaryCounter.v Line: 15
+    Warning (13310): Register "binaryCounter:comb_4|Q[2]" is converted into an equivalent circuit using register "binaryCounter:comb_4|Q[2]~_emulated" and latch "binaryCounter:comb_4|Q[2]~11" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/binaryCounter/binaryCounter.v Line: 15
+    Warning (13310): Register "binaryCounter:comb_4|Q[3]" is converted into an equivalent circuit using register "binaryCounter:comb_4|Q[3]~_emulated" and latch "binaryCounter:comb_4|Q[3]~16" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/binaryCounter/binaryCounter.v Line: 15
 Info (286030): Timing-Driven Synthesis is running
-Info (144001): Generated suppressed messages file C:/Users/Sho/OneDrive/Documents/Verilog/accumulator/output_files/accumulator.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/accumulator/output_files/accumulator.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 24 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 39 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 8 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4825 megabytes
-    Info: Processing ended: Sun Apr 03 11:58:38 2022
-    Info: Elapsed time: 00:00:06
+    Info (21061): Implemented 23 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
+    Info: Peak virtual memory: 4817 megabytes
+    Info: Processing ended: Tue Apr 05 19:50:14 2022
+    Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:15
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/Sho/OneDrive/Documents/Verilog/accumulator/output_files/accumulator.map.smsg.
+The suppressed messages can be found in C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/accumulator/output_files/accumulator.map.smsg.
 
 

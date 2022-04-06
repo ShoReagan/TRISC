@@ -24,14 +24,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "load",
-					"strict" : false
-				},
-				{
-					"name" : "increment",
-					"strict" : false
-				},
-				{
 					"name" : "clear",
 					"strict" : false
 				},
@@ -45,6 +37,14 @@
 				},
 				{
 					"name" : "D[3]",
+					"strict" : false
+				},
+				{
+					"name" : "increment",
+					"strict" : false
+				},
+				{
+					"name" : "load",
 					"strict" : false
 				}
 			]

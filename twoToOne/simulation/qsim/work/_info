@@ -8,42 +8,42 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/Sho/OneDrive/Documents/Verilog/twoToOne/simulation/qsim
+dC:/Users/Sho/OneDrive/Documents/Verilog/twoToOne/simulation/qsim
 vhard_block
-Z1 !s110 1648938563
+Z0 !s110 1649205594
 !i10b 1
 !s100 4<eZPSX5:@JO5ZMnkaRMh2
-Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
 IPNal@hmZ>zce10>mUP>fM2
-Z3 VDg1SIo80bB@j0V0VzS_@n1
-R0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/twoToOne/simulation/qsim
 Z4 w1648938562
 Z5 8twoToOne.vo
 Z6 FtwoToOne.vo
-!i122 0
+!i122 2
 L0 435 45
 Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1648938563.000000
+Z8 !s108 1649205594.000000
 Z9 !s107 twoToOne.vo|
 Z10 !s90 -work|work|twoToOne.vo|
 !i113 1
 Z11 o-work work
 Z12 tCvgOpt 0
 vtwoToOne
-R1
+R0
 !i10b 1
 !s100 4Hc4Kg80GoZJBDGimRbN;1
-R2
+R1
 IE4?PbITc@[W^jn:[m5SzZ1
+R2
 R3
-R0
 R4
 R5
 R6
-!i122 0
+!i122 2
 L0 32 402
 R7
 r1
@@ -57,17 +57,17 @@ R11
 R12
 ntwo@to@one
 vtwoToOne_vlg_vec_tst
-R1
+R0
 !i10b 1
 !s100 P>lQ=W:_SDE_:gD32RW@B0
-R2
+R1
 IWR=g7]T1kGI>M0LdYV@Uh1
+R2
 R3
-R0
-w1648938561
+w1649205592
 8Waveform.vwf.vt
 FWaveform.vwf.vt
-!i122 1
+!i122 3
 L0 30 94
 R7
 r1

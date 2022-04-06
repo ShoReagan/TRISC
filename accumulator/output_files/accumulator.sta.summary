@@ -3,39 +3,99 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'increment'
-Slack : -0.759
-TNS   : -2.553
+Slack : -4.898
+TNS   : -19.108
 
 Type  : Slow 1200mV 85C Model Hold 'increment'
-Slack : 0.989
+Slack : 0.467
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'increment'
+Slack : -2.205
+TNS   : -8.820
+
+Type  : Slow 1200mV 85C Model Recovery 'clear'
+Slack : -0.057
+TNS   : -0.057
+
+Type  : Slow 1200mV 85C Model Removal 'clear'
+Slack : -0.681
+TNS   : -2.217
+
+Type  : Slow 1200mV 85C Model Removal 'increment'
+Slack : 0.597
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'increment'
 Slack : -3.000
 TNS   : -8.612
 
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clear'
+Slack : -3.000
+TNS   : -3.000
+
 Type  : Slow 1200mV 0C Model Setup 'increment'
-Slack : -0.605
-TNS   : -1.987
+Slack : -4.485
+TNS   : -17.404
 
 Type  : Slow 1200mV 0C Model Hold 'increment'
-Slack : 0.907
+Slack : 0.444
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'increment'
+Slack : -2.169
+TNS   : -8.676
+
+Type  : Slow 1200mV 0C Model Recovery 'clear'
+Slack : -0.177
+TNS   : -0.307
+
+Type  : Slow 1200mV 0C Model Removal 'clear'
+Slack : -0.620
+TNS   : -2.016
+
+Type  : Slow 1200mV 0C Model Removal 'increment'
+Slack : 0.633
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'increment'
 Slack : -3.000
 TNS   : -8.612
 
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clear'
+Slack : -3.000
+TNS   : -3.000
+
 Type  : Fast 1200mV 0C Model Setup 'increment'
-Slack : 0.256
-TNS   : 0.000
+Slack : -1.529
+TNS   : -6.077
 
 Type  : Fast 1200mV 0C Model Hold 'increment'
-Slack : 0.387
+Slack : -0.068
+TNS   : -0.101
+
+Type  : Fast 1200mV 0C Model Recovery 'increment'
+Slack : -0.061
+TNS   : -0.244
+
+Type  : Fast 1200mV 0C Model Recovery 'clear'
+Slack : 0.634
 TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'clear'
+Slack : -0.415
+TNS   : -1.493
+
+Type  : Fast 1200mV 0C Model Removal 'increment'
+Slack : -0.056
+TNS   : -0.224
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'increment'
 Slack : -3.000
-TNS   : -7.088
+TNS   : -7.196
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clear'
+Slack : -3.000
+TNS   : -3.000
 
 ------------------------------------------------------------

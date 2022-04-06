@@ -3,7 +3,7 @@ $comment
 		vcd file binaryCounter.msim.vcd -direction
 $end
 $date
-	Sun Apr 03 11:33:04 2022
+	Tue Apr 05 19:47:13 2022
 $end
 $version
 	ModelSim Version 2020.1

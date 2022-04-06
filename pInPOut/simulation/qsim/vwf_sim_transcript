@@ -26,7 +26,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sun Apr 03 11:07:42 2022
+    Info: Processing started: Tue Apr 05 19:42:56 2022
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off pInPOut -c pInPOut --vector_source=C:/Users/Sho/OneDrive/Documents/Verilog/pInPOut/Waveform.vwf --testbench_file=C:/Users/Sho/OneDrive/Documents/Verilog/pInPOut/simulation/qsim/Waveform.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -55,21 +55,21 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sun Apr 03 11:07:43 2022
+    Info: Processing started: Tue Apr 05 19:42:57 2022
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Sho/OneDrive/Documents/Verilog/pInPOut/simulation/qsim/ pInPOut -c pInPOut
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file pInPOut.vo in folder "C:/Users/Sho/OneDrive/Documents/Verilog/pInPOut/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4642 megabytes
-    Info: Processing ended: Sun Apr 03 11:07:43 2022
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Tue Apr 05 19:42:58 2022
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 Completed successfully. 
 
 **** Generating the ModelSim .do script ****
 
-C:/Users/Sho/OneDrive/Documents/Verilog/pInPOut/simulation/qsim/pInPOut.do generated.
+C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/pInPOut/simulation/qsim/pInPOut.do generated.
 
 Completed successfully. 
 
@@ -81,31 +81,33 @@ Reading pref.tcl
 
 # 2020.1
 
+
 # do pInPOut.do
+# ** Warning: (vlib-34) Library already exists at "work".
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:07:44 on Apr 03,2022
+# Start time: 19:42:58 on Apr 05,2022
 # vlog -work work pInPOut.vo 
 # -- Compiling module pInPOut
-
 # -- Compiling module hard_block
 # 
 # Top level modules:
 # 	pInPOut
-# End time: 11:07:44 on Apr 03,2022, Elapsed time: 0:00:00
+# End time: 19:42:59 on Apr 05,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
+
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:07:44 on Apr 03,2022
+# Start time: 19:42:59 on Apr 05,2022
 # vlog -work work Waveform.vwf.vt 
 # -- Compiling module pInPOut_vlg_vec_tst
 # 
 # Top level modules:
 # 	pInPOut_vlg_vec_tst
-# End time: 11:07:44 on Apr 03,2022, Elapsed time: 0:00:00
+# End time: 19:42:59 on Apr 05,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L fiftyfivenm_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.pInPOut_vlg_vec_tst 
-# Start time: 11:07:44 on Apr 03,2022
+# Start time: 19:42:59 on Apr 05,2022
 # Loading work.pInPOut_vlg_vec_tst
 # Loading work.pInPOut
 # Loading work.hard_block
@@ -125,24 +127,23 @@ Reading pref.tcl
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\~QUARTUS_CREATED_ADC2~ '.  Expected 8, found 7.
 #    Time: 0 ps  Iteration: 0  Instance: /pInPOut_vlg_vec_tst/i1/\~QUARTUS_CREATED_ADC2~  File: pInPOut.vo Line: 455
 # ** Warning: (vsim-3722) pInPOut.vo(455): [TFMPC] - Missing connection for port 'clk_dft'.
-# after#24
-
+# after#26
 # ** Note: $finish    : Waveform.vwf.vt(49)
 #    Time: 1 us  Iteration: 0  Instance: /pInPOut_vlg_vec_tst
-# End time: 11:07:45 on Apr 03,2022, Elapsed time: 0:00:01
+# End time: 19:42:59 on Apr 05,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 4
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Users/Sho/OneDrive/Documents/Verilog/pInPOut/Waveform.vwf...
+Reading C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/pInPOut/Waveform.vwf...
 
-Reading C:/Users/Sho/OneDrive/Documents/Verilog/pInPOut/simulation/qsim/pInPOut.msim.vcd...
+Reading C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/pInPOut/simulation/qsim/pInPOut.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/Sho/OneDrive/Documents/Verilog/pInPOut/simulation/qsim/pInPOut_20220403110745.sim.vwf
+Writing the resulting VWF to C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/pInPOut/simulation/qsim/pInPOut_20220405194259.sim.vwf
 
 Finished VCD to VWF conversion.
 

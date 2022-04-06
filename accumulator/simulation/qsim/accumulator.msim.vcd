@@ -3,7 +3,7 @@ $comment
 		vcd file accumulator.msim.vcd -direction
 $end
 $date
-	Sun Apr 03 12:06:01 2022
+	Tue Apr 05 19:51:30 2022
 $end
 $version
 	ModelSim Version 2020.1
