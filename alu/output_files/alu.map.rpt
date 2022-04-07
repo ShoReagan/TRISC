@@ -1,6 +1,6 @@
 Analysis & Synthesis report for alu
-Wed Apr 06 09:01:06 2022
-Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Thu Apr 07 17:41:30 2022
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
 ---------------------
@@ -10,7 +10,13 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -37,22 +43,22 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Wed Apr 06 09:01:06 2022           ;
-; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Thu Apr 07 17:41:30 2022       ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; alu                                         ;
 ; Top-level Entity Name              ; alu                                         ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
-; UFM blocks                         ; N/A until Partition Merge                   ;
-; ADC blocks                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 20                                          ;
+;     Total combinational functions  ; 20                                          ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 30                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -147,8 +153,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -158,36 +164,156 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                           ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                             ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------+---------+
+; ../twoCompAddSub/twoCompAddSub.v ; yes             ; User Verilog HDL File  ; C:/Users/shore/Desktop/DigitalLogicVerilog/twoCompAddSub/twoCompAddSub.v ;         ;
+; ../twoComp/twoComp.v             ; yes             ; User Verilog HDL File  ; C:/Users/shore/Desktop/DigitalLogicVerilog/twoComp/twoComp.v             ;         ;
+; ../FAbehav/FAbehav.v             ; yes             ; User Verilog HDL File  ; C:/Users/shore/Desktop/DigitalLogicVerilog/FAbehav/FAbehav.v             ;         ;
+; alu.v                            ; yes             ; User Verilog HDL File  ; C:/Users/shore/Desktop/DigitalLogicVerilog/alu/alu.v                     ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary            ;
++---------------------------------------------+----------+
+; Resource                                    ; Usage    ;
++---------------------------------------------+----------+
+; Estimated Total logic elements              ; 20       ;
+;                                             ;          ;
+; Total combinational functions               ; 20       ;
+; Logic element usage by number of LUT inputs ;          ;
+;     -- 4 input functions                    ; 14       ;
+;     -- 3 input functions                    ; 5        ;
+;     -- <=2 input functions                  ; 1        ;
+;                                             ;          ;
+; Logic elements by mode                      ;          ;
+;     -- normal mode                          ; 20       ;
+;     -- arithmetic mode                      ; 0        ;
+;                                             ;          ;
+; Total registers                             ; 0        ;
+;     -- Dedicated logic registers            ; 0        ;
+;     -- I/O registers                        ; 0        ;
+;                                             ;          ;
+; I/O pins                                    ; 30       ;
+;                                             ;          ;
+; Embedded Multiplier 9-bit elements          ; 0        ;
+;                                             ;          ;
+; Maximum fan-out node                        ; S1~input ;
+; Maximum fan-out                             ; 9        ;
+; Total fan-out                               ; 117      ;
+; Average fan-out                             ; 1.46     ;
++---------------------------------------------+----------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                       ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------+---------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                      ; Entity Name   ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------+---------------+--------------+
+; |alu                       ; 20 (9)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 30   ; 0            ; 0          ; |alu                                     ; alu           ; work         ;
+;    |twoComp:comb_26|       ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |alu|twoComp:comb_26                     ; twoComp       ; work         ;
+;    |twoCompAddSub:comb_3|  ; 4 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |alu|twoCompAddSub:comb_3                ; twoCompAddSub ; work         ;
+;       |FAbehav:comb_4|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |alu|twoCompAddSub:comb_3|FAbehav:comb_4 ; FAbehav       ; work         ;
+;       |FAbehav:comb_6|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |alu|twoCompAddSub:comb_3|FAbehav:comb_6 ; FAbehav       ; work         ;
+;       |FAbehav:comb_8|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |alu|twoCompAddSub:comb_3|FAbehav:comb_8 ; FAbehav       ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------+---------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 30                          ;
+; cycloneiii_lcell_comb ; 23                          ;
+;     normal            ; 23                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 5                           ;
+;         4 data inputs ; 14                          ;
+;                       ;                             ;
+; Max LUT depth         ; 7.00                        ;
+; Average LUT depth     ; 5.27                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Wed Apr 06 09:01:00 2022
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Thu Apr 07 17:41:10 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off alu -c alu
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /users/sho/onedrive/desktop/digitallogicverilog/twocomp/twocomp.v
-    Info (12023): Found entity 1: twoComp File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/twoComp/twoComp.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/sho/onedrive/desktop/digitallogicverilog/fabehav/fabehav.v
-    Info (12023): Found entity 1: FAbehav File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/FAbehav/FAbehav.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/sho/onedrive/desktop/digitallogicverilog/twocompaddsub/twocompaddsub.v
-    Info (12023): Found entity 1: twoCompAddSub File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/twoCompAddSub/twoCompAddSub.v Line: 1
-Error (10170): Verilog HDL syntax error at alu.v(8) near text: "if";  expecting "endmodule". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v Line: 8
-Error (10759): Verilog HDL error at alu.v(9): object B declared in a list of port declarations cannot be redeclared within the module body File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v Line: 9
-Error (10759): Verilog HDL error at alu.v(9): object S0 declared in a list of port declarations cannot be redeclared within the module body File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v Line: 9
-Error (10759): Verilog HDL error at alu.v(9): object R declared in a list of port declarations cannot be redeclared within the module body File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v Line: 9
-Error (10759): Verilog HDL error at alu.v(9): object Cout declared in a list of port declarations cannot be redeclared within the module body File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v Line: 9
-Error (10759): Verilog HDL error at alu.v(9): object ovr declared in a list of port declarations cannot be redeclared within the module body File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v Line: 9
-Error (10170): Verilog HDL syntax error at alu.v(9) near text: ")";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v Line: 9
-Error (10170): Verilog HDL syntax error at alu.v(18) near text: "end";  expecting "endmodule". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v Line: 18
-Error (10112): Ignored design unit "alu" at alu.v(1) due to previous errors File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v Line: 1
-Info (12021): Found 0 design units, including 0 entities, in source file alu.v
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 9 errors, 1 warning
-    Error: Peak virtual memory: 4701 megabytes
-    Error: Processing ended: Wed Apr 06 09:01:06 2022
-    Error: Elapsed time: 00:00:06
-    Error: Total CPU time (on all processors): 00:00:13
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /users/shore/desktop/digitallogicverilog/twocompaddsub/twocompaddsub.v
+    Info (12023): Found entity 1: twoCompAddSub File: C:/Users/shore/Desktop/DigitalLogicVerilog/twoCompAddSub/twoCompAddSub.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/shore/desktop/digitallogicverilog/twocomp/twocomp.v
+    Info (12023): Found entity 1: twoComp File: C:/Users/shore/Desktop/DigitalLogicVerilog/twoComp/twoComp.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/shore/desktop/digitallogicverilog/fabehav/fabehav.v
+    Info (12023): Found entity 1: FAbehav File: C:/Users/shore/Desktop/DigitalLogicVerilog/FAbehav/FAbehav.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu.v
+    Info (12023): Found entity 1: alu File: C:/Users/shore/Desktop/DigitalLogicVerilog/alu/alu.v Line: 1
+Critical Warning (10846): Verilog HDL Instantiation warning at twoCompAddSub.v(10): instance has no name File: C:/Users/shore/Desktop/DigitalLogicVerilog/twoCompAddSub/twoCompAddSub.v Line: 10
+Critical Warning (10846): Verilog HDL Instantiation warning at twoCompAddSub.v(11): instance has no name File: C:/Users/shore/Desktop/DigitalLogicVerilog/twoCompAddSub/twoCompAddSub.v Line: 11
+Critical Warning (10846): Verilog HDL Instantiation warning at twoCompAddSub.v(12): instance has no name File: C:/Users/shore/Desktop/DigitalLogicVerilog/twoCompAddSub/twoCompAddSub.v Line: 12
+Critical Warning (10846): Verilog HDL Instantiation warning at twoCompAddSub.v(13): instance has no name File: C:/Users/shore/Desktop/DigitalLogicVerilog/twoCompAddSub/twoCompAddSub.v Line: 13
+Critical Warning (10846): Verilog HDL Instantiation warning at alu.v(12): instance has no name File: C:/Users/shore/Desktop/DigitalLogicVerilog/alu/alu.v Line: 12
+Critical Warning (10846): Verilog HDL Instantiation warning at alu.v(21): instance has no name File: C:/Users/shore/Desktop/DigitalLogicVerilog/alu/alu.v Line: 21
+Info (12127): Elaborating entity "alu" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at alu.v(15): truncated value with size 32 to match size of target (1) File: C:/Users/shore/Desktop/DigitalLogicVerilog/alu/alu.v Line: 15
+Warning (10230): Verilog HDL assignment warning at alu.v(16): truncated value with size 32 to match size of target (1) File: C:/Users/shore/Desktop/DigitalLogicVerilog/alu/alu.v Line: 16
+Info (12128): Elaborating entity "twoCompAddSub" for hierarchy "twoCompAddSub:comb_3" File: C:/Users/shore/Desktop/DigitalLogicVerilog/alu/alu.v Line: 12
+Info (12128): Elaborating entity "FAbehav" for hierarchy "twoCompAddSub:comb_3|FAbehav:comb_4" File: C:/Users/shore/Desktop/DigitalLogicVerilog/twoCompAddSub/twoCompAddSub.v Line: 10
+Info (12128): Elaborating entity "twoComp" for hierarchy "twoComp:comb_26" File: C:/Users/shore/Desktop/DigitalLogicVerilog/alu/alu.v Line: 21
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "W[0]" is stuck at VCC File: C:/Users/shore/Desktop/DigitalLogicVerilog/alu/alu.v Line: 8
+    Warning (13410): Pin "W[1]" is stuck at VCC File: C:/Users/shore/Desktop/DigitalLogicVerilog/alu/alu.v Line: 8
+    Warning (13410): Pin "W[2]" is stuck at VCC File: C:/Users/shore/Desktop/DigitalLogicVerilog/alu/alu.v Line: 8
+    Warning (13410): Pin "W[3]" is stuck at VCC File: C:/Users/shore/Desktop/DigitalLogicVerilog/alu/alu.v Line: 8
+    Warning (13410): Pin "W[4]" is stuck at VCC File: C:/Users/shore/Desktop/DigitalLogicVerilog/alu/alu.v Line: 8
+    Warning (13410): Pin "W[5]" is stuck at VCC File: C:/Users/shore/Desktop/DigitalLogicVerilog/alu/alu.v Line: 8
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 50 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 10 input pins
+    Info (21059): Implemented 20 output pins
+    Info (21061): Implemented 20 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 4764 megabytes
+    Info: Processing ended: Thu Apr 07 17:41:30 2022
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:47
 
 
