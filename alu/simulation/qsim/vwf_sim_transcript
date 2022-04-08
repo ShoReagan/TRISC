@@ -7,11 +7,11 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off alu -c alu --vector_source="C:/Users/shore/Desktop/DigitalLogicVerilog/alu/Waveform.vwf" --testbench_file="C:/Users/shore/Desktop/DigitalLogicVerilog/alu/simulation/qsim/Waveform.vwf.vt"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off alu -c alu --vector_source="C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/Waveform.vwf" --testbench_file="C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/simulation/qsim/Waveform.vwf.vt"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
     Info: Copyright (C) 2020  Intel Corporation. All rights reserved.
     Info: Your use of Intel Corporation's design tools, logic functions 
     Info: and other software and tools, and any partner logic 
@@ -26,14 +26,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Thu Apr 07 17:50:07 2022
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off alu -c alu --vector_source=C:/Users/shore/Desktop/DigitalLogicVerilog/alu/Waveform.vwf --testbench_file=C:/Users/shore/Desktop/DigitalLogicVerilog/alu/simulation/qsim/Waveform.vwf.vt
+    Info: Processing started: Fri Apr 08 12:36:21 2022
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off alu -c alu --vector_source=C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/Waveform.vwf --testbench_file=C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/simulation/qsim/Waveform.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
-ory: 4631 megabytes
-    Info: Processing ended: Thu Apr 07 17:50:09 2022
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+nfo: Peak virtual memory: 4634 megabytes
+    Info: Processing ended: Fri Apr 08 12:36:22 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 Completed successfully. 
 
@@ -41,11 +41,11 @@ Completed successfully.
 
 **** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/shore/Desktop/DigitalLogicVerilog/alu/simulation/qsim/" alu -c alu
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/simulation/qsim/" alu -c alu
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
     Info: Copyright (C) 2020  Intel Corporation. All rights reserved.
     Info: Your use of Intel Corporation's design tools, logic functions 
     Info: and other software and tools, and any partner logic 
@@ -60,21 +60,21 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Thu Apr 07 17:50:09 2022
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/shore/Desktop/DigitalLogicVerilog/alu/simulation/qsim/ alu -c alu
+    Info: Processing started: Fri Apr 08 12:36:22 2022
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/simulation/qsim/ alu -c alu
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file alu.vo in folder "C:/Users/shore/Desktop/DigitalLogicVerilog/alu/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file alu.vo in folder "C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4641 megabytes
-    Info: Processing ended: Thu Apr 07 17:50:11 2022
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4642 megabytes
+    Info: Processing ended: Fri Apr 08 12:36:23 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 Completed successfully. 
 
 **** Generating the ModelSim .do script ****
 
-C:/Users/shore/Desktop/DigitalLogicVerilog/alu/simulation/qsim/alu.do generated.
+C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/simulation/qsim/alu.do generated.
 
 Completed successfully. 
 
@@ -84,38 +84,34 @@ c:/intelfpga_lite/20.1/modelsim_ase/win32aloem//vsim -c -do alu.do
 
 Reading pref.tcl
 
-
 # 2020.1
 
 
 # do alu.do
-
 # ** Warning: (vlib-34) Library already exists at "work".
-
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:50:13 on Apr 07,2022
+# Start time: 12:36:23 on Apr 08,2022
 # vlog -work work alu.vo 
-# -- Compiling module alu
 
+# -- Compiling module alu
 # -- Compiling module hard_block
 # 
 # Top level modules:
 # 	alu
-# End time: 17:50:13 on Apr 07,2022, Elapsed time: 0:00:00
+# End time: 12:36:23 on Apr 08,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:50:13 on Apr 07,2022
+# Start time: 12:36:23 on Apr 08,2022
 # vlog -work work Waveform.vwf.vt 
 # -- Compiling module alu_vlg_vec_tst
 # 
 # Top level modules:
 # 	alu_vlg_vec_tst
-# End time: 17:50:14 on Apr 07,2022, Elapsed time: 0:00:01
+# End time: 12:36:24 on Apr 08,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L fiftyfivenm_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.alu_vlg_vec_tst 
-# Start time: 17:50:14 on Apr 07,2022
+# Start time: 12:36:24 on Apr 08,2022
 # Loading work.alu_vlg_vec_tst
 # Loading work.alu
 # Loading work.hard_block
@@ -131,23 +127,22 @@ Reading pref.tcl
 #    Time: 0 ps  Iteration: 0  Instance: /alu_vlg_vec_tst/i1/\~QUARTUS_CREATED_ADC2~  File: alu.vo Line: 953
 # ** Warning: (vsim-3722) alu.vo(953): [TFMPC] - Missing connection for port 'clk_dft'.
 # after#26
-
 # ** Note: $finish    : Waveform.vwf.vt(57)
 #    Time: 1 us  Iteration: 0  Instance: /alu_vlg_vec_tst
-# End time: 17:50:15 on Apr 07,2022, Elapsed time: 0:00:01
+# End time: 12:36:24 on Apr 08,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 4
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Users/shore/Desktop/DigitalLogicVerilog/alu/Waveform.vwf...
+Reading C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/Waveform.vwf...
 
-Reading C:/Users/shore/Desktop/DigitalLogicVerilog/alu/simulation/qsim/alu.msim.vcd...
+Reading C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/simulation/qsim/alu.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/shore/Desktop/DigitalLogicVerilog/alu/simulation/qsim/alu_20220407175015.sim.vwf
+Writing the resulting VWF to C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/simulation/qsim/alu_20220408123624.sim.vwf
 
 Finished VCD to VWF conversion.
 

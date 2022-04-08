@@ -1,6 +1,6 @@
 EDA Netlist Writer report for alu
-Thu Apr 07 17:50:11 2022
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Fri Apr 08 12:36:23 2022
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
 ---------------------
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Apr 07 17:50:11 2022 ;
+; EDA Netlist Writer Status ; Successful - Fri Apr 08 12:36:23 2022 ;
 ; Revision Name             ; alu                                   ;
 ; Top-level Entity Name     ; alu                                   ;
 ; Family                    ; MAX 10                                ;
@@ -66,13 +66,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+------------------------------------------------------------------------+
-; Simulation Generated Files                                             ;
-+------------------------------------------------------------------------+
-; Generated Files                                                        ;
-+------------------------------------------------------------------------+
-; C:/Users/shore/Desktop/DigitalLogicVerilog/alu/simulation/qsim//alu.vo ;
-+------------------------------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Simulation Generated Files                                                    ;
++-------------------------------------------------------------------------------+
+; Generated Files                                                               ;
++-------------------------------------------------------------------------------+
+; C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/simulation/qsim//alu.vo ;
++-------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -80,7 +80,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
     Info: Copyright (C) 2020  Intel Corporation. All rights reserved.
     Info: Your use of Intel Corporation's design tools, logic functions 
     Info: and other software and tools, and any partner logic 
@@ -95,14 +95,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Thu Apr 07 17:50:09 2022
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/shore/Desktop/DigitalLogicVerilog/alu/simulation/qsim/ alu -c alu
+    Info: Processing started: Fri Apr 08 12:36:22 2022
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/simulation/qsim/ alu -c alu
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file alu.vo in folder "C:/Users/shore/Desktop/DigitalLogicVerilog/alu/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file alu.vo in folder "C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4641 megabytes
-    Info: Processing ended: Thu Apr 07 17:50:11 2022
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4642 megabytes
+    Info: Processing ended: Fri Apr 08 12:36:23 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 

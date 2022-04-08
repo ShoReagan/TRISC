@@ -8,43 +8,43 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/shore/Desktop/DigitalLogicVerilog/alu/simulation/qsim
+dC:/Users/shore/Desktop/DigitalLogicVerilog/alu/simulation/qsim
 valu
-Z1 !s110 1649371813
+Z0 !s110 1649439383
 !i10b 1
 !s100 0IY0QfQa@kTgMd2na6>Fa0
-Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
 IzEFDY;2zaDSiC;J>DJaK]2
-Z3 VDg1SIo80bB@j0V0VzS_@n1
-R0
-Z4 w1649371811
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/simulation/qsim
+Z4 w1649439383
 Z5 8alu.vo
 Z6 Falu.vo
-!i122 2
+!i122 6
 L0 32 984
 Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1649371813.000000
+Z8 !s108 1649439383.000000
 Z9 !s107 alu.vo|
 Z10 !s90 -work|work|alu.vo|
 !i113 1
 Z11 o-work work
 Z12 tCvgOpt 0
 valu_vlg_vec_tst
-!s110 1649371814
+!s110 1649439384
 !i10b 1
-!s100 d>B17T2E3]Ano?7ERh6<S0
+!s100 6ZbCSSR37R;L[^8I@2B;L1
+R1
+InjXRJm2aETINc>2=cEZdg2
 R2
-IEQQJE<BQLV[4?c4;YOF5L3
 R3
-R0
-w1649371809
+w1649439382
 8Waveform.vwf.vt
 FWaveform.vwf.vt
-!i122 3
-L0 30 91
+!i122 7
+L0 30 110
 R7
 r1
 !s85 0
@@ -56,17 +56,17 @@ R8
 R11
 R12
 vhard_block
-R1
+R0
 !i10b 1
 !s100 WQW7Kh@Cbo=@<o`aR3?n@0
-R2
+R1
 I:DOf004aX5koiTbHEMM:D0
+R2
 R3
-R0
 R4
 R5
 R6
-!i122 2
+!i122 6
 L0 1017 45
 R7
 r1

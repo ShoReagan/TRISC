@@ -1,9 +1,10 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/shore/Desktop/DigitalLogicVerilog/twoCompAddSub/twoCompAddSub.v
-source_file = 1, C:/Users/shore/Desktop/DigitalLogicVerilog/twoComp/twoComp.v
-source_file = 1, C:/Users/shore/Desktop/DigitalLogicVerilog/FAbehav/FAbehav.v
-source_file = 1, C:/Users/shore/Desktop/DigitalLogicVerilog/alu/alu.v
-source_file = 1, C:/Users/shore/Desktop/DigitalLogicVerilog/alu/db/alu.cbx.xml
+source_file = 1, C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/twoCompAddSub/twoCompAddSub.v
+source_file = 1, C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/twoComp/twoComp.v
+source_file = 1, C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/FAbehav/FAbehav.v
+source_file = 1, C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v
+source_file = 1, C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/Waveform.vwf
+source_file = 1, C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/db/alu.cbx.xml
 design_name = alu
 instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, alu, 1
 instance = comp, \Cout~output , Cout~output, alu, 1
