@@ -1,0 +1,598 @@
+$comment
+	File created using the following command:
+		vcd file BinUp.msim.vcd -direction
+$end
+$date
+	Sun Oct 31 10:39:32 2021
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module BinUp_vlg_vec_tst $end
+$var reg 4 ! D [3:0] $end
+$var reg 1 " clear $end
+$var reg 1 # inc $end
+$var reg 1 $ load $end
+$var wire 1 % Q [3] $end
+$var wire 1 & Q [2] $end
+$var wire 1 ' Q [1] $end
+$var wire 1 ( Q [0] $end
+
+$scope module i1 $end
+$var wire 1 ) gnd $end
+$var wire 1 * vcc $end
+$var wire 1 + unknown $end
+$var tri1 1 , devclrn $end
+$var tri1 1 - devpor $end
+$var tri1 1 . devoe $end
+$var wire 1 / ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 0 ~QUARTUS_CREATED_UNVM~~busy $end
+$var wire 1 1 ~QUARTUS_CREATED_ADC1~~eoc $end
+$var wire 1 2 ~QUARTUS_CREATED_ADC2~~eoc $end
+$var wire 1 3 Q[0]~output_o $end
+$var wire 1 4 Q[1]~output_o $end
+$var wire 1 5 Q[2]~output_o $end
+$var wire 1 6 Q[3]~output_o $end
+$var wire 1 7 D[0]~input_o $end
+$var wire 1 8 clear~input_o $end
+$var wire 1 9 load~input_o $end
+$var wire 1 : Q[3]~27_combout $end
+$var wire 1 ; inc~input_o $end
+$var wire 1 < inc~inputclkctrl_outclk $end
+$var wire 1 = Q[3]~27clkctrl_outclk $end
+$var wire 1 > Q[0]~1_combout $end
+$var wire 1 ? Q[0]~4_combout $end
+$var wire 1 @ Q[0]~0_combout $end
+$var wire 1 A Q[0]~reg0_emulated_q $end
+$var wire 1 B Q[0]~3_combout $end
+$var wire 1 C Q[0]~2_combout $end
+$var wire 1 D D[1]~input_o $end
+$var wire 1 E Q[1]~6_combout $end
+$var wire 1 F Q[1]~9_combout $end
+$var wire 1 G Q[1]~reg0_emulated_q $end
+$var wire 1 H Q[1]~8_combout $end
+$var wire 1 I Q[1]~7_combout $end
+$var wire 1 J D[2]~input_o $end
+$var wire 1 K Q[2]~11_combout $end
+$var wire 1 L Q[2]~14_combout $end
+$var wire 1 M Q[2]~reg0_emulated_q $end
+$var wire 1 N Q[2]~13_combout $end
+$var wire 1 O Q[2]~12_combout $end
+$var wire 1 P D[3]~input_o $end
+$var wire 1 Q Q[3]~16_combout $end
+$var wire 1 R Add0~0_combout $end
+$var wire 1 S Q[3]~19_combout $end
+$var wire 1 T Q[3]~reg0_emulated_q $end
+$var wire 1 U Q[3]~18_combout $end
+$var wire 1 V Q[3]~17_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1010 !
+0"
+0#
+1$
+0(
+0'
+0&
+0%
+0)
+1*
+x+
+1,
+1-
+1.
+0/
+z0
+z1
+z2
+03
+04
+05
+06
+07
+08
+19
+0:
+0;
+0<
+0=
+0>
+1?
+1@
+0A
+0B
+0C
+1D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+1P
+0Q
+0R
+0S
+0T
+0U
+0V
+$end
+#20000
+1"
+18
+0@
+#50000
+0$
+09
+1:
+1=
+1@
+1Q
+1E
+1V
+1I
+14
+16
+1U
+1H
+1%
+1'
+#70000
+1$
+19
+0:
+0=
+0@
+#110000
+0"
+08
+0Q
+0E
+1@
+0V
+0I
+04
+06
+0U
+0H
+0%
+0'
+#130000
+1"
+18
+0@
+#180000
+1#
+1;
+1<
+#200000
+0#
+0;
+0<
+1A
+1B
+1C
+13
+1(
+1F
+0?
+#220000
+1#
+1;
+1<
+#240000
+0#
+0;
+0<
+0A
+1G
+0B
+1H
+0C
+1I
+14
+03
+0(
+1'
+1?
+#260000
+1#
+1;
+1<
+#280000
+0#
+0;
+0<
+1A
+1B
+1C
+13
+1R
+1(
+1L
+0F
+0?
+#300000
+1#
+1;
+1<
+#320000
+0#
+0;
+0<
+0A
+0G
+1M
+0B
+0H
+1N
+0C
+0I
+1O
+15
+04
+03
+0R
+0(
+0'
+1&
+1?
+1S
+0S
+#340000
+1#
+1;
+1<
+#360000
+0#
+0;
+0<
+1A
+1B
+1C
+13
+1(
+1F
+0?
+#380000
+1#
+1;
+1<
+#400000
+0#
+0;
+0<
+0A
+1G
+0B
+1H
+0C
+1I
+14
+03
+0(
+1'
+1?
+#420000
+1#
+1;
+1<
+#440000
+0#
+0;
+0<
+1A
+1B
+1C
+13
+1R
+1(
+0L
+0F
+0?
+1S
+#460000
+1#
+1;
+1<
+#480000
+0#
+0;
+0<
+0A
+0G
+0M
+1T
+0B
+0H
+0N
+1U
+0C
+0I
+0O
+1V
+16
+05
+04
+03
+0R
+0(
+0'
+0&
+1%
+1?
+#500000
+1#
+1;
+1<
+#520000
+0#
+0;
+0<
+1A
+1B
+1C
+13
+1(
+1F
+0?
+#540000
+1#
+1;
+1<
+#560000
+0#
+0;
+0<
+0A
+1G
+0B
+1H
+0C
+1I
+14
+03
+0(
+1'
+1?
+#580000
+1#
+1;
+1<
+#600000
+0#
+0;
+0<
+1A
+1B
+1C
+13
+1R
+1(
+1L
+0F
+0?
+#620000
+1#
+1;
+1<
+#640000
+0#
+0;
+0<
+0A
+0G
+1M
+0B
+0H
+1N
+0C
+0I
+1O
+15
+04
+03
+0R
+0(
+0'
+1&
+1?
+0S
+1S
+#660000
+1#
+1;
+1<
+#680000
+0#
+0;
+0<
+1A
+1B
+1C
+13
+1(
+1F
+0?
+#700000
+1#
+1;
+1<
+#720000
+0#
+0;
+0<
+0A
+1G
+0B
+1H
+0C
+1I
+14
+03
+0(
+1'
+1?
+#740000
+1#
+1;
+1<
+#760000
+0#
+0;
+0<
+1A
+1B
+1C
+13
+1R
+1(
+0L
+0F
+0?
+0S
+#780000
+1#
+1;
+1<
+#800000
+0#
+0;
+0<
+0A
+0G
+0M
+0T
+0B
+0H
+0N
+0U
+0C
+0I
+0O
+0V
+06
+05
+04
+03
+0R
+0(
+0'
+0&
+0%
+1?
+#820000
+1#
+1;
+1<
+#840000
+0#
+0;
+0<
+1A
+1B
+1C
+13
+1(
+1F
+0?
+#860000
+1#
+1;
+1<
+#880000
+0#
+0;
+0<
+0A
+1G
+0B
+1H
+0C
+1I
+14
+03
+0(
+1'
+1?
+#890000
+0"
+08
+1@
+0I
+04
+0'
+0F
+0G
+0H
+#900000
+1#
+1;
+1<
+#910000
+1"
+18
+0@
+#920000
+0#
+0;
+0<
+1A
+1B
+1C
+13
+1(
+1F
+0?
+#940000
+0$
+1#
+1;
+09
+1<
+1:
+1=
+1@
+1Q
+1E
+1V
+1I
+0C
+03
+14
+16
+1U
+1H
+1%
+1'
+0(
+0F
+1?
+0A
+0B
+#960000
+1$
+0#
+0;
+19
+0<
+0:
+0=
+0@
+#980000
+1#
+1;
+1<
+#1000000

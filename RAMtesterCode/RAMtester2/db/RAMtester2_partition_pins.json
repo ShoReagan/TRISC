@@ -1,0 +1,193 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "DataInLEDR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DataInLEDR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DataInLEDR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DataInLEDR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DataInLEDR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DataInLEDR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DataInLEDR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DataInLEDR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DataInLEDR[8]",
+					"strict" : false
+				},
+				{
+					"name" : "DataInLEDR[9]",
+					"strict" : false
+				},
+				{
+					"name" : "AddressOut[0]",
+					"strict" : false
+				},
+				{
+					"name" : "AddressOut[1]",
+					"strict" : false
+				},
+				{
+					"name" : "AddressOut[2]",
+					"strict" : false
+				},
+				{
+					"name" : "AddressOut[3]",
+					"strict" : false
+				},
+				{
+					"name" : "AddressOut[4]",
+					"strict" : false
+				},
+				{
+					"name" : "AddressOut[5]",
+					"strict" : false
+				},
+				{
+					"name" : "AddressOut[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DataOut[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DataOut[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DataOut[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DataOut[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DataOut[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DataOut[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DataOut[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DataOut[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DataOut[8]",
+					"strict" : false
+				},
+				{
+					"name" : "DataOut[9]",
+					"strict" : false
+				},
+				{
+					"name" : "DataOut[10]",
+					"strict" : false
+				},
+				{
+					"name" : "DataOut[11]",
+					"strict" : false
+				},
+				{
+					"name" : "DataOut[12]",
+					"strict" : false
+				},
+				{
+					"name" : "DataOut[13]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[7]",
+					"strict" : false
+				},
+				{
+					"name" : "mode[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mode[1]",
+					"strict" : false
+				},
+				{
+					"name" : "clear",
+					"strict" : false
+				},
+				{
+					"name" : "RW",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "clock_enable",
+					"strict" : false
+				},
+				{
+					"name" : "RAMclock",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

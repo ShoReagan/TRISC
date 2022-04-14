@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Mon Nov 08 18:36:12 2021
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : RAMtester2
+Top-level Entity Name : RAMtester2
+Family : MAX 10
+Total logic elements : 39
+    Total combinational functions : 39
+    Dedicated logic registers : 5
+Total registers : 5
+Total pins : 46
+Total virtual pins : 0
+Total memory bits : 128
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

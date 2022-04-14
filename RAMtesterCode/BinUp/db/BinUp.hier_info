@@ -1,0 +1,21 @@
+|BinUp
+inc => Q[0]~reg0.CLK
+inc => Q[1]~reg0.CLK
+inc => Q[2]~reg0.CLK
+inc => Q[3]~reg0.CLK
+clear => Q[3].IN0
+clear => Q[0]~reg0.ACLR
+clear => Q[1]~reg0.ACLR
+clear => Q[2]~reg0.ACLR
+clear => Q[3]~reg0.ACLR
+load => Q[3].IN1
+D[0] => Q[0]~reg0.ADATA
+D[1] => Q[1]~reg0.ADATA
+D[2] => Q[2]~reg0.ADATA
+D[3] => Q[3]~reg0.ADATA
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
