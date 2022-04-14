@@ -4,7 +4,7 @@ module alu
 	input S0, S1,
 	output Cout, ovr,
 	output [3:0] R,
-	output [13:0] W
+	output [1:0] W
 );
 wire [3:0] addSubR, andOrR;
 wire wireC, wireO;
