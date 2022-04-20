@@ -4,7 +4,7 @@ module alu
 	input S0, S1,
 	output Cout, ovr,
 	output [3:0] R,
-	output [1:0] W
+	output [13:0] W
 );
 wire [3:0] addSubR, andOrR;
 wire wireC, wireO;
@@ -15,6 +15,6 @@ wire wireC, wireO;
 	assign Cout = S1==0 ? wireC : 0;
 	assign ovr = S1==0 ? wireO : 0;
 
-	twoComp(R[0], R[1], R[2], R[3], W[0], W[1], W[2], W[3], W[4], W[5], W[6], W[7], W[8], W[9], 
+	twoComp(R[3], R[2], R[1], R[0], W[0], W[1], W[2], W[3], W[4], W[5], W[6], W[7], W[8], W[9], 
 	W[10], W[11], W[12], W[13]);
 endmodule

@@ -1,6 +1,6 @@
 Analysis & Synthesis report for alu
-Fri Apr 08 12:31:56 2022
-Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Wed Apr 20 12:56:43 2022
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
 ---------------------
@@ -43,8 +43,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 08 12:31:56 2022       ;
-; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Wed Apr 20 12:56:43 2022       ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; alu                                         ;
 ; Top-level Entity Name              ; alu                                         ;
 ; Family                             ; MAX 10                                      ;
@@ -153,8 +153,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -164,16 +164,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                  ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                    ; Library ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------+---------+
-; ../twoCompAddSub/twoCompAddSub.v ; yes             ; User Verilog HDL File  ; C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/twoCompAddSub/twoCompAddSub.v ;         ;
-; ../twoComp/twoComp.v             ; yes             ; User Verilog HDL File  ; C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/twoComp/twoComp.v             ;         ;
-; ../FAbehav/FAbehav.v             ; yes             ; User Verilog HDL File  ; C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/FAbehav/FAbehav.v             ;         ;
-; alu.v                            ; yes             ; User Verilog HDL File  ; C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v                     ;         ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                           ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                             ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------+---------+
+; ../twoCompAddSub/twoCompAddSub.v ; yes             ; User Verilog HDL File  ; C:/Users/shore/Desktop/DigitalLogicVerilog/twoCompAddSub/twoCompAddSub.v ;         ;
+; ../twoComp/twoComp.v             ; yes             ; User Verilog HDL File  ; C:/Users/shore/Desktop/DigitalLogicVerilog/twoComp/twoComp.v             ;         ;
+; ../FAbehav/FAbehav.v             ; yes             ; User Verilog HDL File  ; C:/Users/shore/Desktop/DigitalLogicVerilog/FAbehav/FAbehav.v             ;         ;
+; alu.v                            ; yes             ; User Verilog HDL File  ; C:/Users/shore/Desktop/DigitalLogicVerilog/alu/alu.v                     ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------+
@@ -253,7 +253,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;         4 data inputs ; 14                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 7.00                        ;
-; Average LUT depth     ; 5.27                        ;
+; Average LUT depth     ; 5.33                        ;
 +-----------------------+-----------------------------+
 
 
@@ -271,38 +271,38 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri Apr 08 12:31:49 2022
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Wed Apr 20 12:56:29 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off alu -c alu
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /users/sho/onedrive/desktop/digitallogicverilog/twocompaddsub/twocompaddsub.v
-    Info (12023): Found entity 1: twoCompAddSub File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/twoCompAddSub/twoCompAddSub.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/sho/onedrive/desktop/digitallogicverilog/twocomp/twocomp.v
-    Info (12023): Found entity 1: twoComp File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/twoComp/twoComp.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/sho/onedrive/desktop/digitallogicverilog/fabehav/fabehav.v
-    Info (12023): Found entity 1: FAbehav File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/FAbehav/FAbehav.v Line: 1
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /users/shore/desktop/digitallogicverilog/twocompaddsub/twocompaddsub.v
+    Info (12023): Found entity 1: twoCompAddSub File: C:/Users/shore/Desktop/DigitalLogicVerilog/twoCompAddSub/twoCompAddSub.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/shore/desktop/digitallogicverilog/twocomp/twocomp.v
+    Info (12023): Found entity 1: twoComp File: C:/Users/shore/Desktop/DigitalLogicVerilog/twoComp/twoComp.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/shore/desktop/digitallogicverilog/fabehav/fabehav.v
+    Info (12023): Found entity 1: FAbehav File: C:/Users/shore/Desktop/DigitalLogicVerilog/FAbehav/FAbehav.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: alu File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v Line: 1
-Critical Warning (10846): Verilog HDL Instantiation warning at twoCompAddSub.v(10): instance has no name File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/twoCompAddSub/twoCompAddSub.v Line: 10
-Critical Warning (10846): Verilog HDL Instantiation warning at twoCompAddSub.v(11): instance has no name File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/twoCompAddSub/twoCompAddSub.v Line: 11
-Critical Warning (10846): Verilog HDL Instantiation warning at twoCompAddSub.v(12): instance has no name File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/twoCompAddSub/twoCompAddSub.v Line: 12
-Critical Warning (10846): Verilog HDL Instantiation warning at twoCompAddSub.v(13): instance has no name File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/twoCompAddSub/twoCompAddSub.v Line: 13
-Critical Warning (10846): Verilog HDL Instantiation warning at alu.v(12): instance has no name File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v Line: 12
-Critical Warning (10846): Verilog HDL Instantiation warning at alu.v(19): instance has no name File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v Line: 19
+    Info (12023): Found entity 1: alu File: C:/Users/shore/Desktop/DigitalLogicVerilog/alu/alu.v Line: 1
+Critical Warning (10846): Verilog HDL Instantiation warning at twoCompAddSub.v(10): instance has no name File: C:/Users/shore/Desktop/DigitalLogicVerilog/twoCompAddSub/twoCompAddSub.v Line: 10
+Critical Warning (10846): Verilog HDL Instantiation warning at twoCompAddSub.v(11): instance has no name File: C:/Users/shore/Desktop/DigitalLogicVerilog/twoCompAddSub/twoCompAddSub.v Line: 11
+Critical Warning (10846): Verilog HDL Instantiation warning at twoCompAddSub.v(12): instance has no name File: C:/Users/shore/Desktop/DigitalLogicVerilog/twoCompAddSub/twoCompAddSub.v Line: 12
+Critical Warning (10846): Verilog HDL Instantiation warning at twoCompAddSub.v(13): instance has no name File: C:/Users/shore/Desktop/DigitalLogicVerilog/twoCompAddSub/twoCompAddSub.v Line: 13
+Critical Warning (10846): Verilog HDL Instantiation warning at alu.v(12): instance has no name File: C:/Users/shore/Desktop/DigitalLogicVerilog/alu/alu.v Line: 12
+Critical Warning (10846): Verilog HDL Instantiation warning at alu.v(19): instance has no name File: C:/Users/shore/Desktop/DigitalLogicVerilog/alu/alu.v Line: 19
 Info (12127): Elaborating entity "alu" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at alu.v(15): truncated value with size 32 to match size of target (1) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v Line: 15
-Warning (10230): Verilog HDL assignment warning at alu.v(16): truncated value with size 32 to match size of target (1) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v Line: 16
-Info (12128): Elaborating entity "twoCompAddSub" for hierarchy "twoCompAddSub:comb_3" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v Line: 12
-Info (12128): Elaborating entity "FAbehav" for hierarchy "twoCompAddSub:comb_3|FAbehav:comb_4" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/twoCompAddSub/twoCompAddSub.v Line: 10
-Info (12128): Elaborating entity "twoComp" for hierarchy "twoComp:comb_26" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v Line: 19
+Warning (10230): Verilog HDL assignment warning at alu.v(15): truncated value with size 32 to match size of target (1) File: C:/Users/shore/Desktop/DigitalLogicVerilog/alu/alu.v Line: 15
+Warning (10230): Verilog HDL assignment warning at alu.v(16): truncated value with size 32 to match size of target (1) File: C:/Users/shore/Desktop/DigitalLogicVerilog/alu/alu.v Line: 16
+Info (12128): Elaborating entity "twoCompAddSub" for hierarchy "twoCompAddSub:comb_3" File: C:/Users/shore/Desktop/DigitalLogicVerilog/alu/alu.v Line: 12
+Info (12128): Elaborating entity "FAbehav" for hierarchy "twoCompAddSub:comb_3|FAbehav:comb_4" File: C:/Users/shore/Desktop/DigitalLogicVerilog/twoCompAddSub/twoCompAddSub.v Line: 10
+Info (12128): Elaborating entity "twoComp" for hierarchy "twoComp:comb_26" File: C:/Users/shore/Desktop/DigitalLogicVerilog/alu/alu.v Line: 19
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "W[0]" is stuck at VCC File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v Line: 8
-    Warning (13410): Pin "W[1]" is stuck at VCC File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v Line: 8
-    Warning (13410): Pin "W[2]" is stuck at VCC File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v Line: 8
-    Warning (13410): Pin "W[3]" is stuck at VCC File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v Line: 8
-    Warning (13410): Pin "W[4]" is stuck at VCC File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v Line: 8
-    Warning (13410): Pin "W[5]" is stuck at VCC File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v Line: 8
+    Warning (13410): Pin "W[0]" is stuck at VCC File: C:/Users/shore/Desktop/DigitalLogicVerilog/alu/alu.v Line: 8
+    Warning (13410): Pin "W[1]" is stuck at VCC File: C:/Users/shore/Desktop/DigitalLogicVerilog/alu/alu.v Line: 8
+    Warning (13410): Pin "W[2]" is stuck at VCC File: C:/Users/shore/Desktop/DigitalLogicVerilog/alu/alu.v Line: 8
+    Warning (13410): Pin "W[3]" is stuck at VCC File: C:/Users/shore/Desktop/DigitalLogicVerilog/alu/alu.v Line: 8
+    Warning (13410): Pin "W[4]" is stuck at VCC File: C:/Users/shore/Desktop/DigitalLogicVerilog/alu/alu.v Line: 8
+    Warning (13410): Pin "W[5]" is stuck at VCC File: C:/Users/shore/Desktop/DigitalLogicVerilog/alu/alu.v Line: 8
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -311,9 +311,9 @@ Info (21057): Implemented 50 device resources after synthesis - the final resour
     Info (21059): Implemented 20 output pins
     Info (21061): Implemented 20 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
-    Info: Peak virtual memory: 4765 megabytes
-    Info: Processing ended: Fri Apr 08 12:31:56 2022
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:14
+    Info: Peak virtual memory: 4769 megabytes
+    Info: Processing ended: Wed Apr 20 12:56:43 2022
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:29
 
 
