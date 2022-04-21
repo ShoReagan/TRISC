@@ -2,76 +2,112 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow 1200mV 85C Model Setup 'w'
+Slack : -1.377
+TNS   : -12.445
+
+Type  : Slow 1200mV 85C Model Setup 'instructionDecoder:comb_3|a'
+Slack : -0.740
+TNS   : -2.363
+
 Type  : Slow 1200mV 85C Model Setup 'clock'
-Slack : -2.401
-TNS   : -12.690
+Slack : -0.469
+TNS   : -5.128
 
-Type  : Slow 1200mV 85C Model Setup 'ADD'
-Slack : -2.140
-TNS   : -13.182
+Type  : Slow 1200mV 85C Model Hold 'instructionDecoder:comb_3|a'
+Slack : -0.410
+TNS   : -3.020
 
-Type  : Slow 1200mV 85C Model Hold 'ADD'
-Slack : 1.229
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Hold 'w'
+Slack : -0.020
+TNS   : -0.020
 
 Type  : Slow 1200mV 85C Model Hold 'clock'
-Slack : 1.719
+Slack : 0.767
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -19.836
+TNS   : -32.463
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ADD'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'w'
 Slack : -3.000
 TNS   : -3.000
 
-Type  : Slow 1200mV 0C Model Setup 'clock'
-Slack : -2.092
-TNS   : -11.056
-
-Type  : Slow 1200mV 0C Model Setup 'ADD'
-Slack : -1.954
-TNS   : -11.807
-
-Type  : Slow 1200mV 0C Model Hold 'ADD'
-Slack : 1.070
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'instructionDecoder:comb_3|a'
+Slack : 0.442
 TNS   : 0.000
 
+Type  : Slow 1200mV 0C Model Setup 'w'
+Slack : -1.093
+TNS   : -10.343
+
+Type  : Slow 1200mV 0C Model Setup 'instructionDecoder:comb_3|a'
+Slack : -0.703
+TNS   : -2.336
+
+Type  : Slow 1200mV 0C Model Setup 'clock'
+Slack : -0.256
+TNS   : -2.190
+
+Type  : Slow 1200mV 0C Model Hold 'instructionDecoder:comb_3|a'
+Slack : -0.268
+TNS   : -1.666
+
+Type  : Slow 1200mV 0C Model Hold 'w'
+Slack : -0.063
+TNS   : -0.064
+
 Type  : Slow 1200mV 0C Model Hold 'clock'
-Slack : 1.592
+Slack : 0.602
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -19.836
+TNS   : -32.463
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ADD'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'w'
 Slack : -3.000
 TNS   : -3.000
 
-Type  : Fast 1200mV 0C Model Setup 'ADD'
-Slack : -0.668
-TNS   : -3.834
-
-Type  : Fast 1200mV 0C Model Setup 'clock'
-Slack : -0.583
-TNS   : -1.336
-
-Type  : Fast 1200mV 0C Model Hold 'ADD'
-Slack : 0.486
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'instructionDecoder:comb_3|a'
+Slack : 0.377
 TNS   : 0.000
 
+Type  : Fast 1200mV 0C Model Setup 'w'
+Slack : -0.747
+TNS   : -5.421
+
+Type  : Fast 1200mV 0C Model Setup 'instructionDecoder:comb_3|a'
+Slack : 0.222
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clock'
+Slack : 0.406
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'instructionDecoder:comb_3|a'
+Slack : -0.175
+TNS   : -1.308
+
+Type  : Fast 1200mV 0C Model Hold 'w'
+Slack : -0.028
+TNS   : -0.040
+
 Type  : Fast 1200mV 0C Model Hold 'clock'
-Slack : 0.610
+Slack : 0.248
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -15.680
+TNS   : -26.052
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ADD'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'w'
 Slack : -3.000
 TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'instructionDecoder:comb_3|a'
+Slack : 0.367
+TNS   : 0.000
 
 ------------------------------------------------------------
