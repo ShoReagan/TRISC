@@ -1,0 +1,91 @@
+|controllerTester
+w => w.IN1
+x => x.IN1
+y => y.IN1
+z => z.IN1
+clock => clock.IN1
+startStop => startStop.IN1
+c0 << controller:comb_4.port13
+c1 << controller:comb_4.port14
+c2 << controller:comb_4.port15
+c3 << controller:comb_4.port16
+c4 << controller:comb_4.port17
+c7 << controller:comb_4.port18
+c8 << controller:comb_4.port19
+c9 << controller:comb_4.port20
+c5 << controller:comb_4.port21
+c10 << controller:comb_4.port22
+c11 << controller:comb_4.port23
+c12 << controller:comb_4.port24
+c13 << controller:comb_4.port25
+c14 << controller:comb_4.port26
+
+
+|controllerTester|instructionDecoder:comb_3
+w => Decoder0.IN0
+x => Decoder0.IN1
+y => Decoder0.IN2
+z => Decoder0.IN3
+a <= a$latch.DB_MAX_OUTPUT_PORT_TYPE
+b <= b$latch.DB_MAX_OUTPUT_PORT_TYPE
+c <= c$latch.DB_MAX_OUTPUT_PORT_TYPE
+d <= d$latch.DB_MAX_OUTPUT_PORT_TYPE
+e <= e$latch.DB_MAX_OUTPUT_PORT_TYPE
+f <= f$latch.DB_MAX_OUTPUT_PORT_TYPE
+g <= g$latch.DB_MAX_OUTPUT_PORT_TYPE
+h <= h$latch.DB_MAX_OUTPUT_PORT_TYPE
+i <= i$latch.DB_MAX_OUTPUT_PORT_TYPE
+j <= j$latch.DB_MAX_OUTPUT_PORT_TYPE
+k <= k$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|controllerTester|controller:comb_4
+clock => state~1.DATAIN
+startStop => state~3.DATAIN
+LDA => nextstate.S.IN1
+LDA => nextstate.P.OUTPUTSELECT
+LDA => nextstate.M.OUTPUTSELECT
+LDA => nextstate.I.DATAA
+STA => nextstate.S.IN0
+STA => nextstate.M.DATAA
+STA => nextstate.P.DATAA
+ADD => nextstate.S.IN1
+SUB => ~NO_FANOUT~
+XOR => ~NO_FANOUT~
+INC => nextstate.S.IN1
+INC => nextstate.P.OUTPUTSELECT
+INC => nextstate.M.OUTPUTSELECT
+INC => nextstate.I.OUTPUTSELECT
+INC => nextstate.H.OUTPUTSELECT
+INC => nextstate.G.OUTPUTSELECT
+INC => nextstate.F.DATAA
+CLR => nextstate.S.IN1
+CLR => nextstate.P.OUTPUTSELECT
+CLR => nextstate.M.OUTPUTSELECT
+CLR => nextstate.I.OUTPUTSELECT
+CLR => nextstate.H.OUTPUTSELECT
+CLR => nextstate.G.DATAA
+JMP => nextstate.S.IN1
+JMP => nextstate.P.OUTPUTSELECT
+JMP => nextstate.M.OUTPUTSELECT
+JMP => nextstate.I.OUTPUTSELECT
+JMP => nextstate.H.DATAA
+JPZ => ~NO_FANOUT~
+JPN => ~NO_FANOUT~
+HLT => ~NO_FANOUT~
+c0 <= c0.DB_MAX_OUTPUT_PORT_TYPE
+c1 <= c1.DB_MAX_OUTPUT_PORT_TYPE
+c2 <= c7.DB_MAX_OUTPUT_PORT_TYPE
+c3 <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+c4 <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+c7 <= c7.DB_MAX_OUTPUT_PORT_TYPE
+c8 <= c8.DB_MAX_OUTPUT_PORT_TYPE
+c9 <= c9.DB_MAX_OUTPUT_PORT_TYPE
+c5 <= c5.DB_MAX_OUTPUT_PORT_TYPE
+c10 <= c10.DB_MAX_OUTPUT_PORT_TYPE
+c11 <= c11.DB_MAX_OUTPUT_PORT_TYPE
+c12 <= <GND>
+c13 <= <GND>
+c14 <= c14.DB_MAX_OUTPUT_PORT_TYPE
+
+

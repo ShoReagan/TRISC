@@ -1,0 +1,81 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "c0",
+					"strict" : false
+				},
+				{
+					"name" : "c1",
+					"strict" : false
+				},
+				{
+					"name" : "c2",
+					"strict" : false
+				},
+				{
+					"name" : "c3",
+					"strict" : false
+				},
+				{
+					"name" : "c4",
+					"strict" : false
+				},
+				{
+					"name" : "c7",
+					"strict" : false
+				},
+				{
+					"name" : "c8",
+					"strict" : false
+				},
+				{
+					"name" : "c9",
+					"strict" : false
+				},
+				{
+					"name" : "c5",
+					"strict" : false
+				},
+				{
+					"name" : "c10",
+					"strict" : false
+				},
+				{
+					"name" : "c11",
+					"strict" : false
+				},
+				{
+					"name" : "c14",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "startStop",
+					"strict" : false
+				},
+				{
+					"name" : "x",
+					"strict" : false
+				},
+				{
+					"name" : "y",
+					"strict" : false
+				},
+				{
+					"name" : "z",
+					"strict" : false
+				},
+				{
+					"name" : "w",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

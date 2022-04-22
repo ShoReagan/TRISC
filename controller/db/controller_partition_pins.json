@@ -4,50 +4,6 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "LDA",
-					"strict" : false
-				},
-				{
-					"name" : "STA",
-					"strict" : false
-				},
-				{
-					"name" : "ADD",
-					"strict" : false
-				},
-				{
-					"name" : "SUB",
-					"strict" : false
-				},
-				{
-					"name" : "XOR",
-					"strict" : false
-				},
-				{
-					"name" : "INC",
-					"strict" : false
-				},
-				{
-					"name" : "CLR",
-					"strict" : false
-				},
-				{
-					"name" : "JMP",
-					"strict" : false
-				},
-				{
-					"name" : "JPZ",
-					"strict" : false
-				},
-				{
-					"name" : "JPN",
-					"strict" : false
-				},
-				{
-					"name" : "HLT",
-					"strict" : false
-				},
-				{
 					"name" : "c0",
 					"strict" : false
 				},
@@ -92,27 +48,35 @@
 					"strict" : false
 				},
 				{
-					"name" : "z",
-					"strict" : false
-				},
-				{
-					"name" : "y",
-					"strict" : false
-				},
-				{
-					"name" : "x",
-					"strict" : false
-				},
-				{
-					"name" : "w",
-					"strict" : false
-				},
-				{
 					"name" : "clock",
 					"strict" : false
 				},
 				{
 					"name" : "startStop",
+					"strict" : false
+				},
+				{
+					"name" : "INC",
+					"strict" : false
+				},
+				{
+					"name" : "JMP",
+					"strict" : false
+				},
+				{
+					"name" : "LDA",
+					"strict" : false
+				},
+				{
+					"name" : "STA",
+					"strict" : false
+				},
+				{
+					"name" : "ADD",
+					"strict" : false
+				},
+				{
+					"name" : "CLR",
 					"strict" : false
 				}
 			]

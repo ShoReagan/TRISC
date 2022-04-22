@@ -1,21 +1,37 @@
 |controller
-w => w.IN1
-x => x.IN1
-y => y.IN1
-z => z.IN1
 clock => state~1.DATAIN
 startStop => state~3.DATAIN
-LDA << instructionDecoder:comb_3.port4
-STA << instructionDecoder:comb_3.port5
-ADD << instructionDecoder:comb_3.port6
-SUB << instructionDecoder:comb_3.port7
-XOR << instructionDecoder:comb_3.port8
-INC << instructionDecoder:comb_3.port9
-CLR << instructionDecoder:comb_3.port10
-JMP << instructionDecoder:comb_3.port11
-JPZ << instructionDecoder:comb_3.port12
-JPN << instructionDecoder:comb_3.port13
-HLT << instructionDecoder:comb_3.port14
+LDA => nextstate.S.IN1
+LDA => nextstate.P.OUTPUTSELECT
+LDA => nextstate.M.OUTPUTSELECT
+LDA => nextstate.I.DATAA
+STA => nextstate.S.IN0
+STA => nextstate.M.DATAA
+STA => nextstate.P.DATAA
+ADD => nextstate.S.IN1
+SUB => ~NO_FANOUT~
+XOR => ~NO_FANOUT~
+INC => nextstate.S.IN1
+INC => nextstate.P.OUTPUTSELECT
+INC => nextstate.M.OUTPUTSELECT
+INC => nextstate.I.OUTPUTSELECT
+INC => nextstate.H.OUTPUTSELECT
+INC => nextstate.G.OUTPUTSELECT
+INC => nextstate.F.DATAA
+CLR => nextstate.S.IN1
+CLR => nextstate.P.OUTPUTSELECT
+CLR => nextstate.M.OUTPUTSELECT
+CLR => nextstate.I.OUTPUTSELECT
+CLR => nextstate.H.OUTPUTSELECT
+CLR => nextstate.G.DATAA
+JMP => nextstate.S.IN1
+JMP => nextstate.P.OUTPUTSELECT
+JMP => nextstate.M.OUTPUTSELECT
+JMP => nextstate.I.OUTPUTSELECT
+JMP => nextstate.H.DATAA
+JPZ => ~NO_FANOUT~
+JPN => ~NO_FANOUT~
+HLT => ~NO_FANOUT~
 c0 << c0.DB_MAX_OUTPUT_PORT_TYPE
 c1 << c1.DB_MAX_OUTPUT_PORT_TYPE
 c2 << c7.DB_MAX_OUTPUT_PORT_TYPE
@@ -30,23 +46,5 @@ c11 << c11.DB_MAX_OUTPUT_PORT_TYPE
 c12 << <GND>
 c13 << <GND>
 c14 << c14.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|controller|instructionDecoder:comb_3
-w => Decoder0.IN0
-x => Decoder0.IN1
-y => Decoder0.IN2
-z => Decoder0.IN3
-a <= a$latch.DB_MAX_OUTPUT_PORT_TYPE
-b <= b$latch.DB_MAX_OUTPUT_PORT_TYPE
-c <= c$latch.DB_MAX_OUTPUT_PORT_TYPE
-d <= d$latch.DB_MAX_OUTPUT_PORT_TYPE
-e <= e$latch.DB_MAX_OUTPUT_PORT_TYPE
-f <= f$latch.DB_MAX_OUTPUT_PORT_TYPE
-g <= g$latch.DB_MAX_OUTPUT_PORT_TYPE
-h <= h$latch.DB_MAX_OUTPUT_PORT_TYPE
-i <= i$latch.DB_MAX_OUTPUT_PORT_TYPE
-j <= j$latch.DB_MAX_OUTPUT_PORT_TYPE
-k <= k$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
