@@ -1,0 +1,8 @@
+module trisc(
+	input startStop, clock,
+	output[6:0] PChex, MARhex, MDout1, MDout2, MDin1, MDin2,
+	output c0, c1, c2, c3, c4, c5, c7, c8, c9, c10, c11, c12, c13, c14
+);
+	
+
+endmodule
