@@ -1,6 +1,6 @@
 Analysis & Synthesis report for trisc2
-Tue Apr 26 20:45:59 2022
-Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Tue Apr 26 21:06:34 2022
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
 ---------------------
@@ -54,8 +54,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 26 20:45:59 2022       ;
-; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Tue Apr 26 21:06:34 2022       ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; trisc2                                      ;
 ; Top-level Entity Name              ; trisc2                                      ;
 ; Family                             ; MAX 10                                      ;
@@ -164,8 +164,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -175,26 +175,26 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                            ;
-+--------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path           ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                              ; Library ;
-+--------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------+---------+
-; ../RAMtesterCode/BinUp/BinUp.v             ; yes             ; User Verilog HDL File        ; C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/RAMtesterCode/BinUp/BinUp.v             ;         ;
-; ../RAMtesterCode/Lab11RAM/Lab11RAM.v       ; yes             ; User Wizard-Generated File   ; C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/RAMtesterCode/Lab11RAM/Lab11RAM.v       ;         ;
-; ../RAMtesterCode/OnOffToggle/OnOffToggle.v ; yes             ; User Verilog HDL File        ; C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/RAMtesterCode/OnOffToggle/OnOffToggle.v ;         ;
-; trisc2.v                                   ; yes             ; User Verilog HDL File        ; C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v                         ;         ;
-; altsyncram.tdf                             ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                     ;         ;
-; stratix_ram_block.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc              ;         ;
-; lpm_mux.inc                                ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                        ;         ;
-; lpm_decode.inc                             ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                     ;         ;
-; aglobal201.inc                             ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                     ;         ;
-; a_rdenreg.inc                              ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                      ;         ;
-; altrom.inc                                 ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                         ;         ;
-; altram.inc                                 ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                         ;         ;
-; altdpram.inc                               ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                       ;         ;
-; db/altsyncram_ene1.tdf                     ; yes             ; Auto-Generated Megafunction  ; C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/db/altsyncram_ene1.tdf           ;         ;
-+--------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                     ;
++--------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path           ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                       ; Library ;
++--------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------+---------+
+; ../RAMtesterCode/BinUp/BinUp.v             ; yes             ; User Verilog HDL File        ; C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/BinUp/BinUp.v             ;         ;
+; ../RAMtesterCode/Lab11RAM/Lab11RAM.v       ; yes             ; User Wizard-Generated File   ; C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/Lab11RAM/Lab11RAM.v       ;         ;
+; ../RAMtesterCode/OnOffToggle/OnOffToggle.v ; yes             ; User Verilog HDL File        ; C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/OnOffToggle/OnOffToggle.v ;         ;
+; trisc2.v                                   ; yes             ; User Verilog HDL File        ; C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v                         ;         ;
+; altsyncram.tdf                             ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf              ;         ;
+; stratix_ram_block.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc       ;         ;
+; lpm_mux.inc                                ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                 ;         ;
+; lpm_decode.inc                             ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc              ;         ;
+; aglobal201.inc                             ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc              ;         ;
+; a_rdenreg.inc                              ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc               ;         ;
+; altrom.inc                                 ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                  ;         ;
+; altram.inc                                 ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                  ;         ;
+; altdpram.inc                               ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                ;         ;
+; db/altsyncram_ene1.tdf                     ; yes             ; Auto-Generated Megafunction  ; C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/db/altsyncram_ene1.tdf           ;         ;
++--------------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -442,52 +442,52 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Tue Apr 26 20:45:52 2022
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Tue Apr 26 21:06:15 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off trisc2 -c trisc2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /users/sho/onedrive/desktop/digitallogicverilog/ramtestercode/binary2seven/binary2seven.v
-    Info (12023): Found entity 1: binary2seven File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/RAMtesterCode/binary2seven/binary2seven.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file /users/sho/onedrive/desktop/digitallogicverilog/ramtestercode/binup/binup.v
-    Info (12023): Found entity 1: BinUp File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/RAMtesterCode/BinUp/BinUp.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file /users/sho/onedrive/desktop/digitallogicverilog/ramtestercode/lab11ram/lab11ram.v
-    Info (12023): Found entity 1: Lab11RAM File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/RAMtesterCode/Lab11RAM/Lab11RAM.v Line: 40
-Info (12021): Found 1 design units, including 1 entities, in source file /users/sho/onedrive/desktop/digitallogicverilog/ramtestercode/onofftoggle/onofftoggle.v
-    Info (12023): Found entity 1: OnOffToggle File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/RAMtesterCode/OnOffToggle/OnOffToggle.v Line: 1
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /users/shore/desktop/digitallogicverilog/ramtestercode/binary2seven/binary2seven.v
+    Info (12023): Found entity 1: binary2seven File: C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/binary2seven/binary2seven.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /users/shore/desktop/digitallogicverilog/ramtestercode/binup/binup.v
+    Info (12023): Found entity 1: BinUp File: C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/BinUp/BinUp.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /users/shore/desktop/digitallogicverilog/ramtestercode/lab11ram/lab11ram.v
+    Info (12023): Found entity 1: Lab11RAM File: C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/Lab11RAM/Lab11RAM.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file /users/shore/desktop/digitallogicverilog/ramtestercode/onofftoggle/onofftoggle.v
+    Info (12023): Found entity 1: OnOffToggle File: C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/OnOffToggle/OnOffToggle.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file trisc2.v
-    Info (12023): Found entity 1: trisc2 File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 1
+    Info (12023): Found entity 1: trisc2 File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 1
 Info (12127): Elaborating entity "trisc2" for the top level hierarchy
-Warning (10858): Verilog HDL warning at trisc2.v(14): object ramAddress used but never assigned File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 14
-Warning (10858): Verilog HDL warning at trisc2.v(15): object C4 used but never assigned File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 15
-Warning (10858): Verilog HDL warning at trisc2.v(16): object MDI used but never assigned File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 16
-Warning (10030): Net "ramAddress" at trisc2.v(14) has no driver or initial value, using a default initial value '0' File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 14
-Warning (10030): Net "MDI" at trisc2.v(16) has no driver or initial value, using a default initial value '0' File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 16
-Warning (10030): Net "c5" at trisc2.v(7) has no driver or initial value, using a default initial value '0' File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
-Warning (10030): Net "C4" at trisc2.v(15) has no driver or initial value, using a default initial value '0' File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 15
-Warning (10034): Output port "PChex" at trisc2.v(5) has no driver File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
-Warning (10034): Output port "MARhex" at trisc2.v(5) has no driver File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
-Warning (10034): Output port "MDout" at trisc2.v(6) has no driver File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
-Warning (10034): Output port "MDin" at trisc2.v(6) has no driver File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
-Warning (10034): Output port "c0" at trisc2.v(7) has no driver File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
-Warning (10034): Output port "c1" at trisc2.v(7) has no driver File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
-Warning (10034): Output port "c2" at trisc2.v(7) has no driver File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
-Warning (10034): Output port "c3" at trisc2.v(7) has no driver File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
-Warning (10034): Output port "c4" at trisc2.v(7) has no driver File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
-Warning (10034): Output port "c7" at trisc2.v(7) has no driver File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
-Warning (10034): Output port "c8" at trisc2.v(7) has no driver File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
-Warning (10034): Output port "c9" at trisc2.v(7) has no driver File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
-Warning (10034): Output port "c10" at trisc2.v(7) has no driver File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
-Warning (10034): Output port "c11" at trisc2.v(7) has no driver File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
-Warning (10034): Output port "c12" at trisc2.v(7) has no driver File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
-Warning (10034): Output port "c13" at trisc2.v(7) has no driver File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
-Warning (10034): Output port "c14" at trisc2.v(8) has no driver File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 8
-Info (12128): Elaborating entity "OnOffToggle" for hierarchy "OnOffToggle:DivideX2" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 28
-Info (12128): Elaborating entity "BinUp" for hierarchy "BinUp:AddressGen" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 36
-Info (12128): Elaborating entity "Lab11RAM" for hierarchy "Lab11RAM:RAM" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 44
-Info (12128): Elaborating entity "altsyncram" for hierarchy "Lab11RAM:RAM|altsyncram:altsyncram_component" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/RAMtesterCode/Lab11RAM/Lab11RAM.v Line: 86
-Info (12130): Elaborated megafunction instantiation "Lab11RAM:RAM|altsyncram:altsyncram_component" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/RAMtesterCode/Lab11RAM/Lab11RAM.v Line: 86
-Info (12133): Instantiated megafunction "Lab11RAM:RAM|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/RAMtesterCode/Lab11RAM/Lab11RAM.v Line: 86
+Warning (10858): Verilog HDL warning at trisc2.v(14): object ramAddress used but never assigned File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 14
+Warning (10858): Verilog HDL warning at trisc2.v(15): object C4 used but never assigned File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 15
+Warning (10858): Verilog HDL warning at trisc2.v(16): object MDI used but never assigned File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 16
+Warning (10030): Net "ramAddress" at trisc2.v(14) has no driver or initial value, using a default initial value '0' File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 14
+Warning (10030): Net "MDI" at trisc2.v(16) has no driver or initial value, using a default initial value '0' File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 16
+Warning (10030): Net "c5" at trisc2.v(7) has no driver or initial value, using a default initial value '0' File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
+Warning (10030): Net "C4" at trisc2.v(15) has no driver or initial value, using a default initial value '0' File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 15
+Warning (10034): Output port "PChex" at trisc2.v(5) has no driver File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
+Warning (10034): Output port "MARhex" at trisc2.v(5) has no driver File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
+Warning (10034): Output port "MDout" at trisc2.v(6) has no driver File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+Warning (10034): Output port "MDin" at trisc2.v(6) has no driver File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+Warning (10034): Output port "c0" at trisc2.v(7) has no driver File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
+Warning (10034): Output port "c1" at trisc2.v(7) has no driver File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
+Warning (10034): Output port "c2" at trisc2.v(7) has no driver File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
+Warning (10034): Output port "c3" at trisc2.v(7) has no driver File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
+Warning (10034): Output port "c4" at trisc2.v(7) has no driver File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
+Warning (10034): Output port "c7" at trisc2.v(7) has no driver File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
+Warning (10034): Output port "c8" at trisc2.v(7) has no driver File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
+Warning (10034): Output port "c9" at trisc2.v(7) has no driver File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
+Warning (10034): Output port "c10" at trisc2.v(7) has no driver File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
+Warning (10034): Output port "c11" at trisc2.v(7) has no driver File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
+Warning (10034): Output port "c12" at trisc2.v(7) has no driver File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
+Warning (10034): Output port "c13" at trisc2.v(7) has no driver File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
+Warning (10034): Output port "c14" at trisc2.v(8) has no driver File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 8
+Info (12128): Elaborating entity "OnOffToggle" for hierarchy "OnOffToggle:DivideX2" File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 28
+Info (12128): Elaborating entity "BinUp" for hierarchy "BinUp:AddressGen" File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 36
+Info (12128): Elaborating entity "Lab11RAM" for hierarchy "Lab11RAM:RAM" File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 44
+Info (12128): Elaborating entity "altsyncram" for hierarchy "Lab11RAM:RAM|altsyncram:altsyncram_component" File: C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/Lab11RAM/Lab11RAM.v Line: 86
+Info (12130): Elaborated megafunction instantiation "Lab11RAM:RAM|altsyncram:altsyncram_component" File: C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/Lab11RAM/Lab11RAM.v Line: 86
+Info (12133): Instantiated megafunction "Lab11RAM:RAM|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/Lab11RAM/Lab11RAM.v Line: 86
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "intended_device_family" = "MAX 10"
@@ -503,107 +503,107 @@ Info (12133): Instantiated megafunction "Lab11RAM:RAM|altsyncram:altsyncram_comp
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ene1.tdf
-    Info (12023): Found entity 1: altsyncram_ene1 File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/db/altsyncram_ene1.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_ene1 File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/db/altsyncram_ene1.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_ene1" for hierarchy "Lab11RAM:RAM|altsyncram:altsyncram_component|altsyncram_ene1:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "Lab11RAM:RAM|altsyncram:altsyncram_component|altsyncram_ene1:auto_generated|q_a[0]" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/db/altsyncram_ene1.tdf Line: 37
-        Warning (14320): Synthesized away node "Lab11RAM:RAM|altsyncram:altsyncram_component|altsyncram_ene1:auto_generated|q_a[1]" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/db/altsyncram_ene1.tdf Line: 60
-        Warning (14320): Synthesized away node "Lab11RAM:RAM|altsyncram:altsyncram_component|altsyncram_ene1:auto_generated|q_a[2]" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/db/altsyncram_ene1.tdf Line: 83
-        Warning (14320): Synthesized away node "Lab11RAM:RAM|altsyncram:altsyncram_component|altsyncram_ene1:auto_generated|q_a[3]" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/db/altsyncram_ene1.tdf Line: 106
-        Warning (14320): Synthesized away node "Lab11RAM:RAM|altsyncram:altsyncram_component|altsyncram_ene1:auto_generated|q_a[4]" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/db/altsyncram_ene1.tdf Line: 129
-        Warning (14320): Synthesized away node "Lab11RAM:RAM|altsyncram:altsyncram_component|altsyncram_ene1:auto_generated|q_a[5]" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/db/altsyncram_ene1.tdf Line: 152
-        Warning (14320): Synthesized away node "Lab11RAM:RAM|altsyncram:altsyncram_component|altsyncram_ene1:auto_generated|q_a[6]" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/db/altsyncram_ene1.tdf Line: 175
-        Warning (14320): Synthesized away node "Lab11RAM:RAM|altsyncram:altsyncram_component|altsyncram_ene1:auto_generated|q_a[7]" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/db/altsyncram_ene1.tdf Line: 198
+        Warning (14320): Synthesized away node "Lab11RAM:RAM|altsyncram:altsyncram_component|altsyncram_ene1:auto_generated|q_a[0]" File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/db/altsyncram_ene1.tdf Line: 37
+        Warning (14320): Synthesized away node "Lab11RAM:RAM|altsyncram:altsyncram_component|altsyncram_ene1:auto_generated|q_a[1]" File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/db/altsyncram_ene1.tdf Line: 60
+        Warning (14320): Synthesized away node "Lab11RAM:RAM|altsyncram:altsyncram_component|altsyncram_ene1:auto_generated|q_a[2]" File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/db/altsyncram_ene1.tdf Line: 83
+        Warning (14320): Synthesized away node "Lab11RAM:RAM|altsyncram:altsyncram_component|altsyncram_ene1:auto_generated|q_a[3]" File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/db/altsyncram_ene1.tdf Line: 106
+        Warning (14320): Synthesized away node "Lab11RAM:RAM|altsyncram:altsyncram_component|altsyncram_ene1:auto_generated|q_a[4]" File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/db/altsyncram_ene1.tdf Line: 129
+        Warning (14320): Synthesized away node "Lab11RAM:RAM|altsyncram:altsyncram_component|altsyncram_ene1:auto_generated|q_a[5]" File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/db/altsyncram_ene1.tdf Line: 152
+        Warning (14320): Synthesized away node "Lab11RAM:RAM|altsyncram:altsyncram_component|altsyncram_ene1:auto_generated|q_a[6]" File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/db/altsyncram_ene1.tdf Line: 175
+        Warning (14320): Synthesized away node "Lab11RAM:RAM|altsyncram:altsyncram_component|altsyncram_ene1:auto_generated|q_a[7]" File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/db/altsyncram_ene1.tdf Line: 198
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "PChex[0]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
-    Warning (13410): Pin "PChex[1]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
-    Warning (13410): Pin "PChex[2]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
-    Warning (13410): Pin "PChex[3]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
-    Warning (13410): Pin "PChex[4]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
-    Warning (13410): Pin "PChex[5]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
-    Warning (13410): Pin "PChex[6]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
-    Warning (13410): Pin "MARhex[0]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
-    Warning (13410): Pin "MARhex[1]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
-    Warning (13410): Pin "MARhex[2]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
-    Warning (13410): Pin "MARhex[3]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
-    Warning (13410): Pin "MARhex[4]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
-    Warning (13410): Pin "MARhex[5]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
-    Warning (13410): Pin "MARhex[6]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
-    Warning (13410): Pin "MDout[0]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
-    Warning (13410): Pin "MDout[1]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
-    Warning (13410): Pin "MDout[2]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
-    Warning (13410): Pin "MDout[3]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
-    Warning (13410): Pin "MDout[4]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
-    Warning (13410): Pin "MDout[5]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
-    Warning (13410): Pin "MDout[6]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
-    Warning (13410): Pin "MDout[7]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
-    Warning (13410): Pin "MDout[8]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
-    Warning (13410): Pin "MDout[9]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
-    Warning (13410): Pin "MDout[10]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
-    Warning (13410): Pin "MDout[11]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
-    Warning (13410): Pin "MDout[12]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
-    Warning (13410): Pin "MDout[13]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
-    Warning (13410): Pin "MDin[0]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
-    Warning (13410): Pin "MDin[1]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
-    Warning (13410): Pin "MDin[2]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
-    Warning (13410): Pin "MDin[3]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
-    Warning (13410): Pin "MDin[4]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
-    Warning (13410): Pin "MDin[5]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
-    Warning (13410): Pin "MDin[6]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
-    Warning (13410): Pin "MDin[7]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
-    Warning (13410): Pin "MDin[8]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
-    Warning (13410): Pin "MDin[9]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
-    Warning (13410): Pin "MDin[10]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
-    Warning (13410): Pin "MDin[11]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
-    Warning (13410): Pin "MDin[12]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
-    Warning (13410): Pin "MDin[13]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
-    Warning (13410): Pin "c0" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
-    Warning (13410): Pin "c1" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
-    Warning (13410): Pin "c2" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
-    Warning (13410): Pin "c3" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
-    Warning (13410): Pin "c4" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
-    Warning (13410): Pin "c5" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
-    Warning (13410): Pin "c7" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
-    Warning (13410): Pin "c8" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
-    Warning (13410): Pin "c9" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
-    Warning (13410): Pin "c10" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
-    Warning (13410): Pin "c11" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
-    Warning (13410): Pin "c12" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
-    Warning (13410): Pin "c13" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
-    Warning (13410): Pin "c14" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 8
+    Warning (13410): Pin "PChex[0]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
+    Warning (13410): Pin "PChex[1]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
+    Warning (13410): Pin "PChex[2]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
+    Warning (13410): Pin "PChex[3]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
+    Warning (13410): Pin "PChex[4]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
+    Warning (13410): Pin "PChex[5]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
+    Warning (13410): Pin "PChex[6]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
+    Warning (13410): Pin "MARhex[0]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
+    Warning (13410): Pin "MARhex[1]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
+    Warning (13410): Pin "MARhex[2]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
+    Warning (13410): Pin "MARhex[3]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
+    Warning (13410): Pin "MARhex[4]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
+    Warning (13410): Pin "MARhex[5]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
+    Warning (13410): Pin "MARhex[6]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
+    Warning (13410): Pin "MDout[0]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+    Warning (13410): Pin "MDout[1]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+    Warning (13410): Pin "MDout[2]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+    Warning (13410): Pin "MDout[3]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+    Warning (13410): Pin "MDout[4]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+    Warning (13410): Pin "MDout[5]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+    Warning (13410): Pin "MDout[6]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+    Warning (13410): Pin "MDout[7]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+    Warning (13410): Pin "MDout[8]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+    Warning (13410): Pin "MDout[9]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+    Warning (13410): Pin "MDout[10]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+    Warning (13410): Pin "MDout[11]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+    Warning (13410): Pin "MDout[12]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+    Warning (13410): Pin "MDout[13]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+    Warning (13410): Pin "MDin[0]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+    Warning (13410): Pin "MDin[1]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+    Warning (13410): Pin "MDin[2]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+    Warning (13410): Pin "MDin[3]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+    Warning (13410): Pin "MDin[4]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+    Warning (13410): Pin "MDin[5]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+    Warning (13410): Pin "MDin[6]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+    Warning (13410): Pin "MDin[7]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+    Warning (13410): Pin "MDin[8]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+    Warning (13410): Pin "MDin[9]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+    Warning (13410): Pin "MDin[10]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+    Warning (13410): Pin "MDin[11]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+    Warning (13410): Pin "MDin[12]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+    Warning (13410): Pin "MDin[13]" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+    Warning (13410): Pin "c0" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
+    Warning (13410): Pin "c1" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
+    Warning (13410): Pin "c2" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
+    Warning (13410): Pin "c3" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
+    Warning (13410): Pin "c4" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
+    Warning (13410): Pin "c5" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
+    Warning (13410): Pin "c7" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
+    Warning (13410): Pin "c8" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
+    Warning (13410): Pin "c9" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
+    Warning (13410): Pin "c10" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
+    Warning (13410): Pin "c11" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
+    Warning (13410): Pin "c12" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
+    Warning (13410): Pin "c13" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
+    Warning (13410): Pin "c14" is stuck at GND File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 8
 Info (17049): 5 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/output_files/trisc2.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/output_files/trisc2.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 14 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "Mode" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 2
-    Warning (15610): No output dependent on input pin "ClockIn" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 2
-    Warning (15610): No output dependent on input pin "ClearAddGen" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 2
-    Warning (15610): No output dependent on input pin "RW" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 2
-    Warning (15610): No output dependent on input pin "DataIn[0]" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 3
-    Warning (15610): No output dependent on input pin "DataIn[1]" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 3
-    Warning (15610): No output dependent on input pin "DataIn[2]" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 3
-    Warning (15610): No output dependent on input pin "DataIn[3]" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 3
-    Warning (15610): No output dependent on input pin "DataIn[4]" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 3
-    Warning (15610): No output dependent on input pin "DataIn[5]" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 3
-    Warning (15610): No output dependent on input pin "DataIn[6]" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 3
-    Warning (15610): No output dependent on input pin "DataIn[7]" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 3
-    Warning (15610): No output dependent on input pin "startStop" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 4
-    Warning (15610): No output dependent on input pin "clock" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 4
+    Warning (15610): No output dependent on input pin "Mode" File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 2
+    Warning (15610): No output dependent on input pin "ClockIn" File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 2
+    Warning (15610): No output dependent on input pin "ClearAddGen" File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 2
+    Warning (15610): No output dependent on input pin "RW" File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 2
+    Warning (15610): No output dependent on input pin "DataIn[0]" File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 3
+    Warning (15610): No output dependent on input pin "DataIn[1]" File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 3
+    Warning (15610): No output dependent on input pin "DataIn[2]" File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 3
+    Warning (15610): No output dependent on input pin "DataIn[3]" File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 3
+    Warning (15610): No output dependent on input pin "DataIn[4]" File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 3
+    Warning (15610): No output dependent on input pin "DataIn[5]" File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 3
+    Warning (15610): No output dependent on input pin "DataIn[6]" File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 3
+    Warning (15610): No output dependent on input pin "DataIn[7]" File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 3
+    Warning (15610): No output dependent on input pin "startStop" File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 4
+    Warning (15610): No output dependent on input pin "clock" File: C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 4
 Info (21057): Implemented 70 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 14 input pins
     Info (21059): Implemented 56 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 107 warnings
     Info: Peak virtual memory: 4739 megabytes
-    Info: Processing ended: Tue Apr 26 20:45:59 2022
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:14
+    Info: Processing ended: Tue Apr 26 21:06:34 2022
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:44
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/output_files/trisc2.map.smsg.
+The suppressed messages can be found in C:/Users/shore/Desktop/DigitalLogicVerilog/trisc2/output_files/trisc2.map.smsg.
 
 
