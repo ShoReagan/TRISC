@@ -50,11 +50,6 @@ set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VERILOG_FILE ../RAMtesterCode/binary2seven/binary2seven.v
-set_global_assignment -name VERILOG_FILE ../RAMtesterCode/BinUp/BinUp.v
-set_global_assignment -name VERILOG_FILE ../RAMtesterCode/Lab11RAM/Lab11RAM.v
-set_global_assignment -name VERILOG_FILE ../RAMtesterCode/OnOffToggle/OnOffToggle.v
-set_global_assignment -name VERILOG_FILE trisc2.v
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_location_assignment PIN_A20 -to MDout[1]
@@ -91,3 +86,12 @@ set_location_assignment PIN_A13 -to DataIn[6]
 set_location_assignment PIN_A14 -to DataIn[7]
 set_location_assignment PIN_F15 -to Mode
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VERILOG_FILE ../controllerTester/controllerTester.v
+set_global_assignment -name VERILOG_FILE ../binaryCounter/binaryCounter.v
+set_global_assignment -name VERILOG_FILE ../pInPOut/pInPOut.v
+set_global_assignment -name VERILOG_FILE ../instructionDecoder/instructionDecoder.v
+set_global_assignment -name VERILOG_FILE ../RAMtesterCode/binary2seven/binary2seven.v
+set_global_assignment -name VERILOG_FILE ../RAMtesterCode/BinUp/BinUp.v
+set_global_assignment -name VERILOG_FILE ../RAMtesterCode/Lab11RAM/Lab11RAM.v
+set_global_assignment -name VERILOG_FILE ../RAMtesterCode/OnOffToggle/OnOffToggle.v
+set_global_assignment -name VERILOG_FILE trisc2.v

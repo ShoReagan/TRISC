@@ -1,5 +1,5 @@
 Analysis & Synthesis report for trisc2
-Tue Apr 26 21:04:30 2022
+Tue Apr 26 21:35:21 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -52,13 +52,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 26 21:04:30 2022       ;
+; Analysis & Synthesis Status        ; Successful - Tue Apr 26 21:35:21 2022       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; trisc2                                      ;
 ; Top-level Entity Name              ; trisc2                                      ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 34                                          ;
-;     Total combinational functions  ; 34                                          ;
+; Total logic elements               ; 41                                          ;
+;     Total combinational functions  ; 41                                          ;
 ;     Dedicated logic registers      ; 5                                           ;
 ; Total registers                    ; 5                                           ;
 ; Total pins                         ; 70                                          ;
@@ -170,7 +170,8 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-12        ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -202,16 +203,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 34         ;
+; Estimated Total logic elements              ; 41         ;
 ;                                             ;            ;
-; Total combinational functions               ; 34         ;
+; Total combinational functions               ; 41         ;
 ; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 15         ;
+;     -- 4 input functions                    ; 22         ;
 ;     -- 3 input functions                    ; 1          ;
 ;     -- <=2 input functions                  ; 18         ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 34         ;
+;     -- normal mode                          ; 41         ;
 ;     -- arithmetic mode                      ; 0          ;
 ;                                             ;            ;
 ; Total registers                             ; 5          ;
@@ -223,10 +224,10 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;            ;
 ; Embedded Multiplier 9-bit elements          ; 0          ;
 ;                                             ;            ;
-; Maximum fan-out node                        ; Mode~input ;
-; Maximum fan-out                             ; 14         ;
-; Total fan-out                               ; 250        ;
-; Average fan-out                             ; 1.34       ;
+; Maximum fan-out node                        ; AddIn[0]~0 ;
+; Maximum fan-out                             ; 15         ;
+; Total fan-out                               ; 285        ;
+; Average fan-out                             ; 1.47       ;
 +---------------------------------------------+------------+
 
 
@@ -235,7 +236,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                 ; Entity Name     ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------+-----------------+--------------+
-; |trisc2                                   ; 34 (14)             ; 5 (0)                     ; 128         ; 0          ; 0            ; 0       ; 0         ; 70   ; 0            ; 0          ; |trisc2                                                                             ; trisc2          ; work         ;
+; |trisc2                                   ; 41 (14)             ; 5 (0)                     ; 128         ; 0          ; 0            ; 0       ; 0         ; 70   ; 0            ; 0          ; |trisc2                                                                             ; trisc2          ; work         ;
 ;    |BinUp:AddressGen|                     ; 4 (4)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |trisc2|BinUp:AddressGen                                                            ; BinUp           ; work         ;
 ;    |Lab11RAM:RAM|                         ; 0 (0)               ; 0 (0)                     ; 128         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |trisc2|Lab11RAM:RAM                                                                ; Lab11RAM        ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 128         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |trisc2|Lab11RAM:RAM|altsyncram:altsyncram_component                                ; altsyncram      ; work         ;
@@ -243,6 +244,7 @@ https://fpgasoftware.intel.com/eula.
 ;    |OnOffToggle:DivideX2|                 ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |trisc2|OnOffToggle:DivideX2                                                        ; OnOffToggle     ; work         ;
 ;    |binary2seven:comb_24|                 ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |trisc2|binary2seven:comb_24                                                        ; binary2seven    ; work         ;
 ;    |binary2seven:comb_25|                 ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |trisc2|binary2seven:comb_25                                                        ; binary2seven    ; work         ;
+;    |binary2seven:comb_26|                 ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |trisc2|binary2seven:comb_26                                                        ; binary2seven    ; work         ;
 +-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -410,17 +412,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; cycloneiii_ff         ; 5                           ;
 ;     CLR               ; 4                           ;
 ;     plain             ; 1                           ;
-; cycloneiii_lcell_comb ; 37                          ;
-;     normal            ; 37                          ;
+; cycloneiii_lcell_comb ; 45                          ;
+;     normal            ; 45                          ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 5                           ;
+;         1 data inputs ; 6                           ;
 ;         2 data inputs ; 15                          ;
 ;         3 data inputs ; 1                           ;
-;         4 data inputs ; 15                          ;
+;         4 data inputs ; 22                          ;
 ; cycloneiii_ram_block  ; 8                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.16                        ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 1.54                        ;
 +-----------------------+-----------------------------+
 
 
@@ -439,7 +441,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Tue Apr 26 21:04:23 2022
+    Info: Processing started: Tue Apr 26 21:35:14 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off trisc2 -c trisc2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -455,6 +457,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file trisc2.
     Info (12023): Found entity 1: trisc2 File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 1
 Critical Warning (10846): Verilog HDL Instantiation warning at trisc2.v(46): instance has no name File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 46
 Critical Warning (10846): Verilog HDL Instantiation warning at trisc2.v(47): instance has no name File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 47
+Critical Warning (10846): Verilog HDL Instantiation warning at trisc2.v(48): instance has no name File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 48
 Info (12127): Elaborating entity "trisc2" for the top level hierarchy
 Warning (10858): Verilog HDL warning at trisc2.v(14): object ramAddress used but never assigned File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 14
 Warning (10858): Verilog HDL warning at trisc2.v(15): object C4 used but never assigned File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 15
@@ -463,7 +466,6 @@ Warning (10030): Net "ramAddress" at trisc2.v(14) has no driver or initial value
 Warning (10030): Net "MDI" at trisc2.v(16) has no driver or initial value, using a default initial value '0' File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 16
 Warning (10030): Net "c5" at trisc2.v(7) has no driver or initial value, using a default initial value '0' File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
 Warning (10030): Net "C4" at trisc2.v(15) has no driver or initial value, using a default initial value '0' File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 15
-Warning (10034): Output port "PChex" at trisc2.v(5) has no driver File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
 Warning (10034): Output port "MARhex" at trisc2.v(5) has no driver File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
 Warning (10034): Output port "MDin" at trisc2.v(6) has no driver File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
 Warning (10034): Output port "c0" at trisc2.v(7) has no driver File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
@@ -506,13 +508,6 @@ Info (12128): Elaborating entity "binary2seven" for hierarchy "binary2seven:comb
 Warning (19016): Clock multiplexers are found and protected
     Warning (19017): Found clock multiplexer RAMin File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 11
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "PChex[0]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
-    Warning (13410): Pin "PChex[1]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
-    Warning (13410): Pin "PChex[2]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
-    Warning (13410): Pin "PChex[3]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
-    Warning (13410): Pin "PChex[4]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
-    Warning (13410): Pin "PChex[5]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
-    Warning (13410): Pin "PChex[6]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
     Warning (13410): Pin "MARhex[0]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
     Warning (13410): Pin "MARhex[1]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
     Warning (13410): Pin "MARhex[2]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
@@ -557,16 +552,16 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "startStop" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 4
     Warning (15610): No output dependent on input pin "clock" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 4
-Info (21057): Implemented 112 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 119 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 14 input pins
     Info (21059): Implemented 56 output pins
-    Info (21061): Implemented 34 logic cells
+    Info (21061): Implemented 41 logic cells
     Info (21064): Implemented 8 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 74 warnings
-    Info: Peak virtual memory: 4823 megabytes
-    Info: Processing ended: Tue Apr 26 21:04:30 2022
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 67 warnings
+    Info: Peak virtual memory: 4824 megabytes
+    Info: Processing ended: Tue Apr 26 21:35:21 2022
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Total CPU time (on all processors): 00:00:14
 
 
 +------------------------------------------+

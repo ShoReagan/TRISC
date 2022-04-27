@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Tue Apr 26 21:04:30 2022
+Analysis & Synthesis Status : Successful - Tue Apr 26 21:35:21 2022
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : trisc2
 Top-level Entity Name : trisc2
 Family : MAX 10
-Total logic elements : 34
-    Total combinational functions : 34
+Total logic elements : 41
+    Total combinational functions : 41
     Dedicated logic registers : 5
 Total registers : 5
 Total pins : 70

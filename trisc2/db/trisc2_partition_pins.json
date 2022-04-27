@@ -4,6 +4,34 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "PChex[0]",
+					"strict" : false
+				},
+				{
+					"name" : "PChex[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PChex[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PChex[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PChex[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PChex[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PChex[6]",
+					"strict" : false
+				},
+				{
 					"name" : "MDout[0]",
 					"strict" : false
 				},
@@ -60,11 +88,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "RW",
+					"name" : "Mode",
 					"strict" : false
 				},
 				{
-					"name" : "Mode",
+					"name" : "ClearAddGen",
+					"strict" : false
+				},
+				{
+					"name" : "RW",
 					"strict" : false
 				},
 				{
@@ -101,10 +133,6 @@
 				},
 				{
 					"name" : "ClockIn",
-					"strict" : false
-				},
-				{
-					"name" : "ClearAddGen",
 					"strict" : false
 				}
 			]

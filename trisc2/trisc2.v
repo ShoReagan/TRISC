@@ -11,9 +11,11 @@ wire [3:0]      AddIn, AddGen;
 wire RAMin, RAMwrite, toggle; 
 wire [7:0]      RAMdata; 
 
-wire[3:0] ramAddress;
-wire C0, C1, C2, C3, C4, C5, C7, C8, C9, C10, C11, C12, C13, C14;
 wire[7:0] MDI, MDO;
+wire[3:0] addressBus;
+wire C0, C1, C2, C3, C4, C5, C7, C8, C9, C10, C11, C12, C13, C14;
+wire[3:0] ramAddress;
+
   
 assign AddIn = Mode == 1'b0 ? ramAddress : AddGen; 
 assign RAMin = Mode == 1'b0 ? clock*C4 : ClockIn; 
@@ -43,7 +45,9 @@ Lab11RAM RAM
  .q ( MDO ) 
 );
 
-binary2seven(MDO[7], MDO[6], MDO[5], MDO[4], MDout[13], MDout[12], MDout[11], MDout[10], MDout[9], MDout[8], MDout[7]);
-binary2seven(MDO[3], MDO[2], MDO[1], MDO[0], MDout[6], MDout[5], MDout[4], MDout[3], MDout[2], MDout[1], MDout[0]);
+binary2seven(MDO[7], MDO[6], MDO[5], MDO[4], MDout[7], MDout[8], MDout[9], MDout[10], MDout[11], MDout[12], MDout[13]);
+binary2seven(MDO[3], MDO[2], MDO[1], MDO[0], MDout[0], MDout[1], MDout[2], MDout[3], MDout[4], MDout[5], MDout[6]);
+binary2seven(AddIn[3], AddIn[2], AddIn[1], AddIn[0], PChex[0], PChex[1], PChex[2], PChex[3], PChex[4], PChex[5], PChex[6]);
+
 
 endmodule
