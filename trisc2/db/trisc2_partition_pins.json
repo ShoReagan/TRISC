@@ -2,7 +2,112 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "MDout[0]",
+					"strict" : false
+				},
+				{
+					"name" : "MDout[1]",
+					"strict" : false
+				},
+				{
+					"name" : "MDout[2]",
+					"strict" : false
+				},
+				{
+					"name" : "MDout[3]",
+					"strict" : false
+				},
+				{
+					"name" : "MDout[4]",
+					"strict" : false
+				},
+				{
+					"name" : "MDout[5]",
+					"strict" : false
+				},
+				{
+					"name" : "MDout[6]",
+					"strict" : false
+				},
+				{
+					"name" : "MDout[7]",
+					"strict" : false
+				},
+				{
+					"name" : "MDout[8]",
+					"strict" : false
+				},
+				{
+					"name" : "MDout[9]",
+					"strict" : false
+				},
+				{
+					"name" : "MDout[10]",
+					"strict" : false
+				},
+				{
+					"name" : "MDout[11]",
+					"strict" : false
+				},
+				{
+					"name" : "MDout[12]",
+					"strict" : false
+				},
+				{
+					"name" : "MDout[13]",
+					"strict" : false
+				},
+				{
+					"name" : "RW",
+					"strict" : false
+				},
+				{
+					"name" : "Mode",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ClockIn",
+					"strict" : false
+				},
+				{
+					"name" : "ClearAddGen",
+					"strict" : false
+				}
+			]
 		}
 	]
 }

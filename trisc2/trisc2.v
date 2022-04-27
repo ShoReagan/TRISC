@@ -41,6 +41,9 @@ Lab11RAM RAM
  .data ( RAMdata ), 
  .wren ( RAMwrite ), 
  .q ( MDO ) 
-); 
+);
+
+binary2seven(MDO[7], MDO[6], MDO[5], MDO[4], MDout[13], MDout[12], MDout[11], MDout[10], MDout[9], MDout[8], MDout[7]);
+binary2seven(MDO[3], MDO[2], MDO[1], MDO[0], MDout[6], MDout[5], MDout[4], MDout[3], MDout[2], MDout[1], MDout[0]);
 
 endmodule
