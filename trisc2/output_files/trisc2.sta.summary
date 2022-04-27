@@ -2,76 +2,220 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow 1200mV 85C Model Setup 'controllerTester:comb_26|controller:comb_4|state.E'
+Slack : -10.115
+TNS   : -56.754
+
+Type  : Slow 1200mV 85C Model Setup 'controllerTester:comb_26|controller:comb_4|state.C'
+Slack : -9.825
+TNS   : -75.100
+
+Type  : Slow 1200mV 85C Model Setup 'clock'
+Slack : -8.167
+TNS   : -66.888
+
 Type  : Slow 1200mV 85C Model Setup 'ClockIn'
-Slack : -3.249
-TNS   : -20.691
+Slack : -6.832
+TNS   : -24.187
+
+Type  : Slow 1200mV 85C Model Setup 'pInPOut:IR|Q[0]'
+Slack : -3.715
+TNS   : -20.344
 
 Type  : Slow 1200mV 85C Model Setup 'OnOffToggle:DivideX2|state'
-Slack : -0.163
-TNS   : -0.325
-
-Type  : Slow 1200mV 85C Model Hold 'OnOffToggle:DivideX2|state'
-Slack : 0.341
-TNS   : 0.000
+Slack : -0.181
+TNS   : -0.341
 
 Type  : Slow 1200mV 85C Model Hold 'ClockIn'
-Slack : 1.880
+Slack : -1.155
+TNS   : -9.240
+
+Type  : Slow 1200mV 85C Model Hold 'controllerTester:comb_26|controller:comb_4|state.E'
+Slack : -0.542
+TNS   : -4.909
+
+Type  : Slow 1200mV 85C Model Hold 'clock'
+Slack : -0.136
+TNS   : -1.088
+
+Type  : Slow 1200mV 85C Model Hold 'pInPOut:IR|Q[0]'
+Slack : -0.026
+TNS   : -0.026
+
+Type  : Slow 1200mV 85C Model Hold 'OnOffToggle:DivideX2|state'
+Slack : 0.348
 TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'controllerTester:comb_26|controller:comb_4|state.C'
+Slack : 1.655
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -59.105
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ClockIn'
 Slack : -3.000
 TNS   : -31.045
 
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'controllerTester:comb_26|controller:comb_4|state.C'
+Slack : -2.422
+TNS   : -32.254
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'controllerTester:comb_26|controller:comb_4|state.E'
+Slack : -2.422
+TNS   : -26.642
+
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'OnOffToggle:DivideX2|state'
 Slack : -1.403
 TNS   : -5.612
 
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pInPOut:IR|Q[0]'
+Slack : 0.340
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'controllerTester:comb_26|controller:comb_4|state.E'
+Slack : -9.360
+TNS   : -52.425
+
+Type  : Slow 1200mV 0C Model Setup 'controllerTester:comb_26|controller:comb_4|state.C'
+Slack : -9.103
+TNS   : -68.295
+
+Type  : Slow 1200mV 0C Model Setup 'clock'
+Slack : -7.537
+TNS   : -58.947
+
 Type  : Slow 1200mV 0C Model Setup 'ClockIn'
-Slack : -3.028
-TNS   : -18.388
+Slack : -6.329
+TNS   : -21.588
+
+Type  : Slow 1200mV 0C Model Setup 'pInPOut:IR|Q[0]'
+Slack : -3.331
+TNS   : -17.992
 
 Type  : Slow 1200mV 0C Model Setup 'OnOffToggle:DivideX2|state'
-Slack : -0.063
-TNS   : -0.125
-
-Type  : Slow 1200mV 0C Model Hold 'OnOffToggle:DivideX2|state'
-Slack : 0.306
-TNS   : 0.000
+Slack : -0.080
+TNS   : -0.141
 
 Type  : Slow 1200mV 0C Model Hold 'ClockIn'
-Slack : 1.699
+Slack : -1.074
+TNS   : -8.592
+
+Type  : Slow 1200mV 0C Model Hold 'controllerTester:comb_26|controller:comb_4|state.E'
+Slack : -0.386
+TNS   : -3.265
+
+Type  : Slow 1200mV 0C Model Hold 'clock'
+Slack : -0.158
+TNS   : -1.264
+
+Type  : Slow 1200mV 0C Model Hold 'pInPOut:IR|Q[0]'
+Slack : -0.026
+TNS   : -0.026
+
+Type  : Slow 1200mV 0C Model Hold 'OnOffToggle:DivideX2|state'
+Slack : 0.312
 TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'controllerTester:comb_26|controller:comb_4|state.C'
+Slack : 1.535
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -58.126
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ClockIn'
 Slack : -3.000
 TNS   : -30.066
 
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'controllerTester:comb_26|controller:comb_4|state.C'
+Slack : -2.333
+TNS   : -31.275
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'controllerTester:comb_26|controller:comb_4|state.E'
+Slack : -2.333
+TNS   : -25.663
+
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'OnOffToggle:DivideX2|state'
 Slack : -1.403
 TNS   : -5.612
 
-Type  : Fast 1200mV 0C Model Setup 'ClockIn'
-Slack : -0.900
-TNS   : -3.691
-
-Type  : Fast 1200mV 0C Model Setup 'OnOffToggle:DivideX2|state'
-Slack : 0.501
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pInPOut:IR|Q[0]'
+Slack : 0.417
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'OnOffToggle:DivideX2|state'
-Slack : 0.149
+Type  : Fast 1200mV 0C Model Setup 'controllerTester:comb_26|controller:comb_4|state.E'
+Slack : -4.661
+TNS   : -23.247
+
+Type  : Fast 1200mV 0C Model Setup 'controllerTester:comb_26|controller:comb_4|state.C'
+Slack : -4.518
+TNS   : -32.068
+
+Type  : Fast 1200mV 0C Model Setup 'clock'
+Slack : -3.519
+TNS   : -21.736
+
+Type  : Fast 1200mV 0C Model Setup 'ClockIn'
+Slack : -2.806
+TNS   : -5.536
+
+Type  : Fast 1200mV 0C Model Setup 'pInPOut:IR|Q[0]'
+Slack : -1.370
+TNS   : -7.397
+
+Type  : Fast 1200mV 0C Model Setup 'OnOffToggle:DivideX2|state'
+Slack : 0.493
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'ClockIn'
-Slack : 0.608
+Slack : -0.915
+TNS   : -7.320
+
+Type  : Fast 1200mV 0C Model Hold 'clock'
+Slack : -0.356
+TNS   : -2.848
+
+Type  : Fast 1200mV 0C Model Hold 'pInPOut:IR|Q[0]'
+Slack : -0.015
+TNS   : -0.015
+
+Type  : Fast 1200mV 0C Model Hold 'controllerTester:comb_26|controller:comb_4|state.E'
+Slack : 0.021
 TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'OnOffToggle:DivideX2|state'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'controllerTester:comb_26|controller:comb_4|state.C'
+Slack : 0.710
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -39.753
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ClockIn'
 Slack : -3.000
-TNS   : -17.401
+TNS   : -19.162
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'controllerTester:comb_26|controller:comb_4|state.C'
+Slack : -1.000
+TNS   : -15.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'controllerTester:comb_26|controller:comb_4|state.E'
+Slack : -1.000
+TNS   : -11.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'OnOffToggle:DivideX2|state'
 Slack : -1.000
 TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pInPOut:IR|Q[0]'
+Slack : 0.383
+TNS   : 0.000
 
 ------------------------------------------------------------

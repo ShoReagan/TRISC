@@ -1,5 +1,5 @@
 Flow report for trisc2
-Tue Apr 26 21:35:40 2022
+Wed Apr 27 08:14:25 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,17 +41,17 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Apr 26 21:35:37 2022       ;
+; Flow Status                        ; Successful - Wed Apr 27 08:14:22 2022       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; trisc2                                      ;
 ; Top-level Entity Name              ; trisc2                                      ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DCF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 43 / 49,760 ( < 1 % )                       ;
-;     Total combinational functions  ; 42 / 49,760 ( < 1 % )                       ;
-;     Dedicated logic registers      ; 5 / 49,760 ( < 1 % )                        ;
-; Total registers                    ; 5                                           ;
+; Total logic elements               ; 92 / 49,760 ( < 1 % )                       ;
+;     Total combinational functions  ; 91 / 49,760 ( < 1 % )                       ;
+;     Dedicated logic registers      ; 30 / 49,760 ( < 1 % )                       ;
+; Total registers                    ; 30                                          ;
 ; Total pins                         ; 70 / 360 ( 19 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 128 / 1,677,312 ( < 1 % )                   ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/26/2022 21:35:15 ;
+; Start date & time ; 04/27/2022 08:14:02 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; trisc2              ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 185410942469369.165102691503136        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 185410942469369.165106524110536        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -95,11 +95,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4824 MB             ; 00:00:14                           ;
-; Fitter               ; 00:00:11     ; 1.1                     ; 6218 MB             ; 00:00:14                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4688 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.2                     ; 4921 MB             ; 00:00:02                           ;
-; Total                ; 00:00:23     ; --                      ; --                  ; 00:00:32                           ;
+; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4822 MB             ; 00:00:15                           ;
+; Fitter               ; 00:00:10     ; 1.1                     ; 6219 MB             ; 00:00:16                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4691 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.2                     ; 4924 MB             ; 00:00:02                           ;
+; Total                ; 00:00:21     ; --                      ; --                  ; 00:00:35                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

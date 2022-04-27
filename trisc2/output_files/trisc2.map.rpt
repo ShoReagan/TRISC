@@ -1,5 +1,5 @@
 Analysis & Synthesis report for trisc2
-Tue Apr 26 21:35:21 2022
+Wed Apr 27 08:14:08 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -14,18 +14,32 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
-  9. General Register Statistics
- 10. Source assignments for Lab11RAM:RAM|altsyncram:altsyncram_component|altsyncram_ene1:auto_generated
- 11. Parameter Settings for User Entity Instance: OnOffToggle:DivideX2
- 12. Parameter Settings for User Entity Instance: BinUp:AddressGen
- 13. Parameter Settings for User Entity Instance: Lab11RAM:RAM|altsyncram:altsyncram_component
- 14. altsyncram Parameter Settings by Entity Instance
- 15. Port Connectivity Checks: "BinUp:AddressGen"
- 16. Port Connectivity Checks: "OnOffToggle:DivideX2"
- 17. Post-Synthesis Netlist Statistics for Top Partition
- 18. Elapsed Time Per Partition
- 19. Analysis & Synthesis Messages
- 20. Analysis & Synthesis Suppressed Messages
+  9. State Machine - |trisc2|controllerTester:comb_26|controller:comb_4|state
+ 10. User-Specified and Inferred Latches
+ 11. Registers Removed During Synthesis
+ 12. General Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Source assignments for Lab11RAM:RAM|altsyncram:altsyncram_component|altsyncram_ene1:auto_generated
+ 15. Parameter Settings for User Entity Instance: OnOffToggle:DivideX2
+ 16. Parameter Settings for User Entity Instance: BinUp:AddressGen
+ 17. Parameter Settings for User Entity Instance: Lab11RAM:RAM|altsyncram:altsyncram_component
+ 18. Parameter Settings for User Entity Instance: pInPOut:IR
+ 19. Parameter Settings for User Entity Instance: controllerTester:comb_26|controller:comb_4
+ 20. Parameter Settings for User Entity Instance: pInPOut:buffer
+ 21. Parameter Settings for User Entity Instance: accumulator:comb_28|twoToOne:comb_3
+ 22. Parameter Settings for User Entity Instance: accumulator:comb_28|binaryCounter:comb_4
+ 23. Parameter Settings for User Entity Instance: binaryCounter:comb_30
+ 24. altsyncram Parameter Settings by Entity Instance
+ 25. Port Connectivity Checks: "pInPOut:buffer"
+ 26. Port Connectivity Checks: "alu:comb_27"
+ 27. Port Connectivity Checks: "controllerTester:comb_26"
+ 28. Port Connectivity Checks: "pInPOut:IR"
+ 29. Port Connectivity Checks: "BinUp:AddressGen"
+ 30. Port Connectivity Checks: "OnOffToggle:DivideX2"
+ 31. Post-Synthesis Netlist Statistics for Top Partition
+ 32. Elapsed Time Per Partition
+ 33. Analysis & Synthesis Messages
+ 34. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -52,15 +66,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 26 21:35:21 2022       ;
+; Analysis & Synthesis Status        ; Successful - Wed Apr 27 08:14:08 2022       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; trisc2                                      ;
 ; Top-level Entity Name              ; trisc2                                      ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 41                                          ;
-;     Total combinational functions  ; 41                                          ;
-;     Dedicated logic registers      ; 5                                           ;
-; Total registers                    ; 5                                           ;
+; Total logic elements               ; 94                                          ;
+;     Total combinational functions  ; 89                                          ;
+;     Dedicated logic registers      ; 30                                          ;
+; Total registers                    ; 30                                          ;
 ; Total pins                         ; 70                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 128                                         ;
@@ -180,6 +194,17 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path             ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                ; Library ;
 +----------------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+---------+
+; ../FAbehav/FAbehav.v                         ; yes             ; User Verilog HDL File        ; C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/FAbehav/FAbehav.v                         ;         ;
+; ../twoToOne/twoToOne.v                       ; yes             ; User Verilog HDL File        ; C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/twoToOne/twoToOne.v                       ;         ;
+; ../twoCompAddSub/twoCompAddSub.v             ; yes             ; User Verilog HDL File        ; C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/twoCompAddSub/twoCompAddSub.v             ;         ;
+; ../twoComp/twoComp.v                         ; yes             ; User Verilog HDL File        ; C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/twoComp/twoComp.v                         ;         ;
+; ../accumulator/accumulator.v                 ; yes             ; User Verilog HDL File        ; C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/accumulator/accumulator.v                 ;         ;
+; ../alu/alu.v                                 ; yes             ; User Verilog HDL File        ; C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v                                 ;         ;
+; ../controller/controller.v                   ; yes             ; User Verilog HDL File        ; C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/controller/controller.v                   ;         ;
+; ../controllerTester/controllerTester.v       ; yes             ; User Verilog HDL File        ; C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/controllerTester/controllerTester.v       ;         ;
+; ../binaryCounter/binaryCounter.v             ; yes             ; User Verilog HDL File        ; C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/binaryCounter/binaryCounter.v             ;         ;
+; ../pInPOut/pInPOut.v                         ; yes             ; User Verilog HDL File        ; C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/pInPOut/pInPOut.v                         ;         ;
+; ../instructionDecoder/instructionDecoder.v   ; yes             ; User Verilog HDL File        ; C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/instructionDecoder/instructionDecoder.v   ;         ;
 ; ../RAMtesterCode/binary2seven/binary2seven.v ; yes             ; User Verilog HDL File        ; C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/RAMtesterCode/binary2seven/binary2seven.v ;         ;
 ; ../RAMtesterCode/BinUp/BinUp.v               ; yes             ; User Verilog HDL File        ; C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/RAMtesterCode/BinUp/BinUp.v               ;         ;
 ; ../RAMtesterCode/Lab11RAM/Lab11RAM.v         ; yes             ; User Wizard-Generated File   ; C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/RAMtesterCode/Lab11RAM/Lab11RAM.v         ;         ;
@@ -198,54 +223,57 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary              ;
-+---------------------------------------------+------------+
-; Resource                                    ; Usage      ;
-+---------------------------------------------+------------+
-; Estimated Total logic elements              ; 41         ;
-;                                             ;            ;
-; Total combinational functions               ; 41         ;
-; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 22         ;
-;     -- 3 input functions                    ; 1          ;
-;     -- <=2 input functions                  ; 18         ;
-;                                             ;            ;
-; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 41         ;
-;     -- arithmetic mode                      ; 0          ;
-;                                             ;            ;
-; Total registers                             ; 5          ;
-;     -- Dedicated logic registers            ; 5          ;
-;     -- I/O registers                        ; 0          ;
-;                                             ;            ;
-; I/O pins                                    ; 70         ;
-; Total memory bits                           ; 128        ;
-;                                             ;            ;
-; Embedded Multiplier 9-bit elements          ; 0          ;
-;                                             ;            ;
-; Maximum fan-out node                        ; AddIn[0]~0 ;
-; Maximum fan-out                             ; 15         ;
-; Total fan-out                               ; 285        ;
-; Average fan-out                             ; 1.47       ;
-+---------------------------------------------+------------+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 94          ;
+;                                             ;             ;
+; Total combinational functions               ; 89          ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 40          ;
+;     -- 3 input functions                    ; 32          ;
+;     -- <=2 input functions                  ; 17          ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 89          ;
+;     -- arithmetic mode                      ; 0           ;
+;                                             ;             ;
+; Total registers                             ; 30          ;
+;     -- Dedicated logic registers            ; 30          ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 70          ;
+; Total memory bits                           ; 128         ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; clock~input ;
+; Maximum fan-out                             ; 22          ;
+; Total fan-out                               ; 511         ;
+; Average fan-out                             ; 1.91        ;
++---------------------------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                   ;
-+-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------+-----------------+--------------+
-; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                 ; Entity Name     ; Library Name ;
-+-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------+-----------------+--------------+
-; |trisc2                                   ; 41 (14)             ; 5 (0)                     ; 128         ; 0          ; 0            ; 0       ; 0         ; 70   ; 0            ; 0          ; |trisc2                                                                             ; trisc2          ; work         ;
-;    |BinUp:AddressGen|                     ; 4 (4)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |trisc2|BinUp:AddressGen                                                            ; BinUp           ; work         ;
-;    |Lab11RAM:RAM|                         ; 0 (0)               ; 0 (0)                     ; 128         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |trisc2|Lab11RAM:RAM                                                                ; Lab11RAM        ; work         ;
-;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 128         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |trisc2|Lab11RAM:RAM|altsyncram:altsyncram_component                                ; altsyncram      ; work         ;
-;          |altsyncram_ene1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 128         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |trisc2|Lab11RAM:RAM|altsyncram:altsyncram_component|altsyncram_ene1:auto_generated ; altsyncram_ene1 ; work         ;
-;    |OnOffToggle:DivideX2|                 ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |trisc2|OnOffToggle:DivideX2                                                        ; OnOffToggle     ; work         ;
-;    |binary2seven:comb_24|                 ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |trisc2|binary2seven:comb_24                                                        ; binary2seven    ; work         ;
-;    |binary2seven:comb_25|                 ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |trisc2|binary2seven:comb_25                                                        ; binary2seven    ; work         ;
-;    |binary2seven:comb_26|                 ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |trisc2|binary2seven:comb_26                                                        ; binary2seven    ; work         ;
-+-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------+-----------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                      ;
++-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------+--------------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                 ; Entity Name        ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------+--------------------+--------------+
+; |trisc2                                   ; 89 (16)             ; 30 (0)                    ; 128         ; 0          ; 0            ; 0       ; 0         ; 70   ; 0            ; 0          ; |trisc2                                                                             ; trisc2             ; work         ;
+;    |BinUp:AddressGen|                     ; 4 (4)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |trisc2|BinUp:AddressGen                                                            ; BinUp              ; work         ;
+;    |Lab11RAM:RAM|                         ; 0 (0)               ; 0 (0)                     ; 128         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |trisc2|Lab11RAM:RAM                                                                ; Lab11RAM           ; work         ;
+;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 128         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |trisc2|Lab11RAM:RAM|altsyncram:altsyncram_component                                ; altsyncram         ; work         ;
+;          |altsyncram_ene1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 128         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |trisc2|Lab11RAM:RAM|altsyncram:altsyncram_component|altsyncram_ene1:auto_generated ; altsyncram_ene1    ; work         ;
+;    |OnOffToggle:DivideX2|                 ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |trisc2|OnOffToggle:DivideX2                                                        ; OnOffToggle        ; work         ;
+;    |binary2seven:comb_24|                 ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |trisc2|binary2seven:comb_24                                                        ; binary2seven       ; work         ;
+;    |binary2seven:comb_25|                 ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |trisc2|binary2seven:comb_25                                                        ; binary2seven       ; work         ;
+;    |controllerTester:comb_26|             ; 53 (0)              ; 21 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |trisc2|controllerTester:comb_26                                                    ; controllerTester   ; work         ;
+;       |controller:comb_4|                 ; 40 (40)             ; 21 (21)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |trisc2|controllerTester:comb_26|controller:comb_4                                  ; controller         ; work         ;
+;       |instructionDecoder:comb_3|         ; 13 (13)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |trisc2|controllerTester:comb_26|instructionDecoder:comb_3                          ; instructionDecoder ; work         ;
+;    |pInPOut:IR|                           ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |trisc2|pInPOut:IR                                                                  ; pInPOut            ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------+--------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -258,19 +286,112 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+------+
 
 
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |trisc2|controllerTester:comb_26|controller:comb_4|state                                                                                                                                                  ;
++---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
+; Name    ; state.U ; state.T ; state.S ; state.R ; state.Q ; state.P ; state.O ; state.N ; state.M ; state.L ; state.K ; state.J ; state.I ; state.H ; state.G ; state.F ; state.E ; state.D ; state.C ; state.B ; state.A ;
++---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
+; state.A ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ;
+; state.B ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 1       ;
+; state.C ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 1       ;
+; state.D ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 1       ;
+; state.E ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 1       ;
+; state.F ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; state.G ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; state.H ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; state.I ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; state.J ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; state.K ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; state.L ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; state.M ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; state.N ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; state.O ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; state.P ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; state.Q ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; state.R ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; state.S ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; state.T ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
+; state.U ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ;
++---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                                              ;
++------------------------------------------------------------+------------------------------------------------------------+------------------------+
+; Latch Name                                                 ; Latch Enable Signal                                        ; Free of Timing Hazards ;
++------------------------------------------------------------+------------------------------------------------------------+------------------------+
+; controllerTester:comb_26|controller:comb_4|nextstate.E_761 ; controllerTester:comb_26|controller:comb_4|Selector27      ; yes                    ;
+; controllerTester:comb_26|controller:comb_4|nextstate.B_818 ; controllerTester:comb_26|controller:comb_4|Selector27      ; yes                    ;
+; controllerTester:comb_26|controller:comb_4|nextstate.C_799 ; controllerTester:comb_26|controller:comb_4|Selector27      ; yes                    ;
+; controllerTester:comb_26|controller:comb_4|nextstate.D_780 ; controllerTester:comb_26|controller:comb_4|Selector27      ; yes                    ;
+; controllerTester:comb_26|controller:comb_4|nextstate.M_621 ; GND                                                        ; yes                    ;
+; controllerTester:comb_26|instructionDecoder:comb_3|h       ; controllerTester:comb_26|instructionDecoder:comb_3|WideOr1 ; yes                    ;
+; controllerTester:comb_26|instructionDecoder:comb_3|g       ; controllerTester:comb_26|instructionDecoder:comb_3|WideOr1 ; yes                    ;
+; controllerTester:comb_26|instructionDecoder:comb_3|f       ; controllerTester:comb_26|instructionDecoder:comb_3|WideOr1 ; yes                    ;
+; controllerTester:comb_26|instructionDecoder:comb_3|c       ; controllerTester:comb_26|instructionDecoder:comb_3|WideOr1 ; yes                    ;
+; controllerTester:comb_26|instructionDecoder:comb_3|b       ; controllerTester:comb_26|instructionDecoder:comb_3|WideOr1 ; yes                    ;
+; controllerTester:comb_26|instructionDecoder:comb_3|a       ; controllerTester:comb_26|instructionDecoder:comb_3|WideOr1 ; yes                    ;
+; controllerTester:comb_26|controller:comb_4|nextstate.F_742 ; GND                                                        ; yes                    ;
+; controllerTester:comb_26|controller:comb_4|nextstate.G_726 ; GND                                                        ; yes                    ;
+; controllerTester:comb_26|controller:comb_4|nextstate.H_710 ; GND                                                        ; yes                    ;
+; controllerTester:comb_26|controller:comb_4|nextstate.L_640 ; controllerTester:comb_26|controller:comb_4|Selector27      ; yes                    ;
+; controllerTester:comb_26|controller:comb_4|nextstate.O_586 ; controllerTester:comb_26|controller:comb_4|Selector27      ; yes                    ;
+; controllerTester:comb_26|controller:comb_4|nextstate.U_475 ; controllerTester:comb_26|controller:comb_4|Selector27      ; yes                    ;
+; controllerTester:comb_26|controller:comb_4|nextstate.K_659 ; controllerTester:comb_26|controller:comb_4|Selector27      ; yes                    ;
+; controllerTester:comb_26|controller:comb_4|nextstate.N_605 ; controllerTester:comb_26|controller:comb_4|Selector27      ; yes                    ;
+; controllerTester:comb_26|controller:comb_4|nextstate.T_494 ; controllerTester:comb_26|controller:comb_4|Selector27      ; yes                    ;
+; controllerTester:comb_26|controller:comb_4|nextstate.J_678 ; controllerTester:comb_26|controller:comb_4|Selector27      ; yes                    ;
+; controllerTester:comb_26|controller:comb_4|nextstate.Q_551 ; controllerTester:comb_26|controller:comb_4|Selector27      ; yes                    ;
+; controllerTester:comb_26|controller:comb_4|nextstate.R_532 ; controllerTester:comb_26|controller:comb_4|Selector27      ; yes                    ;
+; controllerTester:comb_26|controller:comb_4|nextstate.S_513 ; controllerTester:comb_26|controller:comb_4|Selector27      ; yes                    ;
+; controllerTester:comb_26|controller:comb_4|nextstate.I_694 ; GND                                                        ; yes                    ;
+; controllerTester:comb_26|controller:comb_4|nextstate.P_567 ; GND                                                        ; yes                    ;
+; Number of user-specified and inferred latches = 26         ;                                                            ;                        ;
++------------------------------------------------------------+------------------------------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++---------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                          ;
++----------------------------------------------------+----------------------------------------+
+; Register name                                      ; Reason for Removal                     ;
++----------------------------------------------------+----------------------------------------+
+; binaryCounter:comb_30|Q[0..3]                      ; Stuck at GND due to stuck port clear   ;
+; pInPOut:buffer|Q[0..3]                             ; Stuck at GND due to stuck port clock   ;
+; accumulator:comb_28|binaryCounter:comb_4|Q[0..3]   ; Stuck at GND due to stuck port data_in ;
+; controllerTester:comb_26|controller:comb_4|state~4 ; Lost fanout                            ;
+; controllerTester:comb_26|controller:comb_4|state~5 ; Lost fanout                            ;
+; controllerTester:comb_26|controller:comb_4|state~6 ; Lost fanout                            ;
+; controllerTester:comb_26|controller:comb_4|state~7 ; Lost fanout                            ;
+; controllerTester:comb_26|controller:comb_4|state~8 ; Lost fanout                            ;
+; Total Number of Removed Registers = 17             ;                                        ;
++----------------------------------------------------+----------------------------------------+
+
+
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 5     ;
+; Total registers                              ; 30    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 4     ;
+; Number of registers using Asynchronous Clear ; 25    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |trisc2|AddIn[0]                                               ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 2 LEs                ; 6 LEs                  ; No         ; |trisc2|controllerTester:comb_26|controller:comb_4|nextstate.M ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------+
@@ -364,6 +485,86 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pInPOut:IR ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; N              ; 4     ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: controllerTester:comb_26|controller:comb_4 ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; A              ; 00000 ; Unsigned Binary                                                ;
+; B              ; 00001 ; Unsigned Binary                                                ;
+; C              ; 00010 ; Unsigned Binary                                                ;
+; D              ; 00011 ; Unsigned Binary                                                ;
+; E              ; 00100 ; Unsigned Binary                                                ;
+; F              ; 00101 ; Unsigned Binary                                                ;
+; G              ; 00110 ; Unsigned Binary                                                ;
+; H              ; 00111 ; Unsigned Binary                                                ;
+; I              ; 01000 ; Unsigned Binary                                                ;
+; J              ; 01001 ; Unsigned Binary                                                ;
+; K              ; 01010 ; Unsigned Binary                                                ;
+; L              ; 01011 ; Unsigned Binary                                                ;
+; M              ; 01100 ; Unsigned Binary                                                ;
+; N              ; 01101 ; Unsigned Binary                                                ;
+; O              ; 01110 ; Unsigned Binary                                                ;
+; P              ; 01111 ; Unsigned Binary                                                ;
+; Q              ; 10000 ; Unsigned Binary                                                ;
+; R              ; 10001 ; Unsigned Binary                                                ;
+; S              ; 10010 ; Unsigned Binary                                                ;
+; T              ; 10011 ; Unsigned Binary                                                ;
+; U              ; 10100 ; Unsigned Binary                                                ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pInPOut:buffer ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; N              ; 4     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: accumulator:comb_28|twoToOne:comb_3 ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 4     ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: accumulator:comb_28|binaryCounter:comb_4 ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; N              ; 4     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: binaryCounter:comb_30 ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; N              ; 4     ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +------------------------------------------------------------------------------------------+
 ; altsyncram Parameter Settings by Entity Instance                                         ;
 +-------------------------------------------+----------------------------------------------+
@@ -382,6 +583,47 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- RAM_BLOCK_TYPE                     ; AUTO                                         ;
 ;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                    ;
 +-------------------------------------------+----------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pInPOut:buffer"                                                                                                                                                                        ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; clear     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; clear[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:comb_27"                                                                        ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; ovr  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; W    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "controllerTester:comb_26"                                                                                ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; c9   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
+; c14  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pInPOut:IR"                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; clear     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; clear[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------+
@@ -409,20 +651,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 70                          ;
-; cycloneiii_ff         ; 5                           ;
-;     CLR               ; 4                           ;
-;     plain             ; 1                           ;
-; cycloneiii_lcell_comb ; 45                          ;
-;     normal            ; 45                          ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 6                           ;
-;         2 data inputs ; 15                          ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 22                          ;
+; cycloneiii_ff         ; 30                          ;
+;     CLR               ; 25                          ;
+;     plain             ; 5                           ;
+; cycloneiii_lcell_comb ; 93                          ;
+;     normal            ; 93                          ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 5                           ;
+;         2 data inputs ; 14                          ;
+;         3 data inputs ; 32                          ;
+;         4 data inputs ; 40                          ;
 ; cycloneiii_ram_block  ; 8                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 1.54                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 1.94                        ;
 +-----------------------+-----------------------------+
 
 
@@ -441,10 +683,32 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Tue Apr 26 21:35:14 2022
+    Info: Processing started: Wed Apr 27 08:14:01 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off trisc2 -c trisc2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /users/sho/onedrive/desktop/digitallogicverilog/fabehav/fabehav.v
+    Info (12023): Found entity 1: FAbehav File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/FAbehav/FAbehav.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/sho/onedrive/desktop/digitallogicverilog/twotoone/twotoone.v
+    Info (12023): Found entity 1: twoToOne File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/twoToOne/twoToOne.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/sho/onedrive/desktop/digitallogicverilog/twocompaddsub/twocompaddsub.v
+    Info (12023): Found entity 1: twoCompAddSub File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/twoCompAddSub/twoCompAddSub.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/sho/onedrive/desktop/digitallogicverilog/twocomp/twocomp.v
+    Info (12023): Found entity 1: twoComp File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/twoComp/twoComp.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/sho/onedrive/desktop/digitallogicverilog/accumulator/accumulator.v
+    Info (12023): Found entity 1: accumulator File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/accumulator/accumulator.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/sho/onedrive/desktop/digitallogicverilog/alu/alu.v
+    Info (12023): Found entity 1: alu File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/sho/onedrive/desktop/digitallogicverilog/controller/controller.v
+    Info (12023): Found entity 1: controller File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/controller/controller.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/sho/onedrive/desktop/digitallogicverilog/controllertester/controllertester.v
+    Info (12023): Found entity 1: controllerTester File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/controllerTester/controllerTester.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/sho/onedrive/desktop/digitallogicverilog/binarycounter/binarycounter.v
+    Info (12023): Found entity 1: binaryCounter File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/binaryCounter/binaryCounter.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/sho/onedrive/desktop/digitallogicverilog/pinpout/pinpout.v
+    Info (12023): Found entity 1: pInPOut File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/pInPOut/pInPOut.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/sho/onedrive/desktop/digitallogicverilog/instructiondecoder/instructiondecoder.v
+    Info (12023): Found entity 1: instructionDecoder File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/instructionDecoder/instructionDecoder.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file /users/sho/onedrive/desktop/digitallogicverilog/ramtestercode/binary2seven/binary2seven.v
     Info (12023): Found entity 1: binary2seven File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/RAMtesterCode/binary2seven/binary2seven.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file /users/sho/onedrive/desktop/digitallogicverilog/ramtestercode/binup/binup.v
@@ -455,19 +719,29 @@ Info (12021): Found 1 design units, including 1 entities, in source file /users/
     Info (12023): Found entity 1: OnOffToggle File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/RAMtesterCode/OnOffToggle/OnOffToggle.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file trisc2.v
     Info (12023): Found entity 1: trisc2 File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 1
-Critical Warning (10846): Verilog HDL Instantiation warning at trisc2.v(46): instance has no name File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 46
-Critical Warning (10846): Verilog HDL Instantiation warning at trisc2.v(47): instance has no name File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 47
+Critical Warning (10846): Verilog HDL Instantiation warning at twoCompAddSub.v(10): instance has no name File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/twoCompAddSub/twoCompAddSub.v Line: 10
+Critical Warning (10846): Verilog HDL Instantiation warning at twoCompAddSub.v(11): instance has no name File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/twoCompAddSub/twoCompAddSub.v Line: 11
+Critical Warning (10846): Verilog HDL Instantiation warning at twoCompAddSub.v(12): instance has no name File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/twoCompAddSub/twoCompAddSub.v Line: 12
+Critical Warning (10846): Verilog HDL Instantiation warning at twoCompAddSub.v(13): instance has no name File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/twoCompAddSub/twoCompAddSub.v Line: 13
+Critical Warning (10846): Verilog HDL Instantiation warning at accumulator.v(9): instance has no name File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/accumulator/accumulator.v Line: 9
+Critical Warning (10846): Verilog HDL Instantiation warning at accumulator.v(10): instance has no name File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/accumulator/accumulator.v Line: 10
+Critical Warning (10846): Verilog HDL Instantiation warning at alu.v(12): instance has no name File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v Line: 12
+Critical Warning (10846): Verilog HDL Instantiation warning at alu.v(19): instance has no name File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v Line: 19
+Critical Warning (10846): Verilog HDL Instantiation warning at controllerTester.v(6): instance has no name File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/controllerTester/controllerTester.v Line: 6
+Critical Warning (10846): Verilog HDL Instantiation warning at controllerTester.v(8): instance has no name File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/controllerTester/controllerTester.v Line: 8
 Critical Warning (10846): Verilog HDL Instantiation warning at trisc2.v(48): instance has no name File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 48
+Critical Warning (10846): Verilog HDL Instantiation warning at trisc2.v(49): instance has no name File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 49
+Critical Warning (10846): Verilog HDL Instantiation warning at trisc2.v(60): instance has no name File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 60
+Critical Warning (10846): Verilog HDL Instantiation warning at trisc2.v(61): instance has no name File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 61
+Critical Warning (10846): Verilog HDL Instantiation warning at trisc2.v(63): instance has no name File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 63
+Critical Warning (10846): Verilog HDL Instantiation warning at trisc2.v(64): instance has no name File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 64
+Critical Warning (10846): Verilog HDL Instantiation warning at trisc2.v(67): instance has no name File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 67
+Critical Warning (10846): Verilog HDL Instantiation warning at trisc2.v(68): instance has no name File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 68
 Info (12127): Elaborating entity "trisc2" for the top level hierarchy
-Warning (10858): Verilog HDL warning at trisc2.v(14): object ramAddress used but never assigned File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 14
-Warning (10858): Verilog HDL warning at trisc2.v(15): object C4 used but never assigned File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 15
-Warning (10858): Verilog HDL warning at trisc2.v(16): object MDI used but never assigned File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 16
-Warning (10030): Net "ramAddress" at trisc2.v(14) has no driver or initial value, using a default initial value '0' File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 14
-Warning (10030): Net "MDI" at trisc2.v(16) has no driver or initial value, using a default initial value '0' File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 16
+Warning (10030): Net "MDI[7..4]" at trisc2.v(14) has no driver or initial value, using a default initial value '0' File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 14
 Warning (10030): Net "c5" at trisc2.v(7) has no driver or initial value, using a default initial value '0' File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
-Warning (10030): Net "C4" at trisc2.v(15) has no driver or initial value, using a default initial value '0' File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 15
 Warning (10034): Output port "MARhex" at trisc2.v(5) has no driver File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
-Warning (10034): Output port "MDin" at trisc2.v(6) has no driver File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+Warning (10034): Output port "MDin[13..7]" at trisc2.v(6) has no driver File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
 Warning (10034): Output port "c0" at trisc2.v(7) has no driver File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
 Warning (10034): Output port "c1" at trisc2.v(7) has no driver File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
 Warning (10034): Output port "c2" at trisc2.v(7) has no driver File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
@@ -481,9 +755,9 @@ Warning (10034): Output port "c11" at trisc2.v(7) has no driver File: C:/Users/S
 Warning (10034): Output port "c12" at trisc2.v(7) has no driver File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
 Warning (10034): Output port "c13" at trisc2.v(7) has no driver File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
 Warning (10034): Output port "c14" at trisc2.v(8) has no driver File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 8
-Info (12128): Elaborating entity "OnOffToggle" for hierarchy "OnOffToggle:DivideX2" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 28
-Info (12128): Elaborating entity "BinUp" for hierarchy "BinUp:AddressGen" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 36
-Info (12128): Elaborating entity "Lab11RAM" for hierarchy "Lab11RAM:RAM" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 44
+Info (12128): Elaborating entity "OnOffToggle" for hierarchy "OnOffToggle:DivideX2" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 30
+Info (12128): Elaborating entity "BinUp" for hierarchy "BinUp:AddressGen" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 38
+Info (12128): Elaborating entity "Lab11RAM" for hierarchy "Lab11RAM:RAM" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 46
 Info (12128): Elaborating entity "altsyncram" for hierarchy "Lab11RAM:RAM|altsyncram:altsyncram_component" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/RAMtesterCode/Lab11RAM/Lab11RAM.v Line: 86
 Info (12130): Elaborated megafunction instantiation "Lab11RAM:RAM|altsyncram:altsyncram_component" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/RAMtesterCode/Lab11RAM/Lab11RAM.v Line: 86
 Info (12133): Instantiated megafunction "Lab11RAM:RAM|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/RAMtesterCode/Lab11RAM/Lab11RAM.v Line: 86
@@ -504,10 +778,88 @@ Info (12133): Instantiated megafunction "Lab11RAM:RAM|altsyncram:altsyncram_comp
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ene1.tdf
     Info (12023): Found entity 1: altsyncram_ene1 File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/db/altsyncram_ene1.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_ene1" for hierarchy "Lab11RAM:RAM|altsyncram:altsyncram_component|altsyncram_ene1:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "binary2seven" for hierarchy "binary2seven:comb_24" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 46
+Info (12128): Elaborating entity "binary2seven" for hierarchy "binary2seven:comb_24" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 48
+Info (12128): Elaborating entity "pInPOut" for hierarchy "pInPOut:IR" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 59
+Info (12128): Elaborating entity "controllerTester" for hierarchy "controllerTester:comb_26" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 60
+Info (12128): Elaborating entity "instructionDecoder" for hierarchy "controllerTester:comb_26|instructionDecoder:comb_3" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/controllerTester/controllerTester.v Line: 6
+Warning (10270): Verilog HDL Case Statement warning at instructionDecoder.v(5): incomplete case statement has no default case item File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/instructionDecoder/instructionDecoder.v Line: 5
+Warning (10240): Verilog HDL Always Construct warning at instructionDecoder.v(4): inferring latch(es) for variable "a", which holds its previous value in one or more paths through the always construct File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/instructionDecoder/instructionDecoder.v Line: 4
+Warning (10240): Verilog HDL Always Construct warning at instructionDecoder.v(4): inferring latch(es) for variable "b", which holds its previous value in one or more paths through the always construct File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/instructionDecoder/instructionDecoder.v Line: 4
+Warning (10240): Verilog HDL Always Construct warning at instructionDecoder.v(4): inferring latch(es) for variable "c", which holds its previous value in one or more paths through the always construct File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/instructionDecoder/instructionDecoder.v Line: 4
+Warning (10240): Verilog HDL Always Construct warning at instructionDecoder.v(4): inferring latch(es) for variable "d", which holds its previous value in one or more paths through the always construct File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/instructionDecoder/instructionDecoder.v Line: 4
+Warning (10240): Verilog HDL Always Construct warning at instructionDecoder.v(4): inferring latch(es) for variable "e", which holds its previous value in one or more paths through the always construct File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/instructionDecoder/instructionDecoder.v Line: 4
+Warning (10240): Verilog HDL Always Construct warning at instructionDecoder.v(4): inferring latch(es) for variable "f", which holds its previous value in one or more paths through the always construct File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/instructionDecoder/instructionDecoder.v Line: 4
+Warning (10240): Verilog HDL Always Construct warning at instructionDecoder.v(4): inferring latch(es) for variable "g", which holds its previous value in one or more paths through the always construct File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/instructionDecoder/instructionDecoder.v Line: 4
+Warning (10240): Verilog HDL Always Construct warning at instructionDecoder.v(4): inferring latch(es) for variable "h", which holds its previous value in one or more paths through the always construct File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/instructionDecoder/instructionDecoder.v Line: 4
+Warning (10240): Verilog HDL Always Construct warning at instructionDecoder.v(4): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/instructionDecoder/instructionDecoder.v Line: 4
+Warning (10240): Verilog HDL Always Construct warning at instructionDecoder.v(4): inferring latch(es) for variable "j", which holds its previous value in one or more paths through the always construct File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/instructionDecoder/instructionDecoder.v Line: 4
+Warning (10240): Verilog HDL Always Construct warning at instructionDecoder.v(4): inferring latch(es) for variable "k", which holds its previous value in one or more paths through the always construct File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/instructionDecoder/instructionDecoder.v Line: 4
+Info (10041): Inferred latch for "k" at instructionDecoder.v(4) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/instructionDecoder/instructionDecoder.v Line: 4
+Info (10041): Inferred latch for "j" at instructionDecoder.v(4) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/instructionDecoder/instructionDecoder.v Line: 4
+Info (10041): Inferred latch for "i" at instructionDecoder.v(4) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/instructionDecoder/instructionDecoder.v Line: 4
+Info (10041): Inferred latch for "h" at instructionDecoder.v(4) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/instructionDecoder/instructionDecoder.v Line: 4
+Info (10041): Inferred latch for "g" at instructionDecoder.v(4) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/instructionDecoder/instructionDecoder.v Line: 4
+Info (10041): Inferred latch for "f" at instructionDecoder.v(4) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/instructionDecoder/instructionDecoder.v Line: 4
+Info (10041): Inferred latch for "e" at instructionDecoder.v(4) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/instructionDecoder/instructionDecoder.v Line: 4
+Info (10041): Inferred latch for "d" at instructionDecoder.v(4) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/instructionDecoder/instructionDecoder.v Line: 4
+Info (10041): Inferred latch for "c" at instructionDecoder.v(4) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/instructionDecoder/instructionDecoder.v Line: 4
+Info (10041): Inferred latch for "b" at instructionDecoder.v(4) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/instructionDecoder/instructionDecoder.v Line: 4
+Info (10041): Inferred latch for "a" at instructionDecoder.v(4) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/instructionDecoder/instructionDecoder.v Line: 4
+Info (12128): Elaborating entity "controller" for hierarchy "controllerTester:comb_26|controller:comb_4" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/controllerTester/controllerTester.v Line: 8
+Warning (10240): Verilog HDL Always Construct warning at controller.v(15): inferring latch(es) for variable "nextstate", which holds its previous value in one or more paths through the always construct File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/controller/controller.v Line: 15
+Info (10041): Inferred latch for "nextstate.U" at controller.v(15) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/controller/controller.v Line: 15
+Info (10041): Inferred latch for "nextstate.T" at controller.v(15) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/controller/controller.v Line: 15
+Info (10041): Inferred latch for "nextstate.S" at controller.v(15) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/controller/controller.v Line: 15
+Info (10041): Inferred latch for "nextstate.R" at controller.v(15) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/controller/controller.v Line: 15
+Info (10041): Inferred latch for "nextstate.Q" at controller.v(15) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/controller/controller.v Line: 15
+Info (10041): Inferred latch for "nextstate.P" at controller.v(15) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/controller/controller.v Line: 15
+Info (10041): Inferred latch for "nextstate.O" at controller.v(15) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/controller/controller.v Line: 15
+Info (10041): Inferred latch for "nextstate.N" at controller.v(15) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/controller/controller.v Line: 15
+Info (10041): Inferred latch for "nextstate.M" at controller.v(15) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/controller/controller.v Line: 15
+Info (10041): Inferred latch for "nextstate.L" at controller.v(15) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/controller/controller.v Line: 15
+Info (10041): Inferred latch for "nextstate.K" at controller.v(15) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/controller/controller.v Line: 15
+Info (10041): Inferred latch for "nextstate.J" at controller.v(15) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/controller/controller.v Line: 15
+Info (10041): Inferred latch for "nextstate.I" at controller.v(15) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/controller/controller.v Line: 15
+Info (10041): Inferred latch for "nextstate.H" at controller.v(15) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/controller/controller.v Line: 15
+Info (10041): Inferred latch for "nextstate.G" at controller.v(15) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/controller/controller.v Line: 15
+Info (10041): Inferred latch for "nextstate.F" at controller.v(15) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/controller/controller.v Line: 15
+Info (10041): Inferred latch for "nextstate.E" at controller.v(15) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/controller/controller.v Line: 15
+Info (10041): Inferred latch for "nextstate.D" at controller.v(15) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/controller/controller.v Line: 15
+Info (10041): Inferred latch for "nextstate.C" at controller.v(15) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/controller/controller.v Line: 15
+Info (10041): Inferred latch for "nextstate.B" at controller.v(15) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/controller/controller.v Line: 15
+Info (12128): Elaborating entity "alu" for hierarchy "alu:comb_27" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 61
+Warning (10230): Verilog HDL assignment warning at alu.v(15): truncated value with size 32 to match size of target (1) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v Line: 15
+Warning (10230): Verilog HDL assignment warning at alu.v(16): truncated value with size 32 to match size of target (1) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v Line: 16
+Info (12128): Elaborating entity "twoCompAddSub" for hierarchy "alu:comb_27|twoCompAddSub:comb_3" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v Line: 12
+Info (12128): Elaborating entity "FAbehav" for hierarchy "alu:comb_27|twoCompAddSub:comb_3|FAbehav:comb_4" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/twoCompAddSub/twoCompAddSub.v Line: 10
+Info (12128): Elaborating entity "twoComp" for hierarchy "alu:comb_27|twoComp:comb_26" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/alu/alu.v Line: 19
+Info (12128): Elaborating entity "accumulator" for hierarchy "accumulator:comb_28" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 63
+Info (12128): Elaborating entity "twoToOne" for hierarchy "accumulator:comb_28|twoToOne:comb_3" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/accumulator/accumulator.v Line: 9
+Info (12128): Elaborating entity "binaryCounter" for hierarchy "accumulator:comb_28|binaryCounter:comb_4" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/accumulator/accumulator.v Line: 10
+Warning (10230): Verilog HDL assignment warning at binaryCounter.v(15): truncated value with size 32 to match size of target (4) File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/binaryCounter/binaryCounter.v Line: 15
 Warning (19016): Clock multiplexers are found and protected
     Warning (19017): Found clock multiplexer RAMin File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 11
+Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13012): Latch controllerTester:comb_26|instructionDecoder:comb_3|h has unsafe behavior File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/instructionDecoder/instructionDecoder.v Line: 3
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pInPOut:IR|Q[0] File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/pInPOut/pInPOut.v Line: 11
+Warning (13012): Latch controllerTester:comb_26|instructionDecoder:comb_3|g has unsafe behavior File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/instructionDecoder/instructionDecoder.v Line: 3
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pInPOut:IR|Q[0] File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/pInPOut/pInPOut.v Line: 11
+Warning (13012): Latch controllerTester:comb_26|instructionDecoder:comb_3|f has unsafe behavior File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/instructionDecoder/instructionDecoder.v Line: 3
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pInPOut:IR|Q[0] File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/pInPOut/pInPOut.v Line: 11
+Warning (13012): Latch controllerTester:comb_26|instructionDecoder:comb_3|c has unsafe behavior File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/instructionDecoder/instructionDecoder.v Line: 3
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pInPOut:IR|Q[0] File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/pInPOut/pInPOut.v Line: 11
+Warning (13012): Latch controllerTester:comb_26|instructionDecoder:comb_3|b has unsafe behavior File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/instructionDecoder/instructionDecoder.v Line: 3
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pInPOut:IR|Q[0] File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/pInPOut/pInPOut.v Line: 11
+Warning (13012): Latch controllerTester:comb_26|instructionDecoder:comb_3|a has unsafe behavior File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/instructionDecoder/instructionDecoder.v Line: 3
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pInPOut:IR|Q[0] File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/pInPOut/pInPOut.v Line: 11
 Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "PChex[0]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
+    Warning (13410): Pin "PChex[1]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
+    Warning (13410): Pin "PChex[2]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
+    Warning (13410): Pin "PChex[3]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
+    Warning (13410): Pin "PChex[4]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
+    Warning (13410): Pin "PChex[5]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
+    Warning (13410): Pin "PChex[6]" is stuck at VCC File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
     Warning (13410): Pin "MARhex[0]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
     Warning (13410): Pin "MARhex[1]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
     Warning (13410): Pin "MARhex[2]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 5
@@ -521,7 +873,7 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "MDin[3]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
     Warning (13410): Pin "MDin[4]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
     Warning (13410): Pin "MDin[5]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
-    Warning (13410): Pin "MDin[6]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
+    Warning (13410): Pin "MDin[6]" is stuck at VCC File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
     Warning (13410): Pin "MDin[7]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
     Warning (13410): Pin "MDin[8]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
     Warning (13410): Pin "MDin[9]" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 6
@@ -544,24 +896,22 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "c13" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 7
     Warning (13410): Pin "c14" is stuck at GND File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 8
 Info (286030): Timing-Driven Synthesis is running
+Info (17049): 5 registers lost all their fanouts during netlist optimizations.
 Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "OnOffToggle:DivideX2|Mult0" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/RAMtesterCode/OnOffToggle/OnOffToggle.v Line: 15
 Info (144001): Generated suppressed messages file C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/output_files/trisc2.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "startStop" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 4
-    Warning (15610): No output dependent on input pin "clock" File: C:/Users/Sho/OneDrive/Desktop/DigitalLogicVerilog/trisc2/trisc2.v Line: 4
-Info (21057): Implemented 119 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 192 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 14 input pins
     Info (21059): Implemented 56 output pins
-    Info (21061): Implemented 41 logic cells
+    Info (21061): Implemented 114 logic cells
     Info (21064): Implemented 8 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 67 warnings
-    Info: Peak virtual memory: 4824 megabytes
-    Info: Processing ended: Tue Apr 26 21:35:21 2022
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 110 warnings
+    Info: Peak virtual memory: 4822 megabytes
+    Info: Processing ended: Wed Apr 27 08:14:08 2022
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:14
+    Info: Total CPU time (on all processors): 00:00:15
 
 
 +------------------------------------------+
