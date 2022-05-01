@@ -6,14 +6,11 @@ module binaryCounter #(parameter N=4)
 );
 	always @ (negedge increment, negedge clear, negedge load) begin
 		if(clear == 0)
-			Q = 0;
+			Q = 4'b0000;
+		else if(load == 0)
+			Q = D;
 		else
-			begin
-				if (load == 0)
-					Q = D;
-				else
-					Q <= Q + 1;
-			end
+			Q <= Q + 1;
 	end
 endmodule
 			

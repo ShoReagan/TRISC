@@ -2,7 +2,280 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "PChex[0]",
+					"strict" : false
+				},
+				{
+					"name" : "PChex[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PChex[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PChex[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PChex[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PChex[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PChex[6]",
+					"strict" : false
+				},
+				{
+					"name" : "MARhex[0]",
+					"strict" : false
+				},
+				{
+					"name" : "MARhex[1]",
+					"strict" : false
+				},
+				{
+					"name" : "MARhex[2]",
+					"strict" : false
+				},
+				{
+					"name" : "MARhex[3]",
+					"strict" : false
+				},
+				{
+					"name" : "MARhex[4]",
+					"strict" : false
+				},
+				{
+					"name" : "MARhex[5]",
+					"strict" : false
+				},
+				{
+					"name" : "MARhex[6]",
+					"strict" : false
+				},
+				{
+					"name" : "MDout[0]",
+					"strict" : false
+				},
+				{
+					"name" : "MDout[1]",
+					"strict" : false
+				},
+				{
+					"name" : "MDout[2]",
+					"strict" : false
+				},
+				{
+					"name" : "MDout[3]",
+					"strict" : false
+				},
+				{
+					"name" : "MDout[4]",
+					"strict" : false
+				},
+				{
+					"name" : "MDout[5]",
+					"strict" : false
+				},
+				{
+					"name" : "MDout[6]",
+					"strict" : false
+				},
+				{
+					"name" : "MDout[7]",
+					"strict" : false
+				},
+				{
+					"name" : "MDout[8]",
+					"strict" : false
+				},
+				{
+					"name" : "MDout[9]",
+					"strict" : false
+				},
+				{
+					"name" : "MDout[10]",
+					"strict" : false
+				},
+				{
+					"name" : "MDout[11]",
+					"strict" : false
+				},
+				{
+					"name" : "MDout[12]",
+					"strict" : false
+				},
+				{
+					"name" : "MDout[13]",
+					"strict" : false
+				},
+				{
+					"name" : "MDin[0]",
+					"strict" : false
+				},
+				{
+					"name" : "MDin[1]",
+					"strict" : false
+				},
+				{
+					"name" : "MDin[2]",
+					"strict" : false
+				},
+				{
+					"name" : "MDin[3]",
+					"strict" : false
+				},
+				{
+					"name" : "MDin[4]",
+					"strict" : false
+				},
+				{
+					"name" : "MDin[5]",
+					"strict" : false
+				},
+				{
+					"name" : "MDin[6]",
+					"strict" : false
+				},
+				{
+					"name" : "MDin[7]",
+					"strict" : false
+				},
+				{
+					"name" : "MDin[8]",
+					"strict" : false
+				},
+				{
+					"name" : "MDin[9]",
+					"strict" : false
+				},
+				{
+					"name" : "MDin[10]",
+					"strict" : false
+				},
+				{
+					"name" : "MDin[11]",
+					"strict" : false
+				},
+				{
+					"name" : "MDin[12]",
+					"strict" : false
+				},
+				{
+					"name" : "MDin[13]",
+					"strict" : false
+				},
+				{
+					"name" : "c0",
+					"strict" : false
+				},
+				{
+					"name" : "c1",
+					"strict" : false
+				},
+				{
+					"name" : "c2",
+					"strict" : false
+				},
+				{
+					"name" : "c3",
+					"strict" : false
+				},
+				{
+					"name" : "c4",
+					"strict" : false
+				},
+				{
+					"name" : "c5",
+					"strict" : false
+				},
+				{
+					"name" : "c7",
+					"strict" : false
+				},
+				{
+					"name" : "c8",
+					"strict" : false
+				},
+				{
+					"name" : "c9",
+					"strict" : false
+				},
+				{
+					"name" : "c10",
+					"strict" : false
+				},
+				{
+					"name" : "c11",
+					"strict" : false
+				},
+				{
+					"name" : "c14",
+					"strict" : false
+				},
+				{
+					"name" : "Mode",
+					"strict" : false
+				},
+				{
+					"name" : "ClearAddGen",
+					"strict" : false
+				},
+				{
+					"name" : "RW",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "startStop",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ClockIn",
+					"strict" : false
+				}
+			]
 		}
 	]
 }

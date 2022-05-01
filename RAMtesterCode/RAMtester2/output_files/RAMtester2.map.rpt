@@ -1,5 +1,5 @@
 Analysis & Synthesis report for RAMtester2
-Fri Apr 15 14:01:07 2022
+Mon Nov 08 18:36:12 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -52,7 +52,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 15 14:01:07 2022       ;
+; Analysis & Synthesis Status        ; Successful - Mon Nov 08 18:36:12 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; RAMtester2                                  ;
 ; Top-level Entity Name              ; RAMtester2                                  ;
@@ -162,40 +162,39 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 8           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 8           ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-8         ;   0.0%      ;
+;     Processors 2-6         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                   ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                               ; Library ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------+---------+
-; ../binary2seven/binary2seven.v   ; yes             ; User Verilog HDL File        ; C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/binary2seven/binary2seven.v       ;         ;
-; ../Lab11RAM/Lab11RAM.v           ; yes             ; User Wizard-Generated File   ; C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/Lab11RAM/Lab11RAM.v               ;         ;
-; ../BinUp/BinUp.v                 ; yes             ; User Verilog HDL File        ; C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/BinUp/BinUp.v                     ;         ;
-; ../OnOffToggle/OnOffToggle.v     ; yes             ; User Verilog HDL File        ; C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/OnOffToggle/OnOffToggle.v         ;         ;
-; RAMtester2.v                     ; yes             ; User Verilog HDL File        ; C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/RAMtester2/RAMtester2.v           ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                      ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc               ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                         ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                      ;         ;
-; aglobal201.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                      ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                       ;         ;
-; altrom.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                          ;         ;
-; altram.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                          ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                        ;         ;
-; db/altsyncram_ene1.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/RAMtester2/db/altsyncram_ene1.tdf ;         ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                     ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                 ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------+---------+
+; ../binary2seven/binary2seven.v   ; yes             ; User Verilog HDL File        ; C:/My Documents/CSE 2441/Fall 2021/designs/binary2seven/binary2seven.v       ;         ;
+; ../Lab11RAM/Lab11RAM.v           ; yes             ; User Wizard-Generated File   ; C:/My Documents/CSE 2441/Fall 2021/designs/Lab11RAM/Lab11RAM.v               ;         ;
+; ../BinUp/BinUp.v                 ; yes             ; User Verilog HDL File        ; C:/My Documents/CSE 2441/Fall 2021/designs/BinUp/BinUp.v                     ;         ;
+; ../OnOffToggle/OnOffToggle.v     ; yes             ; User Verilog HDL File        ; C:/My Documents/CSE 2441/Fall 2021/designs/OnOffToggle/OnOffToggle.v         ;         ;
+; RAMtester2.v                     ; yes             ; User Verilog HDL File        ; C:/My Documents/CSE 2441/Fall 2021/designs/RAMtester2/RAMtester2.v           ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
+; aglobal201.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc        ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
+; altrom.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
+; altram.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc            ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
+; db/altsyncram_ene1.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/My Documents/CSE 2441/Fall 2021/designs/RAMtester2/db/altsyncram_ene1.tdf ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------------------+
@@ -439,7 +438,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -449,27 +448,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Apr 15 14:00:46 2022
+    Info: Processing started: Mon Nov 08 18:36:05 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RAMtester2 -c RAMtester2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /users/shore/desktop/digitallogicverilog/ramtestercode/binary2seven/binary2seven.v
-    Info (12023): Found entity 1: binary2seven File: C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/binary2seven/binary2seven.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file /users/shore/desktop/digitallogicverilog/ramtestercode/lab11ram/lab11ram.v
-    Info (12023): Found entity 1: Lab11RAM File: C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/Lab11RAM/Lab11RAM.v Line: 40
-Info (12021): Found 1 design units, including 1 entities, in source file /users/shore/desktop/digitallogicverilog/ramtestercode/binup/binup.v
-    Info (12023): Found entity 1: BinUp File: C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/BinUp/BinUp.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file /users/shore/desktop/digitallogicverilog/ramtestercode/onofftoggle/onofftoggle.v
-    Info (12023): Found entity 1: OnOffToggle File: C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/OnOffToggle/OnOffToggle.v Line: 1
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /my documents/cse 2441/fall 2021/designs/binary2seven/binary2seven.v
+    Info (12023): Found entity 1: binary2seven File: C:/My Documents/CSE 2441/Fall 2021/designs/binary2seven/binary2seven.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /my documents/cse 2441/fall 2021/designs/lab11ram/lab11ram.v
+    Info (12023): Found entity 1: Lab11RAM File: C:/My Documents/CSE 2441/Fall 2021/designs/Lab11RAM/Lab11RAM.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file /my documents/cse 2441/fall 2021/designs/binup/binup.v
+    Info (12023): Found entity 1: BinUp File: C:/My Documents/CSE 2441/Fall 2021/designs/BinUp/BinUp.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file /my documents/cse 2441/fall 2021/designs/onofftoggle/onofftoggle.v
+    Info (12023): Found entity 1: OnOffToggle File: C:/My Documents/CSE 2441/Fall 2021/designs/OnOffToggle/OnOffToggle.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ramtester2.v
-    Info (12023): Found entity 1: RAMtester2 File: C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/RAMtester2/RAMtester2.v Line: 2
+    Info (12023): Found entity 1: RAMtester2 File: C:/My Documents/CSE 2441/Fall 2021/designs/RAMtester2/RAMtester2.v Line: 2
 Info (12127): Elaborating entity "RAMtester2" for the top level hierarchy
-Info (12128): Elaborating entity "OnOffToggle" for hierarchy "OnOffToggle:DivideX2" File: C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/RAMtester2/RAMtester2.v Line: 25
-Info (12128): Elaborating entity "BinUp" for hierarchy "BinUp:AddressGen" File: C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/RAMtester2/RAMtester2.v Line: 34
-Info (12128): Elaborating entity "Lab11RAM" for hierarchy "Lab11RAM:Lab11RAM" File: C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/RAMtester2/RAMtester2.v Line: 43
-Info (12128): Elaborating entity "altsyncram" for hierarchy "Lab11RAM:Lab11RAM|altsyncram:altsyncram_component" File: C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/Lab11RAM/Lab11RAM.v Line: 86
-Info (12130): Elaborated megafunction instantiation "Lab11RAM:Lab11RAM|altsyncram:altsyncram_component" File: C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/Lab11RAM/Lab11RAM.v Line: 86
-Info (12133): Instantiated megafunction "Lab11RAM:Lab11RAM|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/Lab11RAM/Lab11RAM.v Line: 86
+Info (12128): Elaborating entity "OnOffToggle" for hierarchy "OnOffToggle:DivideX2" File: C:/My Documents/CSE 2441/Fall 2021/designs/RAMtester2/RAMtester2.v Line: 25
+Info (12128): Elaborating entity "BinUp" for hierarchy "BinUp:AddressGen" File: C:/My Documents/CSE 2441/Fall 2021/designs/RAMtester2/RAMtester2.v Line: 34
+Info (12128): Elaborating entity "Lab11RAM" for hierarchy "Lab11RAM:Lab11RAM" File: C:/My Documents/CSE 2441/Fall 2021/designs/RAMtester2/RAMtester2.v Line: 43
+Info (12128): Elaborating entity "altsyncram" for hierarchy "Lab11RAM:Lab11RAM|altsyncram:altsyncram_component" File: C:/My Documents/CSE 2441/Fall 2021/designs/Lab11RAM/Lab11RAM.v Line: 86
+Info (12130): Elaborated megafunction instantiation "Lab11RAM:Lab11RAM|altsyncram:altsyncram_component" File: C:/My Documents/CSE 2441/Fall 2021/designs/Lab11RAM/Lab11RAM.v Line: 86
+Info (12133): Instantiated megafunction "Lab11RAM:Lab11RAM|altsyncram:altsyncram_component" with the following parameter: File: C:/My Documents/CSE 2441/Fall 2021/designs/Lab11RAM/Lab11RAM.v Line: 86
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "intended_device_family" = "MAX 10"
@@ -485,16 +484,16 @@ Info (12133): Instantiated megafunction "Lab11RAM:Lab11RAM|altsyncram:altsyncram
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ene1.tdf
-    Info (12023): Found entity 1: altsyncram_ene1 File: C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/RAMtester2/db/altsyncram_ene1.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_ene1 File: C:/My Documents/CSE 2441/Fall 2021/designs/RAMtester2/db/altsyncram_ene1.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_ene1" for hierarchy "Lab11RAM:Lab11RAM|altsyncram:altsyncram_component|altsyncram_ene1:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "binary2seven" for hierarchy "binary2seven:Address_HEX2" File: C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/RAMtester2/RAMtester2.v Line: 58
+Info (12128): Elaborating entity "binary2seven" for hierarchy "binary2seven:Address_HEX2" File: C:/My Documents/CSE 2441/Fall 2021/designs/RAMtester2/RAMtester2.v Line: 58
 Warning (19016): Clock multiplexers are found and protected
-    Warning (19017): Found clock multiplexer clock1 File: C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/RAMtester2/RAMtester2.v Line: 11
-    Warning (19017): Found clock multiplexer clock1~0 File: C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/RAMtester2/RAMtester2.v Line: 11
-    Warning (19017): Found clock multiplexer clock1~1 File: C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/RAMtester2/RAMtester2.v Line: 11
+    Warning (19017): Found clock multiplexer clock1 File: C:/My Documents/CSE 2441/Fall 2021/designs/RAMtester2/RAMtester2.v Line: 11
+    Warning (19017): Found clock multiplexer clock1~0 File: C:/My Documents/CSE 2441/Fall 2021/designs/RAMtester2/RAMtester2.v Line: 11
+    Warning (19017): Found clock multiplexer clock1~1 File: C:/My Documents/CSE 2441/Fall 2021/designs/RAMtester2/RAMtester2.v Line: 11
 Info (286030): Timing-Driven Synthesis is running
 Info (17016): Found the following redundant logic cells in design
-    Info (17048): Logic cell "OnOffToggle:DivideX2|Mult0" File: C:/Users/shore/Desktop/DigitalLogicVerilog/RAMtesterCode/OnOffToggle/OnOffToggle.v Line: 15
+    Info (17048): Logic cell "OnOffToggle:DivideX2|Mult0" File: C:/My Documents/CSE 2441/Fall 2021/designs/OnOffToggle/OnOffToggle.v Line: 15
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 93 device resources after synthesis - the final resource count might be different
@@ -503,9 +502,9 @@ Info (21057): Implemented 93 device resources after synthesis - the final resour
     Info (21061): Implemented 39 logic cells
     Info (21064): Implemented 8 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4807 megabytes
-    Info: Processing ended: Fri Apr 15 14:01:07 2022
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:43
+    Info: Peak virtual memory: 4784 megabytes
+    Info: Processing ended: Mon Nov 08 18:36:12 2021
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:16
 
 

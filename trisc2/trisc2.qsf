@@ -50,11 +50,6 @@ set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VERILOG_FILE ../RAMtesterCode/binary2seven/binary2seven.v
-set_global_assignment -name VERILOG_FILE ../RAMtesterCode/BinUp/BinUp.v
-set_global_assignment -name VERILOG_FILE ../RAMtesterCode/Lab11RAM/Lab11RAM.v
-set_global_assignment -name VERILOG_FILE ../RAMtesterCode/OnOffToggle/OnOffToggle.v
-set_global_assignment -name VERILOG_FILE trisc2.v
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_location_assignment PIN_A20 -to MDout[1]
@@ -90,4 +85,57 @@ set_location_assignment PIN_B12 -to DataIn[5]
 set_location_assignment PIN_A13 -to DataIn[6]
 set_location_assignment PIN_A14 -to DataIn[7]
 set_location_assignment PIN_F15 -to Mode
+set_global_assignment -name VERILOG_FILE ../FAbehav/FAbehav.v
+set_global_assignment -name VERILOG_FILE ../twoToOne/twoToOne.v
+set_global_assignment -name VERILOG_FILE ../twoCompAddSub/twoCompAddSub.v
+set_global_assignment -name VERILOG_FILE ../twoComp/twoComp.v
+set_global_assignment -name VERILOG_FILE ../accumulator/accumulator.v
+set_global_assignment -name VERILOG_FILE ../alu/alu.v
+set_global_assignment -name VERILOG_FILE ../controller/controller.v
+set_global_assignment -name VERILOG_FILE ../controllerTester/controllerTester.v
+set_global_assignment -name VERILOG_FILE ../binaryCounter/binaryCounter.v
+set_global_assignment -name VERILOG_FILE ../pInPOut/pInPOut.v
+set_global_assignment -name VERILOG_FILE ../instructionDecoder/instructionDecoder.v
+set_global_assignment -name VERILOG_FILE ../RAMtesterCode/binary2seven/binary2seven.v
+set_global_assignment -name VERILOG_FILE ../RAMtesterCode/BinUp/BinUp.v
+set_global_assignment -name VERILOG_FILE ../RAMtesterCode/Lab11RAM/Lab11RAM.v
+set_global_assignment -name VERILOG_FILE ../RAMtesterCode/OnOffToggle/OnOffToggle.v
+set_global_assignment -name VERILOG_FILE trisc2.v
+set_location_assignment PIN_AB8 -to c1
+set_location_assignment PIN_AB9 -to c2
+set_location_assignment PIN_Y10 -to c3
+set_location_assignment PIN_AA11 -to c4
+set_location_assignment PIN_AA12 -to c5
+set_location_assignment PIN_AB17 -to c7
+set_location_assignment PIN_AA17 -to c8
+set_location_assignment PIN_AB19 -to c9
+set_location_assignment PIN_AA19 -to c10
+set_location_assignment PIN_E14 -to c11
+set_location_assignment PIN_D14 -to c12
+set_location_assignment PIN_A11 -to c13
+set_location_assignment PIN_B11 -to c14
+set_location_assignment PIN_C14 -to MDin[0]
+set_location_assignment PIN_E15 -to MDin[1]
+set_location_assignment PIN_C15 -to MDin[2]
+set_location_assignment PIN_C16 -to MDin[3]
+set_location_assignment PIN_E16 -to MDin[4]
+set_location_assignment PIN_D17 -to MDin[5]
+set_location_assignment PIN_C17 -to MDin[6]
+set_location_assignment PIN_C18 -to MDin[7]
+set_location_assignment PIN_D18 -to MDin[8]
+set_location_assignment PIN_E18 -to MDin[9]
+set_location_assignment PIN_B16 -to MDin[10]
+set_location_assignment PIN_A17 -to MDin[11]
+set_location_assignment PIN_A18 -to MDin[12]
+set_location_assignment PIN_B17 -to MDin[13]
+set_location_assignment PIN_AB7 -to c0
+set_location_assignment PIN_A7 -to clock
+set_location_assignment PIN_B8 -to startStop
+set_location_assignment PIN_E20 -to MARhex[1]
+set_location_assignment PIN_E19 -to MARhex[2]
+set_location_assignment PIN_J18 -to MARhex[3]
+set_location_assignment PIN_H19 -to MARhex[4]
+set_location_assignment PIN_F19 -to MARhex[5]
+set_location_assignment PIN_F20 -to MARhex[6]
+set_location_assignment PIN_F18 -to MARhex[0]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
